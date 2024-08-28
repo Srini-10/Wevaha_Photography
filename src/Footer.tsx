@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[70vh] pb-10 flex flex-col justify-center items-center bg-gradient-to-b from-white to-[#fff7e1] scroll-smooth transition-all duration-1000 ease-in-out">
+    <div className="w-full h-[70vh] pb-10 flex flex-col justify-center items-center bg-gradient-to-b from-white to-[#fff7e4] scroll-smooth transition-all duration-1000 ease-in-out">
       {/* Logo */}
       <img className="w-[15vw] pt-32" src={Logo} alt="Wevaha Logo" />
 

@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=New+Amsterdam&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+
+.Font-About {
+  font-family: "Bebas Neue", sans-serif;
+}

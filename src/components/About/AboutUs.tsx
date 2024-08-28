@@ -1,12 +1,15 @@
 import React from "react";
 import Frame from "../../assets/People1.jpg";
 import "./Style.css";
-import { Link } from "react-router-dom";
+import Navbar from "../../Navbar.tsx";
 
-const About = () => {
+const AboutUs = () => {
   return (
     <>
       <div className="w-full min-h-[700px] bg-white h-screen flex justify-between px-[7%] py-[6%] scroll-smooth transition-all duration-1000 ease-in-out">
+        <div
+          className={`absolute z-30 top-0 left-0 right-0 h-[30vh] opacity-10 bg-gradient-to-b from-black to-transparent transition-all duration-1000 ease-in-out`}
+        ></div>
         <div className="">
           <h1 className="Font-About z-50 mt-[-40px] relative text-[200px] font-bold">
             ABOUT US
@@ -26,16 +29,16 @@ const About = () => {
             veniam et sed id? Expedita, vitae.
           </p>
 
-          <Link
-            to={"/about_us"}
-            className="font-semibold text-[25px] text-[#8d8d8d] hover:text-[#9a0104] text-end transition-all duration-500 ease-in-out"
-          >
-            Visit more ...
-          </Link>
+          <p className="font-semibold text-[25px] text-[#8d8d8d] text-end">
+            Our Quote
+          </p>
         </div>
       </div>
     </>
   );
 };
 
-export default About;
+export default AboutUs;
+function useState(arg0: string): [any, any] {
+  throw new Error("Function not implemented.");
+}

@@ -1,6 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home.tsx";
+import About from "./pages/About.tsx";
+import Gallery from "./pages/Gallery.tsx";
+import Contact from "./pages/Contact.tsx";
 
 function App() {
   return (
@@ -20,8 +23,9 @@ function App() {
             {/* <Navbar /> */}
             <Routes>
               <Route path="/" element={<Home />} />
-              {/* <Route path="/About" element={<About />} />
-              <Route path="/Gallery" element={<Gallery />} /> */}
+              <Route path="/about_us" element={<About />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/contact_us" element={<Contact />} />
             </Routes>
           </div>
         </BrowserRouter>

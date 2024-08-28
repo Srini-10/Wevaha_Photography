@@ -6,6 +6,9 @@ import Scroll2 from "../../assets/People3.jpg";
 import "./Style.css";
 import Collage from "./Collage.tsx";
 import Gallery from "./Gallery.tsx";
+import ComponentImages1 from "../ComponentImages/ComponentImages1.tsx";
+import ComponentImages2 from "../ComponentImages/ComponentImages2.tsx";
+import ComponentImages3 from "../ComponentImages/ComponentImages3.tsx";
 
 const AnimationImages: React.FC = () => {
   const navigate = useNavigate();
@@ -62,14 +65,17 @@ const AnimationImages: React.FC = () => {
         <div className="relative w-full h-full flex items-center justify-center z-10">
           <div className="w-full h-full p-12">
             <div className="relative w-full h-full border-2 border-transparent">
-              <div className="w-[320px] h-[200px] mt-[25vh] rounded">
-                <img className="rounded" src={Scroll1} alt="Scroll 1" />
+              <div className="scale-[0.7] shadow-md ml-[-10vw] mt-[30vh] rounded">
+                <ComponentImages1 />
               </div>
-              <h1 className="absolute inset-0 flex items-center justify-center font-medium text-[60px] text-white">
+              <h1 className="absolute inset-0 flex items-center justify-center font-semibold text-[80px] text-white">
                 Wevaha
               </h1>
-              <div className="w-[230px] h-[320px] absolute bottom-0 right-0 rounded">
-                <img className="rounded" src={Scroll2} alt="Scroll 2" />
+              <div className="scale-[0.7] shadow-md absolute bottom-0 right-10 rounded">
+                <ComponentImages2 />
+              </div>
+              <div className="scale-[0.4] shadow-md absolute top-[-30px] right-72 rounded">
+                <ComponentImages3 />
               </div>
             </div>
           </div>
