@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=New+Amsterdam&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+
+.Font-About {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.parallax-container {
+  perspective: 1000px;
+  transition: transform 0.3s ease-out;
+  transform-style: preserve-3d;
+}
+
+.parallax-container img {
+  transition: transform 0.3s ease-out;
+}
+
+.Number_Font {
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 35px;
+}

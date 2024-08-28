@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap");
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+/* Basic Styles */
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga" 1, "calt" 1;
+  /* background: #000; */
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, InterVariable,
+    sans-serif, "Courier New", monospace;
+}
+
+/* Tailwind Imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scrollbar Hide */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* BAck to Top Button Animation */
+/* CSS for text reveal animation */
+@keyframes revealIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes revealOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.animate-textReveal {
+  animation: revealIn 1s forwards; /* Fade in from right */
+}
+
+.hide {
+  animation: revealOut 1s forwards; /* Fade out to left */
+}
+
+/* CSS for button expansion */
+button {
+  transition: width 0.3s ease, border-radius 0.3s ease, right 0.3s ease;
+}
+
+/* Navbar Animation */
+/* Rainbow background effect */
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hover:bg-rainbow {
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #9400d3
+  );
+  background-size: 400% 400%;
+  transition: background 0.5s ease, color 0.5s ease; /* Ensure smooth transition for both background and text color */
+  -webkit-background-clip: text; /* Clip background to text for effect */
+  -webkit-text-fill-color: transparent; /* Make text color transparent to show the background */
+}
+
+.link-item {
+  position: relative;
+  display: inline-block;
+}
+
+.link-item:hover .hover:bg-rainbow {
+  animation: rainbow 5s linear infinite;
+  color: white; /* Ensure text color is readable against the rainbow background */
+  background: none; /* Remove background from the element itself */
+}
+
+.link-item:hover .hover:bg-rainbow::before {
+  content: ""; /* Add empty content to the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #9400d3
+  );
+  background-size: 400% 400%;
+  z-index: -1; /* Place it behind the text */
+  animation: rainbow 5s linear infinite;
+}
