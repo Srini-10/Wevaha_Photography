@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Collage = () => {
   return (
     <>
-      <div className="pt-20 max-h-screen scroll-smooth transition-all bg-white duration-1000 ease-in-out">
+      <div className="pt-20 max-h-screen min-h-screen scroll-smooth transition-all bg-white duration-1000 ease-in-out">
         <div className="w-[55%] mx-auto text-center">
           <h1 className="text-[55px] font-medium">Wevaha Photography</h1>
           <p className="text-[18px] text-gray-500 mt-1">
@@ -75,7 +75,7 @@ const Collage = () => {
       </span>
     </div> */}
         </div>
-        <div className="h-[200px] mt-[-30px] bg-gradient-to-b from-white to-transparent scroll-smooth transition-all duration-1000 ease-in-out"></div>
+        <div className="h-[300px] mt-[-22vh] bg-gradient-to-b from-white to-transparent scroll-smooth transition-all duration-1000 ease-in-out"></div>
       </div>
     </>
   );
