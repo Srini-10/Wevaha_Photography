@@ -39,12 +39,12 @@ const Collage = () => {
             <span className="min-w-[30.3%] h-[30vh] grow pl-3 rounded-2xl">
               <Link
                 to={"/gallery"}
-                className="hover:scale-[1.01] transition-all duration-700 ease-in-out text-[50px] flex gap-5 mt-2 font-bold"
+                className="hover:scale-[1.01] transition-all duration-700 ease-in-out text-[40px] flex gap-5 mt-2 font-bold"
               >
                 SEE MORE <img className="w-[70px]" src={Arrow_More} alt="" />
               </Link>
-              <div className="w-[244px] h-[2px] mt-[-18px] bg-black "></div>
-              <div className="text-[23px] font-medium leading-[45px] mt-5 flex flex-col justify-between">
+              <div className="w-[244px] h-[2px] mt-[-20px] bg-black "></div>
+              <div className="text-[20px] font-medium leading-[40px] mt-5 flex flex-col justify-between">
                 <p className="flex gap-3 text-gray-500 items-center">
                   <b className="Number_Font text-[#9a0104]">100+</b> Successful
                   Projects
