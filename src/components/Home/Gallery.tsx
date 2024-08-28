@@ -94,7 +94,7 @@ const Gallery = () => {
             ></iframe>
           </div>
         </div>
-        <div className="min-w-[300px] absolute right-20 min-h-full bg-gradient-to-l from-white to-transparent flex items-center justify-center"></div>
+        <div className="min-w-[300px] absolute right-20 mt-40 min-h-full bg-gradient-to-l from-white to-transparent flex items-center justify-center"></div>
       </div>
     </>
   );
