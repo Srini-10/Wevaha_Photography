@@ -156,7 +156,7 @@ button {
   transform: rotate(45deg) translate(30%, 40%);
   background: #fed2a5;
   box-shadow: 32px -34px 0 5px #9a0104;
-  animation: slide 2s infinite ease-in-out alternate;
+  animation: slide 2.5s infinite ease-in-out alternate;
 }
 .loader:after {
   content: "";
@@ -169,7 +169,7 @@ button {
   background: #9a0104;
   transform: rotate(0deg);
   transform-origin: 35px 145px;
-  animation: rotate 2s infinite ease-in-out;
+  animation: rotate 2.5s infinite ease-in-out;
 }
 
 @keyframes slide {
