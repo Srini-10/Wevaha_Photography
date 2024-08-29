@@ -54,13 +54,13 @@ const SecondService = () => {
 
   return (
     <>
-      <div className="h-[90vh] mt-[10vh] w-full flex flex-col items-center px-[11vw]">
+      <div className="h-screen mt-[10vh] w-full bg-black text-white flex flex-col items-center py-[5vh] px-[11vw]">
         <div
           id="second-service"
           className={`h-[45vh] mb-[-10vh] justify-end text-end flex ${animationClass}`}
         >
           <div className="w-[40vw] items-end justify-center gap-3 flex flex-col">
-            <div className="w-[28vw] h-[25vh rounded right-0 overflow-hidden">
+            <div className="w-[30vw] h-[25vh rounded right-0 shadow-md overflow-hidden">
               <img
                 className="w-full h-full right-0 object-cover"
                 src={BGImage}
@@ -83,7 +83,7 @@ const SecondService = () => {
           className={`h-[45vh] mt-[-10vh] justify-start text-start flex  ${animation2Class}`}
         >
           <div className="w-[40vw] items-start justify-center gap-3 flex flex-col">
-            <div className="w-[28vw] h-[25vh rounded right-0 overflow-hidden">
+            <div className="w-[30vw] h-[25vh rounded right-0 shadow-md overflow-hidden">
               <img
                 className="w-full h-full right-0 object-cover"
                 src={BGImage}
