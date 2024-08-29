@@ -7,3 +7,99 @@
 .Font-About {
   font-family: "Bebas Neue", sans-serif;
 }
+
+body {
+  text-align: center;
+}
+
+.placeholder {
+  position: absolute;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.gridContainer {
+  min-width: 101%;
+  height: 100vh;
+}
+
+.gridTile {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: center;
+}
+
+/* Arrow Animation */
+.scroll-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #333; /* Arrow color */
+  animation: jump 1.5s infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Style.css or a relevant CSS file */
+
+/* Hidden state for initial setup */
+.hidden {
+  opacity: 0;
+  transform: translateX(100%); /* Start off-screen */
+}
+
+/* Reveal animation from right to left */
+.reveal-animation {
+  opacity: 1;
+  transform: translateX(0); /* Move into view from right */
+  transition: opacity 0.5s ease, transform 1s ease;
+}
+
+/* Unreveal animation from center to left */
+.unreveal-animation {
+  opacity: 0;
+  transform: translateX(-100%); /* Move out of view to the left */
+  transition: opacity 0.5s ease, transform 1s ease;
+}
+
+/* Left to right reveal animation */
+.animation2Class {
+  opacity: 1;
+  transform: translateX(0); /* Move into view from left */
+  transition: opacity 0.5s ease, transform 1s ease;
+}
+
+/* Unreveal animation for left to right */
+.animation2Class-unreveal {
+  opacity: 0;
+  transform: translateX(100%); /* Move out of view to the right */
+  transition: opacity 0.5s ease, transform 1s ease;
+}
+
+/* Ensure elements are positioned correctly */
+#second-service,
+#second-service-2 {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+}

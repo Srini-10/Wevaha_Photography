@@ -112,7 +112,7 @@ const ContactUs = () => {
               className="Responsive-GT-Form-Inputs px-9 pb-4"
             >
               <div className="my-1">
-                <label className="text-white font-medium text-[15px]">
+                <label className="text-white font-medium text-[15px] text-left flex">
                   Email:
                 </label>
                 <input
@@ -127,7 +127,7 @@ const ContactUs = () => {
                 <div className="w-full h-[1px] mt-3 bg-neutral-700"></div>
               </div>
               <div className="my-4">
-                <label className="text-white font-medium text-[15px]">
+                <label className="text-white font-medium text-[15px] text-left flex">
                   Name:
                 </label>
                 <input
@@ -142,7 +142,7 @@ const ContactUs = () => {
                 <div className="w-full h-[1px] mt-3 bg-neutral-700"></div>
               </div>
               <div className="my-4">
-                <label className="text-white font-medium text-[15px]">
+                <label className="text-white font-medium text-[15px] text-left flex">
                   Phone:
                 </label>
                 <input
@@ -157,7 +157,7 @@ const ContactUs = () => {
                 <div className="w-full h-[1px] mt-3 bg-neutral-700"></div>
               </div>
               <div className="my-4">
-                <label className="text-white font-medium text-[15px]">
+                <label className="text-white font-medium text-[15px] text-left flex">
                   Service:
                 </label>
                 <select
@@ -182,7 +182,7 @@ const ContactUs = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Write your message here"
-                  className="textarea text-neutral-400 p-4 w-full h-[18vh] bg-neutral-950 mt-4 rounded-xl border-0 focus:ring-0 focus:outline-none"
+                  className="textarea text-neutral-400 p-4 w-full h-[16vh] bg-neutral-950 mt-4 rounded-xl border-0 focus:ring-0 focus:outline-none"
                   required
                 />
               </div>

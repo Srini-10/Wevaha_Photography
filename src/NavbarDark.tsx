@@ -6,12 +6,12 @@ import "./index.css";
 const Navbar = () => {
   return (
     <div className="h-[7vh] w-full absolute z-50 mt-7 flex items-center justify-between text-black scroll-smooth transition-all duration-1000 ease-in-out">
-      <div className="hover:pl-8 h-[7vh] min-w-[50px] p-1.5 items-center bg-white px-6 rounded-r-full transition-all duration-1000 ease-in-out">
+      <div className="hover:pl-8 h-[7vh] min-w-[50px] border-[0.5px] shadow-sm border-gray-400 p-1.5 items-center bg-white px-6 rounded-r-full transition-all duration-1000 ease-in-out">
         <Link to={"/"}>
           <img className="h-full w-full cursor-pointer" src={Logo} alt="Logo" />
         </Link>
       </div>
-      <ul className="hover:px-10 flex gap-12 h-[7vh] font-medium items-center px-8 rounded-l-full bg-white transition-all duration-1000 ease-in-out">
+      <ul className="hover:px-10 flex gap-12 h-[7vh] border-[0.5px] border-gray-400 shadow-sm font-medium items-center px-8 rounded-l-full bg-white transition-all duration-1000 ease-in-out">
         <li className="relative link-item">
           <Link
             className="cursor-pointer text-black px-4 py-2 rounded-lg hover:bg-rainbow"
