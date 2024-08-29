@@ -52,7 +52,6 @@ const Header = () => {
   return (
     <>
       <div className="w-full h-screen scroll-smooth transition-all duration-1000 ease-in-out">
-        <Navbar />
         <div className="h-[7vh] w-full absolute z-50 top-[55vh] opacity-50 font-semibold text-[90px] text-center text-white">
           Wevaha Photography
         </div>

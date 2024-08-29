@@ -4,6 +4,7 @@ import About from "../components/Home/About.tsx";
 import AnimationImages from "../components/Home/AnimationImages.tsx";
 import Footer from "../Footer.tsx";
 import ArrowUp from "../assets/Up_Arrow.svg";
+import Navbar from "../Navbar.tsx";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -54,6 +55,7 @@ const Home = () => {
     <div className="flex flex-col min-h-screen">
       {/* Main content */}
       <div className="flex-grow z-50 scroll-smooth transition-all duration-1000 ease-in-out bg-white">
+        <Navbar />
         <Header />
         <About />
         <AnimationImages />
