@@ -154,8 +154,8 @@ button {
   width: 40px;
   height: 40px;
   transform: rotate(45deg) translate(30%, 40%);
-  background: #ff9371;
-  box-shadow: 32px -34px 0 5px #ff3d00;
+  background: #b63638;
+  box-shadow: 32px -34px 0 5px #9a0104;
   animation: slide 2s infinite ease-in-out alternate;
 }
 .loader:after {
@@ -166,7 +166,7 @@ button {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #ff3d00;
+  background: #9a0104;
   transform: rotate(0deg);
   transform-origin: 35px 145px;
   animation: rotate 2s infinite ease-in-out;
