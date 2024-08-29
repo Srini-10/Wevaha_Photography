@@ -139,8 +139,8 @@ button {
 
 /* Loading Animation */
 .loader {
-  width: 64px;
-  height: 64px;
+  width: 70px;
+  height: 70px;
   position: relative;
   background: #fff;
   border-radius: 4px;
