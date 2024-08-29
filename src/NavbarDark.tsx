@@ -42,7 +42,7 @@ const NavbarDark = () => {
   return (
     <>
       <div
-        className={`navbar-container h-[7vh] w-full absolute z-[999999999999999999999999999999999999999999] mt-7 flex items-center justify-between text-black transition-all duration-1000 ease-in-out ${
+        className={`navbar-container h-[7vh] w-full absolute mt-7 flex items-center justify-between text-black transition-all duration-1000 ease-in-out ${
           isAtTop ? "scroll-smooth" : "h-[5vh]"
         }`}
         onClick={toggleNavbarExpansion}

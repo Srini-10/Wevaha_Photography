@@ -135,7 +135,7 @@ const OurServices = () => {
               Quis.
             </p>
             <div
-              className="scroll-arrow bg-yellow-100 absolute z-[99999999] rounded-full mt-[24vh] shadow-md ml-[23.4vw] w-12 h-12 cursor-pointer"
+              className="scroll-arrow bg-yellow-100 absolute z-[9997] rounded-full mt-[24vh] shadow-md ml-[23.4vw] w-12 h-12 cursor-pointer"
               onClick={scrollToNextComponent}
             >
               <div className="arrow wave">
