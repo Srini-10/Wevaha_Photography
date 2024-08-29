@@ -11,16 +11,18 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    // Start the loading animation when the component mounts
-    setLoading(true);
+    const handlePageLoad = () => {
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 2000);
 
-    // Simulate page loading delay
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000); // Display loading for 2 seconds
+      return () => clearTimeout(timer);
+    };
 
-    return () => clearTimeout(timer); // Cleanup the timer on component unmount
-  }, [location]); // Trigger the effect whenever the route changes
+    window.addEventListener("load", handlePageLoad);
+
+    return () => window.removeEventListener("load", handlePageLoad);
+  }, [location]);
 
   return (
     <>
