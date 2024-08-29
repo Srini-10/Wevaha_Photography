@@ -4,7 +4,7 @@ import Home from "./pages/Home.tsx";
 import About from "./pages/About.tsx";
 import Gallery from "./pages/Gallery.tsx";
 import Contact from "./pages/Contact.tsx";
-import LoadingAnimation from "./LoadingAnimation.tsx"; // Create this component
+import LoadingAnimation from "./LoadingAnimation.tsx";
 
 function App() {
   const [loading, setLoading] = useState(true);

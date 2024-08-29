@@ -154,7 +154,7 @@ button {
   width: 40px;
   height: 40px;
   transform: rotate(45deg) translate(30%, 40%);
-  background: #b63638;
+  background: #fed2a5;
   box-shadow: 32px -34px 0 5px #9a0104;
   animation: slide 2s infinite ease-in-out alternate;
 }
