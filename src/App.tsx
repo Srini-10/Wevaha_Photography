@@ -1,11 +1,27 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home.tsx";
 import About from "./pages/About.tsx";
 import Gallery from "./pages/Gallery.tsx";
 import Contact from "./pages/Contact.tsx";
+import LoadingAnimation from "./LoadingAnimation.tsx"; // Create this component
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const location = useLocation();
+
+  useEffect(() => {
+    // Start the loading animation when the component mounts
+    setLoading(true);
+
+    // Simulate page loading delay
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Display loading for 2 seconds
+
+    return () => clearTimeout(timer); // Cleanup the timer on component unmount
+  }, [location]); // Trigger the effect whenever the route changes
+
   return (
     <>
       <div className="Tab-View hidden w-full h-screen py-[20%] justify-center items-center bg-black">
@@ -18,9 +34,10 @@ function App() {
       </div>
 
       <div className="Normal-View">
-        <BrowserRouter>
+        {loading ? (
+          <LoadingAnimation />
+        ) : (
           <div className="scroll-smooth focus:scroll-auto">
-            {/* <Navbar /> */}
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about_us" element={<About />} />
@@ -28,10 +45,16 @@ function App() {
               <Route path="/contact_us" element={<Contact />} />
             </Routes>
           </div>
-        </BrowserRouter>
+        )}
       </div>
     </>
   );
 }
 
-export default App;
+export default function RootApp() {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+}
