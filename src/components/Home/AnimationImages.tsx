@@ -93,14 +93,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import BGImage from "../../assets/People1.jpg";
 import Logo from "../../assets/Wevaha_Logo.png";
-import Scroll1 from "../../assets/People2.jpg";
-import Scroll2 from "../../assets/People3.jpg";
 import "./Style.css";
 import Collage from "./Collage.tsx";
 import Gallery from "./Gallery.tsx";
-import ComponentImages1 from "../ComponentImages/ComponentImages1.tsx";
-import ComponentImages2 from "../ComponentImages/ComponentImages2.tsx";
-import ComponentImages3 from "../ComponentImages/ComponentImages3.tsx";
 
 const AnimationImages: React.FC = () => {
   const navigate = useNavigate();
@@ -170,14 +165,17 @@ const AnimationImages: React.FC = () => {
               {/* <div className="scale-[0.7] ml-[-10vw] mt-[30vh] rounded">
                 <ComponentImages1 />
               </div> */}
-              <h1 className="absolute inset-0 flex flex-col items-center justify-center font-semibold text-[30px] text-white">
+              <div className="absolute inset-0 flex flex-col items-center justify-center ">
+                {" "}
                 <img
-                  className="w-[30vw] hover:scale-[1.02] transition-all duration-1000 ease-in-out"
+                  className="w-[20vw] hover:scale-[1.02] transition-all duration-1000 ease-in-out"
                   src={Logo}
                   alt=""
                 />
-                Memories, Straight to your hearts!
-              </h1>
+                <h1 className="Font-Animation font-bold text-[4vw] opacity-50 text-white">
+                  Memories, Straight to your hearts!
+                </h1>
+              </div>
               {/* <div className="scale-[0.7] absolute bottom-0 right-10 rounded">
                 <ComponentImages2 />
               </div>

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Logo from "./assets/Wevaha_Logo.png";
-import Arrow_Left from "./assets/Left_Arrow.svg";
-import Arrow_Right from "./assets/Right_Arrow.svg";
+import Arrow_Left from "./assets/Left_Arrow_white.svg";
+import Arrow_Right from "./assets/Right_Arrow_white.svg";
 import { Link } from "react-router-dom";
 import "./index.css";
 
-const NavbarDark = () => {
+const NavbarWhite = () => {
   const [isAtTop, setIsAtTop] = useState(true);
   const [isExpanded, setIsExpanded] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -50,9 +50,9 @@ const NavbarDark = () => {
         <div
           className={`${
             isAtTop
-              ? "hover:pl-8 min-w-[50px] shadow-md border-[0.5px] border-gray-400 px-6 transition-all duration-1000 ease-in-out"
-              : "max-h-[55px] min-h-[55px] shadow-md rounded-full min-w-[55px] ml-2 p-3 fixed transition-all duration-1000 ease-in-out"
-          } h-full p-1.5 items-center cursor-pointer bg-white rounded-r-full transition-all duration-1000 ease-in-out`}
+              ? "hover:pl-8 min-w-[50px] shadow-md bg-black border-[2px] border-black px-6 transition-all duration-1000 ease-in-out"
+              : "max-h-[55px] min-h-[55px] bg-white border-[4px] border-black shadow-md rounded-full min-w-[55px] ml-2 p-3 fixed transition-all duration-1000 ease-in-out"
+          } h-full p-[8px] cursor-pointer items-center rounded-r-full transition-all duration-1000 ease-in-out`}
           onClick={openModal}
         >
           <img className="h-full w-full cursor-pointer" src={Logo} alt="Logo" />
@@ -60,11 +60,11 @@ const NavbarDark = () => {
         <ul
           className={`${
             isAtTop
-              ? "hover:px-10 gap-5 px-8 right-0 border-[0.5px] border-gray-400 shadow-md h-[55px] fixed transition-all duration-1000 ease-in-out"
+              ? "hover:px-10 gap-5 px-8 right-0 shadow-md h-[55px] fixed transition-all duration-1000 ease-in-out"
               : `gap-5 cursor-pointer px-8 ${
                   isExpanded ? "pl-7 right-0" : "pl-7 right-[-33vw]"
                 } group cursor-auto shadow-md h-[55px] fixed transition-all duration-1000 ease-in-out`
-          } flex h-[55px] font-medium items-center rounded-l-full bg-white transition-all duration-1000 ease-in-out`}
+          } flex h-[55px] font-medium items-center rounded-l-full bg-black transition-all duration-1000 ease-in-out`}
         >
           <li
             className={`${
@@ -75,7 +75,7 @@ const NavbarDark = () => {
                   }`
             }`}
           >
-            <p className="cursor-pointer flex gap-2 items-center text-black pr-4 py-2 rounded-lg hover:bg-rainbow">
+            <p className="cursor-pointer flex gap-2 items-center text-white pr-4 py-2 rounded-lg hover:bg-rainbow">
               {!isExpanded && (
                 <img
                   className="w-[18px] group-hover:mr-2 group-hover:scale-[1.05] transition-all duration-500 ease-in-out"
@@ -98,7 +98,7 @@ const NavbarDark = () => {
           </li>
           <li className="relative link-item">
             <Link
-              className="cursor-pointer text-black px-4 py-2 rounded-lg hover:bg-rainbow"
+              className="cursor-pointer text-white px-4 py-2 rounded-lg hover:bg-rainbow"
               to={"/"}
             >
               Home
@@ -106,7 +106,7 @@ const NavbarDark = () => {
           </li>
           <li className="relative link-item">
             <Link
-              className="cursor-pointer text-black px-4 py-2 rounded-lg hover:bg-rainbow"
+              className="cursor-pointer text-white px-4 py-2 rounded-lg hover:bg-rainbow"
               to={"/gallery"}
             >
               Gallery
@@ -114,7 +114,7 @@ const NavbarDark = () => {
           </li>
           <li className="relative link-item">
             <Link
-              className="cursor-pointer text-black px-4 py-2 rounded-lg hover:bg-rainbow"
+              className="cursor-pointer text-white px-4 py-2 rounded-lg hover:bg-rainbow"
               to={"/about_us"}
             >
               About Us
@@ -122,7 +122,7 @@ const NavbarDark = () => {
           </li>
           <li className="relative link-item">
             <Link
-              className="cursor-pointer text-black px-4 py-2 rounded-lg hover:bg-rainbow"
+              className="cursor-pointer text-white px-4 py-2 rounded-lg hover:bg-rainbow"
               to={"/contact_us"}
             >
               Contact Us
@@ -130,7 +130,6 @@ const NavbarDark = () => {
           </li>
         </ul>
       </div>
-
       {/* Modal for displaying the logo */}
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-[9999999999999999]">
@@ -147,4 +146,4 @@ const NavbarDark = () => {
   );
 };
 
-export default NavbarDark;
+export default NavbarWhite;

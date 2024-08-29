@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=New+Amsterdam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 
 * {
   scroll-behavior: smooth;
@@ -6,6 +7,9 @@
 
 .Font-About {
   font-family: "Bebas Neue", sans-serif;
+}
+.Font-Animation {
+  font-family: "Caveat", cursive;
 }
 
 .parallax-container {
