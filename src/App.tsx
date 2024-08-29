@@ -5,6 +5,7 @@ import About from "./pages/About.tsx";
 import Gallery from "./pages/Gallery.tsx";
 import Contact from "./pages/Contact.tsx";
 import LoadingAnimation from "./LoadingAnimation.tsx";
+import "./index.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <>
-      <div className="Tab-View hidden w-full h-screen py-[20%] justify-center items-center bg-black">
+      <div className="unresponsive-view w-full h-screen py-[20%] justify-center items-center bg-black">
         <div className="text-center min-h-[20%] max-h-[20%]">
           <h1 className="text-[150px] font-bold text-white">Oops!</h1>
           <p className="text-[25px] text-neutral-600">
@@ -35,7 +36,7 @@ function App() {
         </div>
       </div>
 
-      <div className="Normal-View">
+      <div className="normal-view">
         {loading ? (
           <LoadingAnimation />
         ) : (

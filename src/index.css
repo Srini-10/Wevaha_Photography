@@ -198,3 +198,16 @@ button {
     transform: rotate(25deg);
   }
 }
+
+/* UnResponsive Alert */
+.unresponsive-view {
+  display: none;
+}
+@media screen and (min-width: 300px) and (max-width: 1023px) {
+  .unresponsive-view {
+    display: block;
+  }
+  .normal-view {
+    display: none;
+  }
+}
