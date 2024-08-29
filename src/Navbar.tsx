@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Logo from "./assets/Wevaha_Logo.png";
 import Arrow_Left from "./assets/Left_Arrow.svg";
 import Arrow_Right from "./assets/Right_Arrow.svg";
-import Close_Icon from "./assets/Close_Icon.svg";
 import { Link } from "react-router-dom";
 import "./index.css";
 
@@ -42,7 +41,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`h-[7vh] w-full absolute z-[999999999999999999999999999999999999999999] mt-7 flex items-center justify-between text-black transition-all duration-1000 ease-in-out ${
+      className={`navbar-container h-[7vh] w-full absolute z-[999999999999999999999999999999999999999999] mt-7 flex items-center justify-between text-black transition-all duration-1000 ease-in-out ${
         isAtTop ? "scroll-smooth" : "h-[5vh]"
       }`}
       onClick={toggleNavbarExpansion}

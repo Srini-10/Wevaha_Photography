@@ -15,7 +15,7 @@ const NavbarFixed = () => {
   };
   return (
     <>
-      <div className="h-[7vh] w-full absolute z-50 mt-7 flex items-center justify-between text-black scroll-smooth transition-all duration-1000 ease-in-out">
+      <div className="navbar-container h-[7vh] w-full absolute z-50 mt-7 flex items-center justify-between text-black scroll-smooth transition-all duration-1000 ease-in-out">
         <div
           className="hover:pl-8 h-[7vh] min-w-[50px] cursor-pointer p-1.5 items-center bg-white px-6 rounded-r-full transition-all duration-1000 ease-in-out"
           onClick={openModal}
