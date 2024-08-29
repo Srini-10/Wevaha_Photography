@@ -11,7 +11,15 @@ const Navbar = () => {
           <img className="h-full w-full cursor-pointer" src={Logo} alt="Logo" />
         </Link>
       </div>
-      <ul className="hover:px-10 flex gap-12 h-[7vh] border-[0.5px] border-gray-400 shadow-sm font-medium items-center px-8 rounded-l-full bg-white transition-all duration-1000 ease-in-out">
+      <ul className="hover:px-10 flex gap-7 h-[7vh] border-[0.5px] border-gray-400 shadow-sm font-medium items-center px-8 rounded-l-full bg-white transition-all duration-1000 ease-in-out">
+        <li className="relative link-item">
+          <Link
+            className="cursor-pointer text-black px-4 py-2 rounded-lg hover:bg-rainbow"
+            to={"/"}
+          >
+            Home
+          </Link>
+        </li>
         <li className="relative link-item">
           <Link
             className="cursor-pointer text-black px-4 py-2 rounded-lg hover:bg-rainbow"

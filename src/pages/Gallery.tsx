@@ -10,7 +10,7 @@ import SecondService from "../components/Gallery/SecondService.tsx";
 const Gallery = () => {
   return (
     <>
-      <div className="snap-center">
+      <div className="">
         <NavbarDark />
         {/* <GalleryView /> */}
         <OurServices />

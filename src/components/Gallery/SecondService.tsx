@@ -54,34 +54,52 @@ const SecondService = () => {
 
   return (
     <>
-      <div className="h-screen w-full flex flex-col items-center bg-blue-200">
+      <div className="h-[90vh] mt-[10vh] w-full flex flex-col items-center px-[11vw]">
         <div
           id="second-service"
-          className={`h-[50vh] bg-green-500 justify-end text-end flex ${animationClass}`}
+          className={`h-[45vh] mb-[-10vh] justify-end text-end flex ${animationClass}`}
         >
-          <div className="">
-            <div className="w-[22vw] h-[25vh] bg-yellow-500 overflow-hidden">
+          <div className="w-[40vw] items-end justify-center gap-3 flex flex-col">
+            <div className="w-[28vw] h-[25vh rounded right-0 overflow-hidden">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full right-0 object-cover"
                 src={BGImage}
                 alt=""
               />
             </div>
-            <p className="font-medium w-[20vw] text-[20px]">
-              Details about the second service will be revealed from right to
-              left and unrevealed from center to left when scrolling.
+            <h1 className="Font-About text-gray-400 opacity-75 text-[90px] font-bold mt-[-11vh]">
+              WEDDING
+            </h1>
+            <p className="mt-[-5vh] leading-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              odit quos dolores! Est alias, architecto laborum animi illo odit
+              dignissimos saepe quae, veniam at distinctio ratione culpa vero,
+              temporibus earum!
             </p>
           </div>
         </div>
         <div
           id="second-service-2"
-          className={`h-[50vh] bg-red-500 ${animation2Class}`}
+          className={`h-[45vh] mt-[-10vh] justify-start text-start flex  ${animation2Class}`}
         >
-          <h2>Second Service Component 2</h2>
-          <p>
-            Details about the second service will be revealed from left to right
-            and unrevealed from center to right when scrolling.
-          </p>
+          <div className="w-[40vw] items-start justify-center gap-3 flex flex-col">
+            <div className="w-[28vw] h-[25vh rounded right-0 overflow-hidden">
+              <img
+                className="w-full h-full right-0 object-cover"
+                src={BGImage}
+                alt=""
+              />
+            </div>
+            <h1 className="Font-About text-gray-400 opacity-75 text-[90px] font-bold mt-[-11vh]">
+              Baby Shower
+            </h1>
+            <p className="mt-[-5vh] leading-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              odit quos dolores! Est alias, architecto laborum animi illo odit
+              dignissimos saepe quae, veniam at distinctio ratione culpa vero,
+              temporibus earum!
+            </p>
+          </div>
         </div>
       </div>
     </>
