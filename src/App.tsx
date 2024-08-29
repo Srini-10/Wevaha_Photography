@@ -15,7 +15,7 @@ function App() {
     const handlePageLoad = () => {
       const timer = setTimeout(() => {
         setLoading(false);
-      }, 2100);
+      }, 2050);
 
       return () => clearTimeout(timer);
     };
