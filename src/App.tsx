@@ -14,18 +14,53 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    setLoading(true);
-
-    const timer = setTimeout(() => {
+    const handleLoad = () => {
       setLoading(false);
-    }, 0);
+    };
 
-    return () => clearTimeout(timer);
+    // Initial page load
+    if (document.readyState === "complete") {
+      setLoading(false);
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
+
+  useEffect(() => {
+    // For navigation events
+    const handleNavigationStart = () => {
+      setLoading(true);
+    };
+
+    const handleNavigationComplete = () => {
+      setLoading(false);
+    };
+
+    window.addEventListener("beforeunload", handleNavigationStart);
+    window.addEventListener("load", handleNavigationComplete);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleNavigationStart);
+      window.removeEventListener("load", handleNavigationComplete);
+    };
   }, [location]);
 
   return (
     <>
-      <div className="">
+      <div className="unresponsive-view hidden w-full h-screen py-[20%] justify-center items-center bg-black">
+        <div className="text-center min-h-[20%] max-h-[20%]">
+          <h1 className="text-[150px] font-bold text-white">Oops!</h1>
+          <p className="text-[25px] text-neutral-600">
+            Your device is not compatible with this website.
+          </p>
+        </div>
+      </div>
+
+      <div className="normal-view">
         {loading ? (
           <LoadingAnimation />
         ) : (
