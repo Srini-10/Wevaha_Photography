@@ -6,17 +6,17 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <>
-      <div className="w-full min-h-[700px] bg-white h-screen flex justify-between px-[7%] py-[6%] scroll-smooth transition-all duration-1000 ease-in-out">
+      <div className="w-full sm:h-[50vh] lg:min-h-[700px] bg-white h-screen flex justify-between sm:px-[10vw] lg:px-[7vw] sm:py-[3vh] lg:py-[10vh] scroll-smooth transition-all duration-1000 ease-in-out">
         <div className="">
-          <h1 className="Font-About z-50 mt-[-40px] relative text-[200px] font-bold">
+          <h1 className="Font-About z-50 mt-[-40px] relative sm:text-[80px] lg:text-[170px] xl:text-[200px] font-bold">
             ABOUT US
           </h1>
-          <div className="w-[250px] h-[350px] mt-[-100px] ml-[336px] absolute bg-blue-400">
+          <div className="sm:w-[130px] sm:h-[170px] lg:w-[250px] lg:h-[350px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[336px] sm:ml-[120px] lg:ml-[292px] absolute bg-blue-400">
             <img className="object-cover h-full w-full" src={Frame} alt="" />
           </div>
         </div>
-        <div className="w-[500px] z-50 mt-[20%] justify-between flex flex-col">
-          <p>
+        <div className="xl:w-[40vw] sm:h-[29vh] lg:w-[38vw] sm:w-[40vw] z-50 sm:mt-[8vh] lg:mt-[30vh] justify-between flex flex-col">
+          <p className="lg:text-[16px] sm:text-[10px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
             magnam praesentium. Rem corrupti, omnis quos eius animi quia aut
             molestias delectus doloremque minus, hic velit nesciunt, sunt
@@ -28,7 +28,7 @@ const About = () => {
 
           <Link
             to={"/about_us"}
-            className="font-semibold text-[25px] text-[#8d8d8d] hover:text-[#9a0104] text-end transition-all duration-500 ease-in-out"
+            className="font-semibold sm:text-[17px] lg:text-[25px] text-[#8d8d8d] hover:text-[#9a0104] text-end transition-all duration-500 ease-in-out"
           >
             Visit more ...
           </Link>

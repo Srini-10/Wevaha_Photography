@@ -142,7 +142,7 @@ const AnimationImages: React.FC = () => {
 
   return (
     <>
-      <div className="relative w-full h-screen overflow-hidden scroll-smooth transition-all duration-1000 ease-in-out">
+      <div className="relative w-full sm:h-[60vh] lg:h-screen overflow-hidden scroll-smooth transition-all duration-1000 ease-in-out">
         <div
           className={`absolute z-30 top-0 left-0 right-0 h-[30vh] opacity-70 bg-gradient-to-b ${gradientColor} transition-all duration-1000 ease-in-out`}
         ></div>

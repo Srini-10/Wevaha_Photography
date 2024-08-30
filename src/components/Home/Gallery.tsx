@@ -128,11 +128,11 @@ const Gallery = () => {
   return (
     <>
       <div
-        className="flex justify-between items-center w-full bg-white h-screen px-[8vw] scroll-smooth transition-all duration-1000 ease-in-out"
+        className="flex justify-between items-center w-full bg-white h-screen sm:mt-[6vh] px-[8vw] scroll-smooth transition-all duration-1000 ease-in-out"
         ref={galleryRef}
       >
         <div className="w-full h-screen bg-white items-center justify-center">
-          <h1 className="Font-About z-50 mt-[0px] relative text-[200px] font-bold">
+          <h1 className="Font-About z-50 mt-[0px] sm:text-start relative sm:text-[150px] lg:text-[200px] font-bold">
             GALLERY
           </h1>
           <div
@@ -162,13 +162,13 @@ const Gallery = () => {
             <div className="Animation-Pop">
               <p
                 onClick={handleIframeClick}
-                className="absolute cursor-pointer text-black flex gap-1 right-[6vw] mt-[-15vh] z-[99999] font-semibold text-[20px]"
+                className="absolute cursor-pointer text-black flex gap-1 right-[6vw] sm:mt-[-8.5vh] lg:mt-[-13vh] z-[999] font-semibold sm:text-[17px] lg:text-[20px]"
               >
                 Click to See Our <span className="bg-rainbow">Magics!</span>
               </p>
               <iframe
                 title="animation"
-                className="absolute opacity-30 h-[19vh] right-[0vw] z-50 mt-[-5vh] transform rotate-[110deg] scale-x-[+1] Animated_Button"
+                className="absolute sm:opacity-20 lg:opacity-30 w-[21vh] sm:right-[3vw] lg:right-[4.5vw] xl:right-[5vw] z-50 sm:mt-[0vh] lg:mt-[-3vh] transform rotate-[110deg] scale-x-[+1] Animated_Button"
                 src="https://lottie.host/embed/9fef1aea-b2ef-4885-b3f0-f55357930ecd/IH0aYoUIOf.json"
               ></iframe>
             </div>
@@ -184,7 +184,7 @@ const Gallery = () => {
               onClick={handleIframeClick}
             ></iframe>
           </div>
-          <div className="flex justify-center ml-[-79vw] mt-[10px] gap-3 z-[999999999999]">
+          <div className="flex justify-center xl:ml-[-79vw] lg:ml-[-78vw] sm:ml-[-75vw] mt-[10px] gap-3 z-[999999999999]">
             <img
               className="w-7 h-7 border-[1px] shadow-xl cursor-pointer rounded-full"
               src={Arrow_Left}
@@ -199,7 +199,7 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className="min-w-[300px] absolute right-20 mt-40 min-h-full bg-gradient-to-l from-white to-transparent flex items-center justify-center"></div>
+        <div className="min-w-[35vw] absolute sm:right-14 lg:right-20 mt-40 min-h-full bg-gradient-to-l from-white to-transparent flex items-center justify-center"></div>
       </div>
     </>
   );

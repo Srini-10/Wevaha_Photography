@@ -44,7 +44,7 @@ const NavbarFixed = () => {
               className="cursor-pointer text-black px-4 py-2 rounded-lg hover:bg-rainbow"
               to={"/about_us"}
             >
-              About Us
+              AboutUs
             </Link>
           </li>
           <li className="relative link-item">
@@ -52,7 +52,7 @@ const NavbarFixed = () => {
               className="cursor-pointer text-black px-4 py-2 rounded-lg hover:bg-rainbow"
               to={"/contact_us"}
             >
-              Contact Us
+              ContactUs
             </Link>
           </li>
         </ul>

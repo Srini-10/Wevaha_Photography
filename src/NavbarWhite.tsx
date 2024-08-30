@@ -60,9 +60,11 @@ const NavbarWhite = () => {
         <ul
           className={`${
             isAtTop
-              ? "hover:px-10 gap-5 px-8 right-0 shadow-md h-[55px] fixed transition-all duration-1000 ease-in-out"
-              : `gap-5 cursor-pointer px-8 ${
-                  isExpanded ? "pl-7 right-0" : "pl-7 right-[-33vw]"
+              ? "hover:px-6 gap-5 px-8 right-0 w-[490px] shadow-md h-[55px] fixed transition-all duration-1000 ease-in-out"
+              : `gap-5 cursor-pointer px-8 transition-all duration-500 ease-in-out ${
+                  isExpanded
+                    ? "pl-7 right-0 transition-all w-[600px] duration-1000 ease-in-out"
+                    : "pl-7 right-[0vw] lg:right-[0vw] w-[120px] transition-all duration-1000 ease-in-out"
                 } group cursor-auto shadow-md h-[55px] fixed transition-all duration-1000 ease-in-out`
           } flex h-[55px] font-medium items-center rounded-l-full bg-black transition-all duration-1000 ease-in-out`}
         >
@@ -78,7 +80,7 @@ const NavbarWhite = () => {
             <p className="cursor-pointer flex gap-2 items-center text-white pr-4 py-2 rounded-lg hover:bg-rainbow">
               {!isExpanded && (
                 <img
-                  className="w-[18px] group-hover:mr-2 group-hover:scale-[1.05] transition-all duration-500 ease-in-out"
+                  className="w-[18px] group-hover:-ml-1.5 group-hover:mr-1.5 group-hover:scale-[1.05] transition-all duration-500 ease-in-out"
                   src={Arrow_Left}
                   alt="Left Arrow"
                 />
@@ -87,7 +89,7 @@ const NavbarWhite = () => {
               {isExpanded && (
                 <div className="flex">
                   <img
-                    className="w-[18px] group-hover:-mr-1 mr-0.5 group-hover:scale-[1.05] transition-all duration-500 ease-in-out"
+                    className="w-[18px] group-hover:ml-1 group-hover:-mr-1 group-hover:scale-[1.05] transition-all duration-500 ease-in-out"
                     src={Arrow_Right}
                     alt="Right Arrow"
                   />
@@ -117,7 +119,7 @@ const NavbarWhite = () => {
               className="cursor-pointer text-white px-4 py-2 rounded-lg hover:bg-rainbow"
               to={"/about_us"}
             >
-              About Us
+              AboutUs
             </Link>
           </li>
           <li className="relative link-item">
@@ -125,7 +127,7 @@ const NavbarWhite = () => {
               className="cursor-pointer text-white px-4 py-2 rounded-lg hover:bg-rainbow"
               to={"/contact_us"}
             >
-              Contact Us
+              ContactUs
             </Link>
           </li>
         </ul>

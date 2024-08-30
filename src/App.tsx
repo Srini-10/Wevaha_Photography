@@ -12,17 +12,13 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    const handlePageLoad = () => {
-      const timer = setTimeout(() => {
-        setLoading(false);
-      }, 2000);
+    setLoading(true);
 
-      return () => clearTimeout(timer);
-    };
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
 
-    window.addEventListener("load", handlePageLoad);
-
-    return () => window.removeEventListener("load", handlePageLoad);
+    return () => clearTimeout(timer);
   }, [location]);
 
   return (
