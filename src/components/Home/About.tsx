@@ -11,7 +11,7 @@ const About = () => {
           <h1 className="Font-About z-50 mt-[-30px] sm:mt-[-40px] relative text-[25vw] pl-4 pt-5 sm:p-0 sm:text-[80px] lg:text-[150px] xl:text-[200px] font-bold">
             ABOUT US
           </h1>
-          <div className="w-[15vw] h-[60.3vh] sm:w-[130px] sm:h-[170px] lg:w-[230px] lg:h-[320px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[336px] sm:ml-[120px] lg:ml-[230px] sm:absolute bg-gray-200">
+          <div className="w-[15vw] h-[60.3vh] sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:w-[230px] lg:h-[320px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[336px] sm:ml-[120px] lg:ml-[230px] sm:absolute bg-gray-200">
             <img className="object-cover h-full w-full" src={Frame} alt="" />
           </div>
         </div>
