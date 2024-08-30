@@ -128,15 +128,15 @@ const Gallery = () => {
   return (
     <>
       <div
-        className="flex justify-between items-center w-full bg-white h-screen sm:mt-[6vh] px-[8vw] scroll-smooth transition-all duration-1000 ease-in-out"
+        className="flex justify-between items-center w-full h-[80vh] sm:h-screen sm:mt-[6vh] px-[8vw] scroll-smooth transition-all duration-1000 ease-in-out"
         ref={galleryRef}
       >
-        <div className="w-full h-screen bg-white items-center justify-center">
-          <h1 className="Font-About z-50 mt-[0px] sm:text-start relative sm:text-[150px] lg:text-[200px] font-bold">
+        <div className="w-full h-screen items-center justify-center">
+          <h1 className="Font-About z-50 sm:mt-[0px] text-[25vw] text-start relative sm:text-[150px] lg:text-[200px] font-bold">
             GALLERY
           </h1>
           <div
-            className="w-full h-[60vh] mt-[-40px] flex overflow-x-scroll overflow-y-scroll gap-5"
+            className="w-full h-[60vh] mt-[-30px] sm:mt-[-40px] flex overflow-x-scroll overflow-y-scroll gap-5"
             ref={carouselRef}
             style={{
               scrollSnapType: "x mandatory", // Ensure snapping behavior
@@ -145,7 +145,7 @@ const Gallery = () => {
             {images.map((src, index) => (
               <div
                 key={index}
-                className="parallax-container w-[20vw] min-w-[300px] h-full bg-gray-200 flex items-center justify-center rounded"
+                className="parallax-container min-w-[90vw] sm:w-[20vw] sm:min-w-[300px] h-full bg-gray-200 flex items-center justify-center rounded"
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
                 style={{
@@ -162,13 +162,13 @@ const Gallery = () => {
             <div className="Animation-Pop">
               <p
                 onClick={handleIframeClick}
-                className="absolute cursor-pointer text-black flex gap-1 right-[6vw] sm:mt-[-8.5vh] lg:mt-[-13vh] z-[999] font-semibold sm:text-[17px] lg:text-[20px]"
+                className="absolute cursor-pointer text-gray-700 sm:text-black flex gap-1 right-[6vw] mt-[-12px] sm:mt-[-8.5vh] lg:mt-[-13vh] z-[999] font-semibold text-[7px] sm:text-[17px] lg:text-[20px]"
               >
                 Click to See Our <span className="bg-rainbow">Magics!</span>
               </p>
               <iframe
                 title="animation"
-                className="absolute sm:opacity-20 lg:opacity-30 w-[21vh] sm:right-[3vw] lg:right-[4.5vw] xl:right-[5vw] z-50 sm:mt-[0vh] lg:mt-[-3vh] transform rotate-[110deg] scale-x-[+1] Animated_Button"
+                className="absolute sm:opacity-20 lg:opacity-30 w-[140px] mt-[25px] opacity-20 right-[9vw] sm:w-[21vh] sm:right-[3vw] lg:right-[4.5vw] xl:right-[5vw] z-50 sm:mt-[0vh] lg:mt-[-3vh] transform rotate-[110deg] scale-x-[+1] Animated_Button"
                 src="https://lottie.host/embed/9fef1aea-b2ef-4885-b3f0-f55357930ecd/IH0aYoUIOf.json"
               ></iframe>
             </div>
@@ -179,12 +179,12 @@ const Gallery = () => {
             ></p>
             <iframe
               title="animation"
-              className="absolute scale-[1.2] right-[3.5vw] w-[9vw] z-50 mt-[21vh] Animated_Button"
+              className="absolute scale-[1.7] sm:scale-[1.2] right-[3.5vw] w-[9vw] z-50 mt-[21vh] Animated_Button"
               src="https://lottie.host/embed/bda50e50-7c17-4a38-941a-1708b955a4df/bPhWC8UGtn.json"
               onClick={handleIframeClick}
             ></iframe>
           </div>
-          <div className="flex justify-center xl:ml-[-79vw] lg:ml-[-78vw] sm:ml-[-75vw] mt-[10px] gap-3 z-[999999999999]">
+          <div className="flex justify-center xl:ml-[-79vw] lg:ml-[-78vw] sm:ml-[-75vw] ml-[-67vw] mt-[10px] gap-3 z-[999999999999]">
             <img
               className="w-7 h-7 border-[1px] shadow-xl cursor-pointer rounded-full"
               src={Arrow_Left}
@@ -199,7 +199,7 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className="min-w-[35vw] absolute sm:right-14 lg:right-20 mt-40 min-h-full bg-gradient-to-l from-white to-transparent flex items-center justify-center"></div>
+        <div className="min-w-[25vw] sm:min-w-[35vw] absolute right-7 sm:right-14 lg:right-20 sm:mt-40 h-[80vh] sm:min-h-full bg-gradient-to-l from-white to-transparent flex items-center justify-center"></div>
       </div>
     </>
   );

@@ -5,6 +5,8 @@ import AnimationImages from "../components/Home/AnimationImages.tsx";
 import Footer from "../Footer.tsx";
 import ArrowUp from "../assets/Up_Arrow.svg";
 import Navbar from "../Navbar.tsx";
+import Gallery from "../components/Home/Gallery.tsx";
+import Collage from "../components/Home/Collage.tsx";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,7 +14,7 @@ const Home = () => {
 
   // Show button when page is scrolled down
   const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
+    if (window.pageYOffset > 200) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -59,6 +61,8 @@ const Home = () => {
         <Header />
         <About />
         <AnimationImages />
+        <Gallery />
+        <Collage />
       </div>
 
       {/* Scroll to Top Button */}
