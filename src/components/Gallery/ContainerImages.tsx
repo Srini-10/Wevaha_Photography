@@ -7,7 +7,7 @@ import "./Style.css";
 const ContainerImages = () => {
   return (
     <>
-      <h1 className="Font-About mt-[8vh] mb-[-5vh] text-start px-[7vw] sm:text-[170px] lg:text-[200px] font-bold">
+      <h1 className="Font-About mt-[8vh] mb-[-4vh] sm:mb-[-5vh] text-start px-[7vw] text-[90px] sm:text-[170px] lg:text-[200px] font-bold">
         GALLERY
       </h1>
       <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-3 gap-4 px-[7vw] mb-[10vh] space-y-4  scroll-smooth transition-all duration-1000 ease-in-out">

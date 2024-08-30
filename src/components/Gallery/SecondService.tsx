@@ -54,23 +54,23 @@ const SecondService = () => {
 
   return (
     <>
-      <div className="h-screen mt-[10vh] w-full bg-black text-white flex flex-col items-center py-[5vh] px-[11vw]">
+      <div className="h-screen sm:mt-[10vh] w-full overflow-hidden bg-black text-white flex flex-col items-center py-0 sm:py-[5vh] px-[8vw] sm:px-[11vw]">
         <div
           id="second-service"
-          className={`h-[45vh] mb-[-10vh] justify-end text-end flex ${animationClass}`}
+          className={`h-45vh] mb-[-10vh] justify-end text-end flex ${animationClass}`}
         >
-          <div className="w-[40vw] items-end justify-center gap-3 flex flex-col">
-            <div className="w-[30vw] h-[25vh rounded right-0 shadow-md overflow-hidden">
+          <div className="w-[80vw] sm:w-[40vw] items-end justify-center gap-3 flex flex-col">
+            <div className="w-[70vw] sm:w-[30vw] h-[25vh rounded right-0 shadow-md overflow-hidden">
               <img
                 className="w-full h-full right-0 object-cover"
                 src={BGImage}
                 alt=""
               />
             </div>
-            <h1 className="Font-About text-gray-400 opacity-75 sm:text-[65px] lg:text-[90px] font-bold sm:mt-[-8.5vh] lg:mt-[-11vh]">
+            <h1 className="Font-About text-gray-400 opacity-75 text-[50px] sm:text-[65px] lg:text-[90px] font-bold mt-[-7.5vh] sm:mt-[-8.5vh] lg:mt-[-11vh]">
               WEDDING
             </h1>
-            <p className="mt-[-5vh] lg:text-[16px] sm:text-[12px] sm:leading-4 lg:leading-6">
+            <p className="mt-[-3.5vh] sm:mt-[-5vh] text-[12px] lg:text-[16px] sm:text-[12px] sm:leading-4 lg:leading-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               odit quos dolores! Est alias, architecto laborum animi illo odit
               dignissimos saepe quae, veniam at distinctio ratione culpa vero,
@@ -82,18 +82,18 @@ const SecondService = () => {
           id="second-service-2"
           className={`h-[45vh] mt-[-10vh] justify-start text-start flex  ${animation2Class}`}
         >
-          <div className="w-[40vw] items-start justify-center gap-3 flex flex-col">
-            <div className="w-[30vw] h-[25vh rounded right-0 shadow-md overflow-hidden">
+          <div className="w-[80vw] sm:w-[40vw] items-start justify-center gap-3 flex flex-col">
+            <div className="w-[70vw] sm:w-[30vw] h-[25vh rounded right-0 shadow-md overflow-hidden">
               <img
                 className="w-full h-full right-0 object-cover"
                 src={BGImage}
                 alt=""
               />
             </div>
-            <h1 className="Font-About text-gray-400 opacity-75 sm:text-[65px] lg:text-[90px] font-bold sm:mt-[-8.5vh] lg:mt-[-11vh]">
+            <h1 className="Font-About text-gray-400 opacity-75 text-[50px] sm:text-[65px] lg:text-[90px] font-bold mt-[-7.5vh] sm:mt-[-8.5vh] lg:mt-[-11vh]">
               Baby Shower
             </h1>
-            <p className="mt-[-5vh] lg:text-[16px] sm:text-[12px] sm:leading-4 lg:leading-6">
+            <p className="mt-[-3.5vh] sm:mt-[-5vh] text-[12px] lg:text-[16px] sm:text-[12px] sm:leading-4 lg:leading-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               odit quos dolores! Est alias, architecto laborum animi illo odit
               dignissimos saepe quae, veniam at distinctio ratione culpa vero,

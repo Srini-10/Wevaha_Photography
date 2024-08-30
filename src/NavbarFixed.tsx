@@ -118,6 +118,7 @@ const NavbarFixed = () => {
                 } group cursor-auto shadow-md h-[55px] fixed transition-all duration-1000 ease-in-out`
           } flex h-[55px] font-medium items-center rounded-l-3xl bg-white transition-all duration-1000 ease-in-out`}
         >
+          {" "}
           <li
             className={`${
               isAtTop && window.innerWidth >= 768
@@ -127,26 +128,26 @@ const NavbarFixed = () => {
                   }`
             }`}
           >
-            <p className="cursor-pointer flex gap-2 text-[21px] items-center text-black pr-4 py-2 rounded-lg hover:bg-rainbow">
+            <p className="cursor-pointer flex gap-3 items-center text-black pr-4 py-2 rounded-lg hover:bg-rainbow  transition-all duration-1000 ease-in-out">
               {!isExpanded && (
                 <img
-                  className="w-[18px] group-hover:-ml-1.5 -rotate-90 group-hover:mr-1.5 group-hover:scale-[1.05] transition-all duration-500 ease-in-out"
+                  className="w-[16px] group-hover:-ml-1.5 -rotate-90 group-hover:mr-1.5 group-hover:scale-[1.05] transition-all duration-1000 ease-in-out"
+                  src={Arrow_Left}
+                  alt="Left Arrow"
+                />
+              )}
+              {isExpanded && (
+                <img
+                  className="w-[16px] group-hover:-ml-1.5 rotate-90 group-hover:mr-1.5 group-hover:scale-[1.05] transition-all duration-1000 ease-in-out"
                   src={Arrow_Left}
                   alt="Left Arrow"
                 />
               )}
               Menu
-              {isExpanded && (
-                <div className="flex">
-                  <img
-                    className="min-w-[18px] group-hover:ml-1 -rotate-90 group-hover:-mr-1 group-hover:scale-[1.05] transition-all duration-500 ease-in-out"
-                    src={Arrow_Right}
-                    alt="Right Arrow"
-                  />
-                  <span className="ml-7 -mr-6 min-h-full min-w-[1.5px] bg-gray-300"></span>
-                </div>
-              )}
             </p>
+            {isExpanded && (
+              <div className="w-full h-[1px] absolute ml-[-27px] mt-[40px] opacity-80 bg-black"></div>
+            )}
           </li>
           <li className="relative link-item">
             <Link

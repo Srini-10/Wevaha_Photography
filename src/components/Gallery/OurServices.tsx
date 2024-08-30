@@ -66,17 +66,20 @@ const OurServices = () => {
           className={`absolute top-0 left-0 right-0 h-[30vh] opacity-0 bg-gradient-to-b ${gradientColor} transition-all duration-1000 ease-in-out`}
         ></div>
         <div className="w-[90vw] h-full flex justify-center items-center">
-          <div className="w-[100px] h-full flex items-start text-start justify-start">
-            <h1 className="Font-About -rotate-90 text-[130px] font-bold ml-[-124px] mt-[79px]">
+          <div className="w-[80px] sm:w-[100px] h-full flex items-start text-start justify-start">
+            <h1 className="Font-About -rotate-90 text-[100px] sm:text-[130px] font-bold ml-[-90px] sm:ml-[-124px] mt-[79px]">
               WEDDING
             </h1>
           </div>
           <div className="w-[87vw] h-full items-start text-start justify-start">
-            <h1 className="Font-About ml-4 -mt-2.5 lg:-mb-1 sm:-mb-2 text-neutral-500 text-[30px] font-bold">
+            <h1 className="Font-About sm:ml-4 ml-2 -mb-1 sm:-mt-2.5 lg:-mb-1 sm:-mb-2 text-neutral-500 text-[23px] sm:text-[30px] font-bold">
               Photography
             </h1>
-            <div className="rounded overflow-hidden sm:w-[51vw] lg:w-[53vw] xl:w-[55vw] h-[62vh]">
-              <div id="parallax" className="w-full h-screen overflow-hidden">
+            <div className="rounded overflow-hidden w-[40vw] sm:w-[51vw] lg:w-[53vw] xl:w-[55vw] h-[55vh] sm:h-[62vh]">
+              <div
+                id="parallax"
+                className="w-full h-screen overflow-hidden shadow-inner"
+              >
                 {/* <div
                   className={`absolute top-0 left-0 right-0 h-[30vh] opacity-70 bg-gradient-to-b ${gradientColor} transition-all duration-1000 ease-in-out`}
                 ></div> */}
@@ -118,12 +121,12 @@ const OurServices = () => {
               </div>
             </div>
           </div>
-          <div className="ml-[3vw] mt-[-28.5vh]">
-            <h1 className="Font-About ml-4 mt-[-50px] -mb-2 sm:mr-1.5 lg:mr-2.5 text-neutral-500 opacity-75 text-end sm:text-[22px] lg:text-[32px] font-bold">
+          <div className="ml-[3vw] mt-[-32vh] sm:mt-[-28.5vh]">
+            <h1 className="Font-About ml-4 mt-[-100px] sm:mt-[-50px] -mb-0.5 sm:-mb-2 sm:mr-1.5 lg:mr-2.5 text-neutral-500 opacity-75 text-end text-[12px] sm:text-[22px] lg:text-[32px] font-bold">
               All Type of Events
             </h1>
             <div className="overflow-hidden w-full h-auto">
-              <div className="h-[28vh] rounded mb-3 overflow-hidden">
+              <div className="h-[22vh] sm:h-[28vh] rounded mb-1 sm:mb-3 overflow-hidden">
                 <img
                   src={Image1}
                   alt=""
@@ -131,14 +134,14 @@ const OurServices = () => {
                 />
               </div>
             </div>
-            <p className="sm:text-[10px] lg:text-[13px] sm:leading-3.5 lg:leading-5 text-justify">
+            <p className="sm:text-[10px] text-[7.5px] lg:text-[13px] leading-[9px] sm:leading-3.5 lg:leading-5 text-justify">
               Hello, Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Aperiam, voluptatum perspiciatis? Dolorum temporibus, nesciunt,
               mollitia aut odio illo repellat fugiat vero ad unde praesentium
               Quis.
             </p>
             <div
-              className="scroll-arrow bg-yellow-100 absolute z-[99] rounded-full sm:mt-[20vh] lg:mt-[24vh] shadow-md sm:ml-[0px] sm:right-[2.1vw] lg:right-[3.5vw] w-12 h-12 cursor-pointer"
+              className="scroll-arrow bg-yellow-100 absolute z-[99] rounded-full sm:mt-[20vh] lg:mt-[24vh] mt-[27vh] shadow-md sm:ml-[0px] sm:right-[2.1vw] lg:right-[3.5vw] right-[5vw] w-12 h-12 cursor-pointer"
               onClick={scrollToNextComponent}
             >
               <div className="arrow wave">
@@ -153,8 +156,8 @@ const OurServices = () => {
         </div>
       </div>
       <div className="w-full flex justify-center items-center">
-        <div className="w-[90vw] absolute h-[29vh] flex justify-center mt-[-40vh] items-center ">
-          <div className="min-w-[100px]"></div>
+        <div className="w-[70vw] sm:w-[90vw] absolute h-[29vh] flex justify-center mt-[-54vh] sm:mt-[-40vh] items-center ">
+          <div className="min-w-[80px] sm:min-w-[100px]"></div>
           <img
             src={BGImage}
             alt=""
