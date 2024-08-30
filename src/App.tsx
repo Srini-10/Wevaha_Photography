@@ -14,12 +14,11 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    // Display loading animation on location change
     setLoading(true);
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 0);
 
     return () => clearTimeout(timer);
   }, [location]);
