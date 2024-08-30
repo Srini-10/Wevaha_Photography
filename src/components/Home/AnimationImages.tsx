@@ -168,7 +168,7 @@ const AnimationImages: React.FC = () => {
               <div className="absolute inset-0 flex flex-col items-center justify-center ">
                 {" "}
                 <img
-                  className="w-[20vw] hover:scale-[1.02] transition-all duration-1000 ease-in-out"
+                  className="w-[40vw] sm:w-[20vw] hover:scale-[1.02] transition-all duration-1000 ease-in-out"
                   src={Logo}
                   alt=""
                 />
