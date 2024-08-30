@@ -199,19 +199,6 @@ button {
   }
 }
 
-/* UnResponsive Alert */
-/* .unresponsive-view {
-  display: none;
-}
-@media screen and (min-width: 300px) and (max-width: 1023px) {
-  .unresponsive-view {
-    display: block;
-  }
-  .normal-view {
-    display: none;
-  }
-} */
-
 /* Navbar Fixed Mobile Responsive */
 @media only screen and (max-width: 767px) and (min-width: 300px) {
   .navbar-large-screen {
