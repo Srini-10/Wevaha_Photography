@@ -109,7 +109,7 @@ button {
 }
 
 .link-item:hover .hover:bg-rainbow::before {
-  content: ""; /* Add empty content to the pseudo-element */
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -126,7 +126,7 @@ button {
     #9400d3
   );
   background-size: 400% 400%;
-  z-index: -1; /* Place it behind the text */
+  z-index: -1;
   animation: rainbow 5s linear infinite;
 }
 
