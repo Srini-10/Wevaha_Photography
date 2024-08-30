@@ -8,7 +8,7 @@ const LocationMap = () => {
         <div className="">
           <MiddleBar />
         </div>
-        <div className="flex sm:flex-row flex-col justify-between mt-[5vh] h-[27vh] sm:justify-around sm:mt-[20vh] text-[26px]">
+        <div className="flex sm:flex-row flex-col items-center justify-between mt-[5vh] h-[27vh] sm:justify-around sm:mt-[20vh] text-[26px]">
           <span className="">
             <b className="text-[7vw] sm:text-[20px] lg:text-[25px] xl:text-[30px]">
               Wevaha Photography
