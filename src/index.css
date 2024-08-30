@@ -230,3 +230,10 @@ button {
     display: none; /* Hide the small-screen navbar */
   }
 }
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .Responsive-Navbar {
+    display: none;
+    z-index: 9999;
+  }
+}
