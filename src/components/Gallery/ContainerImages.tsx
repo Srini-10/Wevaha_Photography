@@ -109,13 +109,6 @@ const ContainerImages = () => {
             alt=""
           />
         </div>
-        <div className="break-inside-avoid">
-          <img
-            className="w-full h-auto object-cover rounded-lg"
-            src={Image1}
-            alt=""
-          />
-        </div>
       </div>
     </>
   );

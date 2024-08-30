@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AboutUs from "../components/About/AboutUs.tsx";
-import Navbar from "../Navbar.tsx";
 import Collage from "../components/About/Collage.tsx";
-import NavbarDark from "../NavbarDark.tsx";
 import NavbarWhite from "../NavbarWhite.tsx";
 import ArrowUp from "../assets/Up_Arrow.svg";
 
