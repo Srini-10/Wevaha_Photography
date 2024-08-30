@@ -16,15 +16,8 @@ const Gallery = () => {
   const [showAnimation, setShowAnimation] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [images] = useState([
-    Demo1,
-    Demo2,
-    Demo3,
-    Demo4,
-    Demo1,
-    Demo2,
-    Demo3,
-    Demo4,
-  ]);
+    ...Array(1000).fill([Demo1, Demo2, Demo3, Demo4]).flat(),
+  ]); // Repeat images 10 times
 
   useEffect(() => {
     const handlePageScroll = () => {
@@ -61,7 +54,6 @@ const Gallery = () => {
       }, 6000); // Hide the animation after 6 seconds
     };
 
-    // Start the initial animation loop
     const animationInterval = setInterval(() => {
       repeatAnimation();
     }, 16000); // Repeat every 16 seconds (10s delay + 6s animation duration)
@@ -136,7 +128,7 @@ const Gallery = () => {
             GALLERY
           </h1>
           <div
-            className="w-full h-[60vh] mt-[-30px] sm:mt-[-40px] flex overflow-x-scroll overflow-y-scroll gap-5"
+            className="w-full h-[60vh] mt-[-30px] sm:mt-[-40px] flex overflow-x-scroll overflow-y-scroll gap-5 transition-all duration-1000 ease-in-out"
             ref={carouselRef}
             style={{
               scrollSnapType: "x mandatory", // Ensure snapping behavior
@@ -145,7 +137,7 @@ const Gallery = () => {
             {images.map((src, index) => (
               <div
                 key={index}
-                className="parallax-container min-w-[90vw] sm:w-[20vw] sm:min-w-[300px] h-full bg-gray-200 flex items-center justify-center rounded"
+                className="parallax-container min-w-[90vw] sm:w-[20vw] sm:min-w-[300px] h-full bg-gray-200 flex items-center justify-center rounded transition-all duration-1000 ease-in-out"
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
                 style={{
