@@ -12,6 +12,11 @@ const NavbarWhite = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      // Disable isAtTop functionality on mobile screens
+      if (window.innerWidth >= 300 && window.innerWidth <= 767) {
+        return;
+      }
+
       setIsAtTop(window.scrollY === 0);
       if (window.scrollY === 0) {
         setIsExpanded(false); // Reset expansion when scrolled back to top
@@ -50,7 +55,7 @@ const NavbarWhite = () => {
         <div
           className={`${
             isAtTop
-              ? "hover:pl-8 min-w-[50px] shadow-md bg-black border-[2px] border-black px-6 transition-all duration-1000 ease-in-out"
+              ? "hover:pl-8 min-w-[50px] max-h-[55px] fixed min-h-[55px] shadow-md bg-black border-[2px] border-black px-6 transition-all duration-1000 ease-in-out"
               : "max-h-[55px] min-h-[55px] bg-white border-[4px] border-black shadow-md rounded-full min-w-[55px] ml-2 p-3 fixed transition-all duration-1000 ease-in-out"
           } h-full p-[8px] cursor-pointer items-center rounded-r-full transition-all duration-1000 ease-in-out`}
           onClick={openModal}

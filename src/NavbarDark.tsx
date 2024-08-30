@@ -12,21 +12,27 @@ const NavbarDark = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsAtTop(window.scrollY === 0);
-      if (window.scrollY === 0) {
-        setIsExpanded(false); // Reset expansion when scrolled back to top
+      if (window.innerWidth > 767) {
+        setIsAtTop(window.scrollY === 0);
+        if (window.scrollY === 0) {
+          setIsExpanded(false); // Reset expansion when scrolled back to top
+        }
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    if (window.innerWidth > 767) {
+      window.addEventListener("scroll", handleScroll);
+    }
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      if (window.innerWidth > 767) {
+        window.removeEventListener("scroll", handleScroll);
+      }
     };
   }, []);
 
   const toggleNavbarExpansion = () => {
-    if (!isAtTop) {
+    if (!isAtTop && window.innerWidth > 767) {
       setIsExpanded(!isExpanded);
     }
   };
@@ -50,7 +56,7 @@ const NavbarDark = () => {
         <div
           className={`${
             isAtTop
-              ? "hover:pl-8 min-w-[50px] shadow-md border-[0.5px] border-gray-400 px-6 transition-all duration-1000 ease-in-out"
+              ? "hover:pl-8 min-w-[50px] max-h-[55px] min-h-[55px] shadow-md border-[0.5px] border-gray-400 px-6 transition-all duration-1000 ease-in-out"
               : "max-h-[55px] min-h-[55px] shadow-md rounded-full min-w-[55px] ml-2 p-3 fixed transition-all duration-1000 ease-in-out"
           } h-full p-1.5 items-center cursor-pointer bg-white rounded-r-full transition-all duration-1000 ease-in-out`}
           onClick={openModal}

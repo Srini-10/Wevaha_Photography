@@ -93,7 +93,7 @@ const Header = () => {
                 alt="Background 3"
               />
               <div
-                className={`absolute bottom-0 left-0 right-0 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
+                className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
               ></div>
             </div>
           </Slider>

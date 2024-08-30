@@ -72,16 +72,19 @@ const OurServices = () => {
             </h1>
           </div>
           <div className="w-[87vw] h-full items-start text-start justify-start">
-            <h1 className="Font-About ml-4 -mt-2.5 -mb-1 text-neutral-500 text-[30px] font-bold">
+            <h1 className="Font-About ml-4 -mt-2.5 lg:-mb-1 sm:-mb-2 text-neutral-500 text-[30px] font-bold">
               Photography
             </h1>
-            <div className="rounded overflow-hidden w-[55vw] h-[62vh]">
+            <div className="rounded overflow-hidden sm:w-[51vw] lg:w-[53vw] xl:w-[55vw] h-[62vh]">
               <div id="parallax" className="w-full h-screen overflow-hidden">
                 {/* <div
                   className={`absolute top-0 left-0 right-0 h-[30vh] opacity-70 bg-gradient-to-b ${gradientColor} transition-all duration-1000 ease-in-out`}
                 ></div> */}
                 <Slider {...settings}>
-                  <div className="w-full h-screen relative overflow-hidden">
+                  <div
+                    id="parallax"
+                    className="w-full h-screen relative overflow-hidden"
+                  >
                     <img
                       className="object-cover select-none h-[62vh] w-[55vw]"
                       src={BG1}
@@ -116,7 +119,7 @@ const OurServices = () => {
             </div>
           </div>
           <div className="ml-[3vw] mt-[-28.5vh]">
-            <h1 className="Font-About ml-4 mt-[-50px] -mb-2 mr-2.5 text-neutral-500 opacity-75 text-end text-[32px] font-bold">
+            <h1 className="Font-About ml-4 mt-[-50px] -mb-2 sm:mr-1.5 lg:mr-2.5 text-neutral-500 opacity-75 text-end sm:text-[22px] lg:text-[32px] font-bold">
               All Type of Events
             </h1>
             <div className="overflow-hidden w-full h-auto">
@@ -128,14 +131,14 @@ const OurServices = () => {
                 />
               </div>
             </div>
-            <p className="text-[13px] leading-5 text-justify">
+            <p className="sm:text-[10px] lg:text-[13px] sm:leading-3.5 lg:leading-5 text-justify">
               Hello, Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Aperiam, voluptatum perspiciatis? Dolorum temporibus, nesciunt,
               mollitia aut odio illo repellat fugiat vero ad unde praesentium
               Quis.
             </p>
             <div
-              className="scroll-arrow bg-yellow-100 absolute z-[99] rounded-full mt-[24vh] shadow-md ml-[23.4vw] w-12 h-12 cursor-pointer"
+              className="scroll-arrow bg-yellow-100 absolute z-[99] rounded-full sm:mt-[20vh] lg:mt-[24vh] shadow-md sm:ml-[0px] sm:right-[2.1vw] lg:right-[3.5vw] w-12 h-12 cursor-pointer"
               onClick={scrollToNextComponent}
             >
               <div className="arrow wave">
@@ -163,8 +166,11 @@ const OurServices = () => {
               filter: "brightness(0.75)",
             }}
           />
-          <h1 className="Font-About absolute flex gap-2 right-[2.3vw] bottom-[-2vh] text-white opacity-85 text-end text-[25px] font-bold">
-            <p className="text-[100px] opacity-45">Baby</p> Shower
+          <h1 className="Font-About absolute flex gap-2 right-[2.3vw] bottom-[-2vh] text-white opacity-85 text-end sm:text-[20px] lg:text-[25px] font-bold">
+            <p className="lg:text-[100px] sm:text-[70px] sm:-mr-5 opacity-45">
+              Baby
+            </p>{" "}
+            Shower
           </h1>
         </div>
       </div>

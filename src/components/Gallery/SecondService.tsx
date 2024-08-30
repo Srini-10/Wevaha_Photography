@@ -67,10 +67,10 @@ const SecondService = () => {
                 alt=""
               />
             </div>
-            <h1 className="Font-About text-gray-400 opacity-75 text-[90px] font-bold mt-[-11vh]">
+            <h1 className="Font-About text-gray-400 opacity-75 sm:text-[65px] lg:text-[90px] font-bold sm:mt-[-8.5vh] lg:mt-[-11vh]">
               WEDDING
             </h1>
-            <p className="mt-[-5vh] leading-6">
+            <p className="mt-[-5vh] lg:text-[16px] sm:text-[12px] sm:leading-4 lg:leading-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               odit quos dolores! Est alias, architecto laborum animi illo odit
               dignissimos saepe quae, veniam at distinctio ratione culpa vero,
@@ -90,10 +90,10 @@ const SecondService = () => {
                 alt=""
               />
             </div>
-            <h1 className="Font-About text-gray-400 opacity-75 text-[90px] font-bold mt-[-11vh]">
+            <h1 className="Font-About text-gray-400 opacity-75 sm:text-[65px] lg:text-[90px] font-bold sm:mt-[-8.5vh] lg:mt-[-11vh]">
               Baby Shower
             </h1>
-            <p className="mt-[-5vh] leading-6">
+            <p className="mt-[-5vh] lg:text-[16px] sm:text-[12px] sm:leading-4 lg:leading-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               odit quos dolores! Est alias, architecto laborum animi illo odit
               dignissimos saepe quae, veniam at distinctio ratione culpa vero,

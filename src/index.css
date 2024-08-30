@@ -211,3 +211,22 @@ button {
     display: none;
   }
 } */
+
+/* Navbar Fixed Mobile Responsive */
+@media only screen and (max-width: 767px) and (min-width: 300px) {
+  .navbar-large-screen {
+    display: none; /* Hide the large-screen navbar */
+  }
+  .navbar-small-screen {
+    display: block; /* Show the small-screen navbar */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-large-screen {
+    display: flex; /* Show the large-screen navbar */
+  }
+  .navbar-small-screen {
+    display: none; /* Hide the small-screen navbar */
+  }
+}

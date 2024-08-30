@@ -12,21 +12,28 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsAtTop(window.scrollY === 0);
-      if (window.scrollY === 0) {
-        setIsExpanded(false);
+      if (window.innerWidth >= 767) {
+        // Ensure that the screen width is above 767px
+        setIsAtTop(window.scrollY === 0);
+        if (window.scrollY === 0) {
+          setIsExpanded(false);
+        }
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    if (window.innerWidth >= 767) {
+      window.addEventListener("scroll", handleScroll);
+    }
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      if (window.innerWidth >= 767) {
+        window.removeEventListener("scroll", handleScroll);
+      }
     };
   }, []);
 
   const toggleNavbarExpansion = () => {
-    if (!isAtTop) {
+    if (!isAtTop || window.innerWidth < 767) {
       setIsExpanded(!isExpanded);
     }
   };
@@ -42,14 +49,14 @@ const Navbar = () => {
   return (
     <div
       className={`navbar-container h-[7vh] w-full absolute mt-7 flex items-center justify-between text-black transition-all duration-1000 ease-in-out ${
-        isAtTop ? "scroll-smooth" : "h-[5vh]"
+        isAtTop && window.innerWidth >= 767 ? "scroll-smooth" : "h-[5vh]"
       }`}
       onClick={toggleNavbarExpansion}
     >
       <div
         className={`${
-          isAtTop
-            ? "hover:pl-8 min-w-[50px] px-6 transition-all duration-1000 ease-in-out"
+          isAtTop && window.innerWidth >= 767
+            ? "hover:pl-8 min-w-[50px] max-h-[55px] min-h-[55px] px-6 transition-all duration-1000 ease-in-out"
             : "max-h-[55px] min-h-[55px] shadow-md rounded-full min-w-[55px] ml-2 p-3 fixed transition-all duration-1000 ease-in-out"
         } h-full p-1.5 items-center bg-white cursor-pointer rounded-r-full transition-all duration-1000 ease-in-out`}
         onClick={openModal}
@@ -58,7 +65,7 @@ const Navbar = () => {
       </div>
       <ul
         className={`${
-          isAtTop
+          isAtTop && window.innerWidth >= 767
             ? "hover:px-6 gap-5 px-8 right-0 w-[490px] shadow-md h-[55px] fixed transition-all duration-1000 ease-in-out"
             : `gap-5 cursor-pointer px-8 transition-all duration-500 ease-in-out ${
                 isExpanded
@@ -69,7 +76,7 @@ const Navbar = () => {
       >
         <li
           className={`${
-            isAtTop
+            isAtTop && window.innerWidth >= 767
               ? "hidden"
               : `flex items-center ${
                   isExpanded ? "flex-row" : "flex-row-reverse"

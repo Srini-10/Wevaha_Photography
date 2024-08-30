@@ -8,10 +8,10 @@ const Collage = () => {
   return (
     <>
       <div
-        className="pt-20 max-h-screen sm:h-[80vh] lg:min-h-screen scroll-smooth transition-all bg-white duration-1000 ease-in-out"
+        className="pt-20 sm:h-[80vh] lg:min-h-screen scroll-smooth transition-all bg-white duration-1000 ease-in-out"
         style={{ boxShadow: "0px 0px 100px 150px rgba(255, 255, 255, 10)" }}
       >
-        <div className="sm:w-[65vw] lg:w-[55vw] mx-auto text-center">
+        <div className="sm:w-[65vw] lg:w-[65vw] mx-auto text-center">
           <h1 className="lg:text-[55px] sm:text-[40px] font-medium">
             Wevaha Photography
           </h1>
@@ -22,17 +22,17 @@ const Collage = () => {
             voluptatibus voluptate!
           </p>
         </div>
-        <div className="w-full lg:h-[72vh] sm:h-[50vh] p-[6%] px-[8vw] items-center mx-auto flex flex-col gap-3 justify-between">
-          <div className="w-full lg:h-[25vh] sm:h-[20vh] flex gap-5">
-            <span className="min-w-[38%] grow rounded-3xl overflow-hidden">
+        <div className="w-full lg:h-[542px] sm:h-[400px] p-[6%] px-[8vw] items-center mx-auto flex flex-col gap-3 justify-between">
+          <div className="w-full lg:h-[180px] sm:h-[150px] flex gap-5">
+            <span className="min-w-[34.5vw] grow rounded-3xl overflow-hidden">
               <img
                 className="object-cover w-full h-auto"
                 src={BGImage}
                 alt=""
               />
             </span>
-            <span className="min-w-[25.2%] lg:block sm:hidden h-[30vh] mb-[-0.85vh] rounded-3xl overflow-hidden"></span>
-            <span className="absolute lg:block sm:hidden min-w-[60.63vw] h-[51.55vh] rounded-3xl overflow-hidden">
+            <span className="min-w-[25.2%] lg:block sm:hidden h-[180px] rounded-3xl overflow-hidden"></span>
+            <span className="absolute lg:block sm:hidden min-w-[60.63vw] lg:h-[375px] rounded-3xl overflow-hidden">
               <img
                 src={BGImage}
                 alt=""
@@ -45,7 +45,7 @@ const Collage = () => {
                 }}
               />
             </span>
-            <span className="lg:min-w-[30.3vw] sm:min-w-[200px] sm:mt-[35px] lg:mt-0 h-[30vh] grow pl-3 rounded-2xl">
+            <span className="lg:min-w-[30.3vw] sm:min-w-[200px] sm:mt-[10px] lg:mt-0 h-[145px] grow pl-3 rounded-2xl">
               <Link
                 to={"/gallery"}
                 className="hover:scale-[1.01] transition-all duration-700 ease-in-out lg:text-[40px] sm:text-[25px] flex gap-5 mt-2 font-bold"
@@ -80,15 +80,15 @@ const Collage = () => {
               </div>
             </span>
           </div>
-          <div className="w-full h-[25vh] flex gap-5">
-            <span className="min-w-[50.8%] sm:opacity-100 lg:opacity-0 grow rounded-3xl overflow-hidden">
+          <div className="w-full sm:h-[183px] flex lg:items-start lg:mt-[40px] sm:items-center gap-5">
+            <span className="min-w-[50.8%] sm:h-[155px] lg:h-[145px] sm:opacity-100 lg:opacity-0 grow rounded-3xl overflow-hidden">
               <img
                 className="object-cover w-full h-auto"
                 src={BGImage}
                 alt=""
               />
             </span>
-            <span className="min-w-[45%] h-[20vh] lg:mt-[3vh] sm:mt-[5vh] rounded-3xl overflow-hidden">
+            <span className="min-w-[45%] sm:h-[135px] lg:h-[145px] sm:mt-[0px] lg:mt-[0px] rounded-3xl overflow-hidden">
               <img
                 className="object-cover w-full h-auto"
                 src={BGImage}

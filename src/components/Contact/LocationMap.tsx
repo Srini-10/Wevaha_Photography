@@ -10,16 +10,28 @@ const LocationMap = () => {
         </div>
         <div className="flex justify-around mt-[20vh] text-[26px]">
           <span className="">
-            <b>Wevaha Photography</b>
-            <p className="text-[17px]">Memories, Straight from your Hearts!</p>
+            <b className="sm:text-[20px] lg:text-[25px] xl:text-[30px]">
+              Wevaha Photography
+            </b>
+            <p className="sm:text-[13px] lg:text-[15px] xl:text-[17px]">
+              Memories, Straight from your Hearts!
+            </p>
           </span>
           <span className="text-center">
-            <b>Phone</b>
-            <p className="text-[17px]">+91 98945 98945</p>
+            <b className="sm:text-[20px] lg:text-[25px] xl:text-[30px]">
+              Phone
+            </b>
+            <p className="sm:text-[13px] lg:text-[15px] xl:text-[17px]">
+              +91 98945 98945
+            </p>
           </span>
           <span className="text-center">
-            <b>Address</b>
-            <p className="text-[17px]">Salem, Tamil Nadu</p>
+            <b className="sm:text-[20px] lg:text-[25px] xl:text-[30px]">
+              Address
+            </b>
+            <p className="sm:text-[13px] lg:text-[15px] xl:text-[17px]">
+              Salem, Tamil Nadu
+            </p>
           </span>
         </div>
       </div>
