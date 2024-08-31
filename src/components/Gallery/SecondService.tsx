@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import BGImage from "../../assets/3.webp";
 import Maternity from "../../assets/008-21.webp";
-import "./Style.css"; // Import the CSS file
+import "./Style.css";
 
 const SecondService = () => {
   const [animationClass, setAnimationClass] = useState("hidden");
@@ -18,7 +18,6 @@ const SecondService = () => {
         const rect2 = element2.getBoundingClientRect();
         const windowHeight = window.innerHeight;
 
-        // Handle animation for the first element
         if (!animationCompleted) {
           if (rect.top < windowHeight / 1 && rect.bottom > windowHeight / 100) {
             setAnimationClass("reveal-animation");
@@ -30,14 +29,13 @@ const SecondService = () => {
           }
         }
 
-        // Handle animation for the second element
         if (!animation2Completed) {
           if (
             rect2.top < windowHeight / 1 &&
             rect2.bottom > windowHeight / 100
           ) {
             setAnimation2Class("animation2Class");
-            setAnimation2Completed(true); // Mark animation as completed
+            setAnimation2Completed(true);
           } else if (rect2.top >= windowHeight || rect2.bottom <= 0) {
             setAnimation2Class("animation2Class-unreveal");
           } else {
@@ -48,7 +46,7 @@ const SecondService = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check visibility on mount
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [animationCompleted, animation2Completed]);
@@ -61,10 +59,10 @@ const SecondService = () => {
       >
         <div
           id="second-service"
-          className={`h-45vh] mb-[-10vh] justify-end text-end flex ${animationClass}`}
+          className={`h-[45vh] mb-[-10vh] justify-end text-end flex ${animationClass}`}
         >
           <div className="w-[80vw] sm:w-[40vw] items-end justify-center gap-3 flex flex-col">
-            <div className="w-[70vw] sm:w-[30vw] sm:h-[37vh] h-[25vh] rounded right-0 shadow-md overflow-hidden">
+            <div className="w-[70vw] sm:w-[30vw] sm:h-[33vh] h-[25vh] rounded right-0 shadow-md overflow-hidden">
               <img
                 className="w-full h-full right-0 object-cover"
                 src={BGImage}
@@ -74,11 +72,11 @@ const SecondService = () => {
             <h1 className="Font-About text-gray-400 opacity-75 text-[50px] sm:text-[65px] lg:text-[90px] font-bold mt-[-7.5vh] sm:mt-[-8.5vh] lg:mt-[-11vh]">
               OUT DOOR
             </h1>
-            <p className="mt-[-3.5vh] sm:mt-[-5vh] text-[12px] lg:text-[16px] sm:text-[12px] sm:leading-4 lg:leading-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              odit quos dolores! Est alias, architecto laborum animi illo odit
-              dignissimos saepe quae, veniam at distinctio ratione culpa vero,
-              temporibus earum!
+            <p className="mt-[-3.5vh] sm:mt-[-5vh] text-[12px] lg:text-[14px] sm:text-[12px] sm:leading-4 lg:leading-6">
+              An outdoor photoshoot captures natural light and scenic
+              backgrounds, creating vibrant and dynamic images. It offers a
+              versatile setting, from urban landscapes to nature, enhancing the
+              overall aesthetic of the photos.
             </p>
           </div>
         </div>
@@ -87,7 +85,7 @@ const SecondService = () => {
           className={`h-[45vh] mt-[-10vh] justify-start text-start flex  ${animation2Class}`}
         >
           <div className="w-[80vw] sm:w-[40vw] items-start justify-center gap-3 flex flex-col">
-            <div className="w-[70vw] sm:w-[30vw] sm:h-[37vh] h-[25vh] rounded right-0 shadow-md overflow-hidden">
+            <div className="w-[70vw] sm:w-[30vw] sm:h-[33vh] h-[25vh] rounded right-0 shadow-md overflow-hidden">
               <img
                 className="w-full h-auto mt-[-7vh] right-0 object-cover"
                 src={Maternity}
@@ -97,11 +95,10 @@ const SecondService = () => {
             <h1 className="Font-About text-gray-400 opacity-75 text-[50px] sm:text-[65px] lg:text-[90px] font-bold mt-[-7.5vh] sm:mt-[-8.5vh] lg:mt-[-11vh]">
               Maternity
             </h1>
-            <p className="mt-[-3.5vh] sm:mt-[-5vh] text-[12px] lg:text-[16px] sm:text-[12px] sm:leading-4 lg:leading-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              odit quos dolores! Est alias, architecto laborum animi illo odit
-              dignissimos saepe quae, veniam at distinctio ratione culpa vero,
-              temporibus earum!
+            <p className="mt-[-3.5vh] sm:mt-[-5vh] text-[12px] lg:text-[14px] sm:text-[12px] sm:leading-4 lg:leading-6">
+              Maternity photography captures the beauty of pregnancy,
+              highlighting the expecting mother's glow in serene and intimate
+              settings.
             </p>
           </div>
         </div>

@@ -13,7 +13,6 @@ const NavbarWhite = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.innerWidth >= 768) {
-        // Ensure that the screen width is above 767px
         setIsAtTop(window.scrollY === 0);
         if (window.scrollY === 0) {
           setIsExpanded(false);
@@ -58,7 +57,7 @@ const NavbarWhite = () => {
           className={`${
             isAtTop
               ? "hover:pl-8 min-w-[50px] max-h-[55px] fixed min-h-[55px] shadow-md bg-black border-[2px] border-black px-6 transition-all duration-1000 ease-in-out"
-              : "max-h-[55px] min-h-[55px] bg-white border-[4px] border-black shadow-md rounded-full min-w-[55px] ml-2 p-3 fixed transition-all duration-1000 ease-in-out"
+              : "max-h-[55px] min-h-[55px] bg-white border-[3.5px] border-black shadow-md rounded-full min-w-[55px] ml-2 p-3 fixed transition-all duration-1000 ease-in-out"
           } h-full p-[8px] cursor-pointer items-center rounded-r-full transition-all duration-1000 ease-in-out`}
           onClick={openModal}
         >
@@ -140,6 +139,7 @@ const NavbarWhite = () => {
         </ul>
       </div>
 
+      {/* Mobile Navbar */}
       <div
         className={`sm:hidden navbar-container h-[7vh] w-full absolute mt-7 flex items-center justify-between text-white transition-all duration-1000 ease-in-out ${
           isAtTop && window.innerWidth >= 768 ? "scroll-smooth" : "h-[5vh]"
@@ -233,6 +233,7 @@ const NavbarWhite = () => {
           </li>
         </ul>
       </div>
+
       {/* Modal for displaying the logo */}
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-[9999999999999999]">

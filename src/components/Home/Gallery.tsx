@@ -51,12 +51,12 @@ const Gallery = () => {
       setShowAnimation(true);
       setTimeout(() => {
         setShowAnimation(false);
-      }, 6000); // Hide the animation after 6 seconds
+      }, 6000);
     };
 
     const animationInterval = setInterval(() => {
       repeatAnimation();
-    }, 16000); // Repeat every 16 seconds (10s delay + 6s animation duration)
+    }, 16000);
 
     window.addEventListener("scroll", handlePageScroll);
 
@@ -73,7 +73,7 @@ const Gallery = () => {
       if (galleryRef.current) {
         observer.unobserve(galleryRef.current);
       }
-      clearInterval(animationInterval); // Clear the interval on unmount
+      clearInterval(animationInterval);
     };
   }, [navigate]);
 

@@ -2,7 +2,7 @@ import React from "react";
 import "./Style.css";
 import BGImage1 from "../../assets/011-1.webp";
 import BGImage2 from "../../assets/011-1.svg";
-import BGImage3 from "../../assets/4.webp";
+import BGImage3 from "../../assets/012-8.webp";
 import Arrow_More from "../../assets/Icons/Arrow_More_Icon.svg";
 import { Link } from "react-router-dom";
 
@@ -18,10 +18,9 @@ const Collage = () => {
             Wevaha Photography
           </h1>
           <p className="lg:text-[18px] sm:text-[12px] text-[10px] text-gray-500 mt-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            tempore laborum sit maiores atque et, quos, mollitia nobis aliquid
-            quis dolorem dolor omnis magnam quidem suscipit facere itaque,
-            voluptatibus voluptate!
+            Welcome we specialize in Capturing your cherished moments for
+            Weddings, Receptions, All Kind of Events & Commercial shoots and
+            etc..
           </p>
         </div>
         <div className="w-full lg:h-[542px] sm:h-[400px] p-[6%] px-[8vw] items-center mx-auto flex flex-col gap-3 justify-between">
@@ -60,21 +59,21 @@ const Collage = () => {
                 />
               </Link>
               <div className="lg:w-[195px] w-[49px] mt-[-2px] h-[0.5px] sm:w-[122.5px] sm:h-[1.5px] lg:h-[2px] sm:mt-[-6px] lg:mt-[-20px] bg-black "></div>
-              <div className="lg:text-[20px] sm:text-[13px] w-[120px] sm:w-full text-[10px] font-medium sm:leading-[27px] lg:leading-[40px] sm:mt-3 lg:mt-5 mt-1.5 flex flex-col justify-between">
+              <div className="lg:text-[18px] sm:text-[13px] w-[120px] sm:w-full text-[10px] font-medium sm:leading-[27px] lg:leading-[40px] sm:mt-3 lg:mt-5 flex flex-col justify-between">
                 <p className="flex gap-3 text-gray-500 items-center">
-                  <b className="Number_Font sm:text-[28px] text-[12px] lg:text-[35px] text-[#9a0104]">
+                  <b className="Number_Font sm:text-[28px] text-[12px] lg:text-[32px] text-[#9a0104]">
                     100+
                   </b>{" "}
                   Successful Projects
                 </p>
                 <p className="flex gap-3 text-gray-500 items-center">
-                  <b className="Number_Font sm:text-[28px] lg:text-[35px] text-[#9a0104]">
+                  <b className="Number_Font sm:text-[28px] lg:text-[32px] text-[#9a0104]">
                     150+
                   </b>{" "}
                   Happy Clients
                 </p>
                 <p className="flex gap-3 text-gray-500 items-center">
-                  <b className="Number_Font sm:text-[28px] lg:text-[35px] text-[#9a0104]">
+                  <b className="Number_Font sm:text-[28px] lg:text-[32px] text-[#9a0104]">
                     5+
                   </b>{" "}
                   Years of Experience
@@ -92,20 +91,12 @@ const Collage = () => {
             </span>
             <span className="min-w-[45%] h-[17vh] mt-[0px] sm:h-[135px] bg-white lg:h-[145px] sm:mt-[0px] lg:mt-[0px] rounded-3xl overflow-hidden">
               <img
-                className="object-cover w-auto sm:mt-[-170px] h-full sm:w-full sm:h-auto"
+                className="object-cover w-auto sm:mt-[-50px] h-full sm:w-full sm:h-auto"
                 src={BGImage3}
                 alt=""
               />
             </span>
           </div>
-          {/* <div className="w-full h-[25vh] grid grid-cols-2 gap-5">
-      <span className="min-w-[47.5%] bg-green-400 rounded-3xl overflow-hidden">
-        <img src={BGImage} alt="" />
-      </span>
-      <span className="min-w-[47.5%] bg-blue-400 rounded-3xl overflow-hidden">
-        <img src={BGImage} alt="" />
-      </span>
-    </div> */}
         </div>
       </div>
     </>

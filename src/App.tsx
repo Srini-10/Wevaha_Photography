@@ -31,7 +31,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // For navigation events
     const handleNavigationStart = () => {
       setLoading(true);
     };

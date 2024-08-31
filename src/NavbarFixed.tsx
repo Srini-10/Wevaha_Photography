@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Logo from "./assets/Wevaha_Logo.png";
 import { Link } from "react-router-dom";
 import Arrow_Left from "./assets/Icons/Left_Arrow.svg";
-import Arrow_Right from "./assets/Icons/Right_Arrow.svg";
 import "./index.css";
 
 const NavbarFixed = () => {
@@ -13,7 +12,6 @@ const NavbarFixed = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.innerWidth >= 767) {
-        // Ensure that the screen width is above 767px
         setIsAtTop(window.scrollY === 0);
         if (window.scrollY === 0) {
           setIsExpanded(false);
@@ -91,6 +89,7 @@ const NavbarFixed = () => {
         </ul>
       </div>
 
+      {/* Mobile Navbar */}
       <div
         className={`sm:hidden navbar-container h-[7vh] w-full absolute mt-7 flex items-center justify-between text-black transition-all duration-1000 ease-in-out ${
           isAtTop && window.innerWidth >= 768 ? "scroll-smooth" : "h-[5vh]"
@@ -183,6 +182,7 @@ const NavbarFixed = () => {
           </li>
         </ul>
       </div>
+
       {/* Modal for displaying the logo */}
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-[9999999999999999]">

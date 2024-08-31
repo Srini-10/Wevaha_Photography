@@ -44,7 +44,6 @@ const Header = () => {
         }px)`;
       }
 
-      // Change gradient color based on scroll position
       if (scrollPosition > window.innerHeight * 0.4) {
         setGradientBlack("from-white to-transparent");
       } else {

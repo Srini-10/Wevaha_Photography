@@ -13,7 +13,6 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.innerWidth >= 768) {
-        // Ensure that the screen width is above 767px
         setIsAtTop(window.scrollY === 0);
         if (window.scrollY === 0) {
           setIsExpanded(false);

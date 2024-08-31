@@ -8,13 +8,13 @@ const LocationMap = () => {
         <div className="">
           <MiddleBar />
         </div>
-        <div className="flex sm:flex-row flex-col items-center justify-between mt-[5vh] h-[27vh] sm:justify-around sm:mt-[20vh] text-[26px]">
+        <div className="flex sm:flex-row flex-col items-center justify-between mt-[5vh] h-[27vh] sm:justify-around sm:mt-[10vh] text-[26px]">
           <span className="">
             <b className="text-[7vw] sm:text-[20px] lg:text-[25px] xl:text-[30px]">
               Wevaha Photography
             </b>
             <p className="text-[13px] text-neutral-600 sm:text-[13px] lg:text-[15px] xl:text-[17px]">
-              Memories, Straight from your Hearts!
+              Photography is a Story... We Fail to put in a Words...
             </p>
           </span>
           <span className="text-center">
@@ -22,7 +22,8 @@ const LocationMap = () => {
               Phone
             </b>
             <p className="text-[13px] text-neutral-600 sm:text-[13px] lg:text-[15px] xl:text-[17px]">
-              +91 98945 98945
+              9944706585 <b className="text-black font-medium mx-[3px]">/</b>{" "}
+              9080013948
             </p>
           </span>
           <span className="text-center">

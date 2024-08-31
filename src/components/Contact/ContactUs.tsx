@@ -81,9 +81,6 @@ const ContactUs = () => {
   return (
     <>
       <div className="w-full sm:min-h-[700px] bg-black min-h-[850px] h-screen overflow-hidden sm:flex justify-between px-[7%] pt-[15vh] sm:py-[6%] scroll-smooth transition-all duration-1000 ease-in-out">
-        {/* <div
-          className={`absolute z-30 top-0 left-0 right-0 h-[30vh] opacity-10 bg-gradient-to-b from-black to-transparent transition-all duration-1000 ease-in-out`}
-        ></div> */}
         <div className="">
           <p className="font-semibold absolute left-14 bottom-10 hidden sm:block sm:text-[18px] lg:text-[25px] text-white opacity-30 text-start">
             Wevaha Photography

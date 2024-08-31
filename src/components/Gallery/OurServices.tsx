@@ -5,8 +5,12 @@ import Down_Arrow from "../../assets/Icons/Arrow_More_Icon.svg";
 import ModelShoot from "../../assets/008-1.svg";
 import Slider from "react-slick";
 import BG1 from "../../assets/002-3.webp";
-import BG2 from "../../assets/009-2.webp";
-import BG3 from "../../assets/009-1.webp";
+import BG2 from "../../assets/007-9.webp";
+import BG3 from "../../assets/018-5.webp";
+import BG4 from "../../assets/012-7.webp";
+import BG5 from "../../assets/012-8.webp";
+import BG6 from "../../assets/017-4.webp";
+import BG7 from "../../assets/004-9.webp";
 
 const OurServices = () => {
   const scrollToNextComponent = () => {
@@ -32,6 +36,16 @@ const OurServices = () => {
     autoplaySpeed: 3000,
     pauseOnHover: false,
   };
+
+  const slides = [
+    { image: BG1, alt: "Background 1" },
+    { image: BG2, alt: "Background 2" },
+    { image: BG3, alt: "Background 3" },
+    { image: BG4, alt: "Background 4" },
+    { image: BG5, alt: "Background 5" },
+    { image: BG6, alt: "Background 6" },
+    { image: BG7, alt: "Background 7" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -80,43 +94,22 @@ const OurServices = () => {
                 id="parallax"
                 className="w-full h-screen overflow-hidden shadow-inner"
               >
-                {/* <div
-                  className={`absolute top-0 left-0 right-0 h-[30vh] opacity-70 bg-gradient-to-b ${gradientColor} transition-all duration-1000 ease-in-out`}
-                ></div> */}
                 <Slider {...settings}>
-                  <div
-                    id="parallax"
-                    className="w-full h-screen relative overflow-hidden"
-                  >
-                    <img
-                      className="object-cover select-none h-[62vh] w-[55vw]"
-                      src={BG1}
-                      alt="Background 1"
-                    />
+                  {slides.map((slide, index) => (
                     <div
-                      className={`absolute bottom-0 left-0 right-0 h-[40vh] opacity-70 bg-gradient-to-t ${gradientColor} transition-all duration-1000 ease-in-out`}
-                    ></div>
-                  </div>
-                  <div className="w-full h-screen relative overflow-hidden">
-                    <img
-                      className="object-cover select-none h-[62vh] w-[55vw]"
-                      src={BG2}
-                      alt="Background 2"
-                    />
-                    <div
-                      className={`absolute bottom-0 left-0 right-0 h-[40vh] opacity-70 bg-gradient-to-t ${gradientColor} transition-all duration-1000 ease-in-out`}
-                    ></div>
-                  </div>
-                  <div className="w-full h-screen relative overflow-hidden">
-                    <img
-                      className="object-cover select-none h-[62vh] w-[55vw]"
-                      src={BG3}
-                      alt="Background 3"
-                    />
-                    <div
-                      className={`absolute bottom-0 left-0 right-0 h-[40vh] opacity-70 bg-gradient-to-t ${gradientColor} transition-all duration-1000 ease-in-out`}
-                    ></div>
-                  </div>
+                      key={index}
+                      className="w-full h-screen relative overflow-hidden"
+                    >
+                      <img
+                        className="object-cover select-none h-[62vh] w-[55vw]"
+                        src={slide.image}
+                        alt={slide.alt}
+                      />
+                      <div
+                        className={`absolute bottom-0 left-0 right-0 h-[40vh] opacity-70 bg-gradient-to-t ${gradientColor} transition-all duration-1000 ease-in-out`}
+                      ></div>
+                    </div>
+                  ))}
                 </Slider>
               </div>
             </div>
@@ -134,11 +127,10 @@ const OurServices = () => {
                 />
               </div>
             </div>
-            <p className="sm:text-[10px] text-[7.5px] lg:text-[13px] leading-[9px] sm:leading-3.5 lg:leading-5 text-justify">
-              Hello, Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aperiam, voluptatum perspiciatis? Dolorum temporibus, nesciunt,
-              mollitia aut odio illo repellat fugiat vero ad unde praesentium
-              Quis.
+            <p className="sm:text-[10px] text-[7.5px] lg:text-[13px] text-neutral-700 leading-[9px] sm:leading-3.5 lg:leading-5 text-justify">
+              <b className="font-bold text-black">Hi,</b> Welcome we specialize
+              in Capturing your cherished moments for Weddings, Receptions, All
+              Kind of Events &Commercial shoots
             </p>
             <div
               className="scroll-arrow bg-yellow-100 absolute z-[99] rounded-full sm:mt-[20vh] lg:mt-[24vh] mt-[27vh] shadow-md sm:ml-[0px] sm:right-[2.1vw] lg:right-[3.5vw] right-[5vw] w-12 h-12 cursor-pointer"
