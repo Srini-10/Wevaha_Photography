@@ -33,6 +33,12 @@
   align-items: center;
 }
 
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .scroll-arrow {
+    display: none;
+  }
+}
+
 .arrow {
   font-size: 2rem;
   color: #333; /* Arrow color */

@@ -120,7 +120,7 @@ const Gallery = () => {
   return (
     <>
       <div
-        className="flex justify-between items-center w-full h-[80vh] sm:h-screen mt-[70vh] sm:mt-[6vh] lg:mt-[115vh] px-[8vw] scroll-smooth transition-all duration-1000 ease-in-out"
+        className="flex justify-between items-center w-full h-[80vh] sm:h-screen mt-[70vh] sm:mt-[50vh] lg:mt-[115vh] px-[8vw] scroll-smooth transition-all duration-1000 ease-in-out"
         ref={galleryRef}
       >
         <div className="w-full h-screen items-center justify-center">

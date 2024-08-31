@@ -10,7 +10,7 @@ const Collage = () => {
   return (
     <>
       <div
-        className="pt-5 sm:pt-20 sm:h-[80vh] lg:min-h-screen scroll-smooth transition-all bg-white duration-1000 ease-in-out"
+        className="pt-0 sm:pt-5 sm:h-[80vh] lg:min-h-screen scroll-smooth transition-all bg-white duration-1000 ease-in-out"
         style={{ boxShadow: "0px 0px 100px 150px rgba(255, 255, 255, 10)" }}
       >
         <div className="sm:w-[65vw] lg:w-[65vw] w-[85vw] mx-auto text-center">
@@ -47,20 +47,20 @@ const Collage = () => {
                 }}
               />
             </span>
-            <span className="lg:min-w-[30.3vw] sm:min-w-[200px] w-auto mt-[45px] sm:mt-[10px] lg:mt-0 h-[12vh] sm:h-[145px] grow pl-3 rounded-2xl">
+            <span className="lg:min-w-[30.3vw] sm:min-w-[200px] w-auto mt-[30px] sm:mt-[10px] lg:mt-0 h-[12vh] sm:h-[145px] grow pl-3 rounded-2xl">
               <Link
                 to={"/gallery"}
                 className="hover:scale-[1.01] transition-all duration-700 ease-in-out lg:text-[40px] sm:text-[25px] text-[10px] flex gap-5 mt-2 font-bold"
               >
                 SEE MORE{" "}
                 <img
-                  className="sm:w-[30px] lg:w-[70px] w-[15px]"
+                  className="sm:w-[30px] lg:w-[60px] lg:mb-[10px] w-[15px]"
                   src={Arrow_More}
                   alt=""
                 />
               </Link>
-              <div className="lg:w-[244px] sm:w-[122.5px] sm:h-[1.5px] lg:h-[2px] sm:mt-[-6px] lg:mt-[-20px] bg-black "></div>
-              <div className="lg:text-[20px] sm:text-[13px] w-[120px] sm:w-full text-[10px] font-medium sm:leading-[27px] lg:leading-[40px] sm:mt-3 lg:mt-5 flex flex-col justify-between">
+              <div className="lg:w-[195px] w-[49px] mt-[-2px] h-[0.5px] sm:w-[122.5px] sm:h-[1.5px] lg:h-[2px] sm:mt-[-6px] lg:mt-[-20px] bg-black "></div>
+              <div className="lg:text-[20px] sm:text-[13px] w-[120px] sm:w-full text-[10px] font-medium sm:leading-[27px] lg:leading-[40px] sm:mt-3 lg:mt-5 mt-1.5 flex flex-col justify-between">
                 <p className="flex gap-3 text-gray-500 items-center">
                   <b className="Number_Font sm:text-[28px] text-[12px] lg:text-[35px] text-[#9a0104]">
                     100+

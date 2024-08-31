@@ -28,7 +28,7 @@ const About = () => {
               ? "0px 0px 3px 3px rgba(0, 0, 0, 0.1)"
               : "none",
         }}
-        className="w-full h-[60.3vh] sm:h-[50vh] lg:h-screen sm:mt-0 z-[99] absolute overflow-hidden mt-[-17vh] lg:min-h-[700px] rounded-t-3xl sm:rounded-none bg-white sm:flex justify-between sm:px-[10vw] lg:px-[7vw] sm:py-[3vh] lg:py-[10vh] scroll-smooth transition-all duration-1000 ease-in-out"
+        className="w-full h-[60.3vh] sm:h-[50vh] lg:h-screen sm:mt-[-8vh] z-[99] absolute overflow-hidden mt-[-17vh] lg:min-h-[700px] rounded-t-3xl sm:rounded-none bg-white sm:flex justify-between sm:px-[10vw] lg:px-[7vw] sm:py-[3vh] lg:py-[10vh] scroll-smooth transition-all duration-1000 ease-in-out"
       >
         <div className="flex justify-between sm:block">
           <h1 className="Font-About z-50 mt-[-30px] sm:mt-[-40px] relative text-[25vw] pl-4 pt-5 sm:p-0 sm:text-[80px] lg:text-[150px] xl:text-[200px] font-bold">
@@ -47,15 +47,21 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="xl:w-[40vw] max-w-[80vw] p-4 sm:p-0 h-[48vh] sm:h-[29vh] lg:h-[30vh] lg:w-[38vw] sm:w-[40vw] z-50 mt-[-49vh] sm:mt-[8vh] lg:mt-[30vh] justify-between flex flex-col">
+        <div className="xl:w-[40vw] max-w-[80vw] p-4 sm:p-0 h-[48vh] sm:h-[29vh] lg:h-[45vh] lg:w-[38vw] sm:w-[40vw] z-50 mt-[-49vh] sm:mt-[8vh] lg:mt-[30vh] justify-between flex flex-col">
           <p className="lg:text-[14px] text-[12px] text-gray-700 sm:text-black text-justify sm:text-[10px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-            magnam praesentium. Rem corrupti, omnis quos eius animi quia aut
-            molestias delectus doloremque minus, hic velit nesciunt, sunt
-            aspernatur ipsa odit!, Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Inventore magni nemo, quam consectetur possimus
-            maiores natus illum delectus dignissimos labore odit modi ipsam ipsa
-            veniam et sed id? Expedita, vitae.
+            We are incredibly blessed to have a team of talented photographers.
+            We choose our clients as carefully as they choose us. We approach
+            every client with intent to create Fresh, offbeat ideas while
+            holding onto our timeless tradition and culture. We strive to create
+            a life long client relationship built on friendship and trust. From
+            our First meeting together until we bid you goodbye we will be by
+            your side during your event planning adventure. Photography is meant
+            to be cherished for generations to come. It is meant to be artistic,
+            romantic and timeless. We are committed to making those memories
+            last for you.
+            <br />
+            <br />
+            <b className="mt-[-0px] ml-[25vw]"> - Wevaha Photography</b>
           </p>
 
           <Link
