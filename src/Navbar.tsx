@@ -52,7 +52,6 @@ const Navbar = () => {
         className={`Responsive-Navbar navbar-container h-[7vh] w-full absolute mt-7 flex items-center justify-between text-black transition-all duration-1000 ease-in-out ${
           isAtTop && window.innerWidth >= 768 ? "scroll-smooth" : "h-[5vh]"
         }`}
-        onClick={toggleNavbarExpansion}
       >
         <div
           className={`${
@@ -169,6 +168,7 @@ const Navbar = () => {
           <img className="h-full w-full cursor-pointer" src={Logo} alt="Logo" />
         </div>
         <ul
+          onClick={toggleNavbarExpansion}
           className={`${
             isAtTop && window.innerWidth >= 768
               ? "hover:px-6 gap-5 px-8 right-0 w-[490px] shadow-md h-[55px] fixed transition-all duration-1000 ease-in-out"
@@ -242,24 +242,23 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-
-        {/* Modal for displaying the logo */}
-        {isModalOpen && (
-          <div className="fixed inset-0 flex items-center justify-center z-[9999999999999999]">
-            <div
-              className="fixed inset-0 bg-black opacity-50"
-              onClick={closeModal}
-            ></div>
-            <div className="relative bg-white p-4 rounded-lg shadow-lg">
-              <img
-                className="max-w-[75vw] h-auto sm:h-[75vh] sm:w-[75vh]"
-                src={Logo}
-                alt="Logo"
-              />
-            </div>
+      </div>{" "}
+      {/* Modal for displaying the logo */}
+      {isModalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center z-[9999999999999999]">
+          <div
+            className="fixed inset-0 bg-black opacity-50"
+            onClick={closeModal}
+          ></div>
+          <div className="relative bg-white p-4 rounded-lg shadow-lg">
+            <img
+              className="max-w-[75vw] h-auto sm:h-[75vh] sm:w-[75vh]"
+              src={Logo}
+              alt="Logo"
+            />
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </>
   );
 };

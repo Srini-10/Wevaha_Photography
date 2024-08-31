@@ -157,6 +157,7 @@ const NavbarWhite = () => {
           <img className="h-full w-full cursor-pointer" src={Logo} alt="Logo" />
         </div>
         <ul
+          onClick={toggleNavbarExpansion}
           className={`${
             isAtTop && window.innerWidth >= 768
               ? "hover:px-6 gap-5 px-8 right-0 w-[490px] shadow-md h-[55px] fixed transition-all duration-1000 ease-in-out"
@@ -240,7 +241,11 @@ const NavbarWhite = () => {
             onClick={closeModal}
           ></div>
           <div className="relative bg-white p-4 rounded-lg shadow-lg">
-            <img className="h-[75vh] w-[75vh]" src={Logo} alt="Logo" />
+            <img
+              className="max-w-[75vw] h-auto sm:h-[75vh] sm:w-[75vh]"
+              src={Logo}
+              alt="Logo"
+            />
           </div>
         </div>
       )}

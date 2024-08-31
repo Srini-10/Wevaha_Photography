@@ -59,8 +59,8 @@ const Home = () => {
       <div className="flex-grow z-50 scroll-smooth transition-all duration-1000 ease-in-out bg-white">
         <Navbar />
         <Header />
-        <About />
         <AnimationImages />
+        <About />
         <Gallery />
         <Collage />
       </div>
