@@ -1,8 +1,26 @@
 import React, { useRef, useState, useEffect } from "react";
-import Demo1 from "../../assets/1.webp";
-import Demo2 from "../../assets/2.webp";
-import Demo3 from "../../assets/3.webp";
-import Demo4 from "../../assets/4.webp";
+import Image1 from "../../assets/Gallery/001.webp";
+import Image2 from "../../assets/Gallery/002.webp";
+import Image3 from "../../assets/Gallery/003.webp";
+import Image4 from "../../assets/Gallery/004.webp";
+import Image5 from "../../assets/Gallery/005.webp";
+import Image6 from "../../assets/Gallery/006.webp";
+import Image7 from "../../assets/Gallery/007.webp";
+import Image8 from "../../assets/Gallery/008.webp";
+// import Image9 from "../../assets/Gallery/009.webp";
+import Image10 from "../../assets/Gallery/010.webp";
+import Image11 from "../../assets/Gallery/011.webp";
+import Image12 from "../../assets/Gallery/012.webp";
+import Image13 from "../../assets/Gallery/013.webp";
+import Image14 from "../../assets/Gallery/014.webp";
+import Image15 from "../../assets/Gallery/015.webp";
+import Image16 from "../../assets/Gallery/016.webp";
+// import Image17 from "../../assets/Gallery/017.webp";
+import Image18 from "../../assets/Gallery/018.webp";
+// import Image19 from "../../assets/Gallery/019.webp";
+import Image20 from "../../assets/Gallery/020.webp";
+// import Image21 from "../../assets/Gallery/009.webp";
+
 import Arrow_Left from "../../assets/Icons/Arrow_Left.svg";
 import Arrow_Right from "../../assets/Icons/Arrow_Right.svg";
 import "./Style.css";
@@ -16,7 +34,31 @@ const Gallery = () => {
   const [showAnimation, setShowAnimation] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [images] = useState([
-    ...Array(30).fill([Demo1, Demo2, Demo3, Demo4]).flat(),
+    ...Array(1)
+      .fill([
+        Image1,
+        Image2,
+        Image3,
+        Image4,
+        Image5,
+        Image6,
+        Image7,
+        Image8,
+        // Image9,
+        Image10,
+        Image11,
+        Image12,
+        Image13,
+        Image14,
+        Image15,
+        Image16,
+        // Image17,
+        Image18,
+        // Image19,
+        Image20,
+        // Image21,
+      ])
+      .flat(),
   ]);
 
   useEffect(() => {
