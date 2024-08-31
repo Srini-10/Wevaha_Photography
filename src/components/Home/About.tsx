@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <>
-      <div className="w-full h-[60.3vh] sm:h-[50vh] shadow-md lg:h-screen sm:mt-0 z-[99] absolute overflow-hidden mt-[-3vh] lg:min-h-[700px] rounded-t-3xl sm:rounded-none bg-white sm:flex justify-between sm:px-[10vw] lg:px-[7vw] sm:py-[3vh] lg:py-[10vh] scroll-smooth transition-all duration-1000 ease-in-out">
+      <div className="w-full h-[60.3vh] sm:h-[50vh] shadow-md lg:h-screen sm:mt-0 z-[99] absolute overflow-hidden mt-[-13vh] lg:min-h-[700px] rounded-t-3xl sm:rounded-none bg-white sm:flex justify-between sm:px-[10vw] lg:px-[7vw] sm:py-[3vh] lg:py-[10vh] scroll-smooth transition-all duration-1000 ease-in-out">
         <div className="flex justify-between sm:block">
           <h1 className="Font-About z-50 mt-[-30px] sm:mt-[-40px] relative text-[25vw] pl-4 pt-5 sm:p-0 sm:text-[80px] lg:text-[150px] xl:text-[200px] font-bold">
             ABOUT US
