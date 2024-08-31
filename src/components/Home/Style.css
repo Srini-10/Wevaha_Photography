@@ -25,3 +25,26 @@
 .Number_Font {
   font-family: "New Amsterdam", sans-serif;
 }
+
+/* Arrow Animation */
+.scroll-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #333; /* Arrow color */
+  animation: jump 1.5s infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

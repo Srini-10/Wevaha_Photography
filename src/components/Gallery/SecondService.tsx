@@ -55,7 +55,10 @@ const SecondService = () => {
 
   return (
     <>
-      <div className="h-screen sm:mt-[10vh] w-full overflow-hidden bg-black text-white flex flex-col items-center py-0 sm:py-[5vh] px-[8vw] sm:px-[11vw]">
+      <div
+        id="nextComponent"
+        className="h-screen sm:mt-[10vh] w-full overflow-hidden bg-black text-white flex flex-col items-center py-0 sm:py-[5vh] px-[8vw] sm:px-[11vw]"
+      >
         <div
           id="second-service"
           className={`h-45vh] mb-[-10vh] justify-end text-end flex ${animationClass}`}

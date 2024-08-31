@@ -49,7 +49,10 @@ const AnimationImages: React.FC = () => {
 
   return (
     <>
-      <div className="relative w-full h-[40vh] mb-[10vh] mt-[0vh] bg-white sm:mt-[40vh] lg:mt-[10vh] sm:h-[50vh] lg:h-[60vh] overflow-hidden scroll-smooth transition-all duration-1000 ease-in-out">
+      <div
+        id="nextComponent1"
+        className="relative w-full h-[43vh] mb-[10vh] mt-[0vh] bg-white sm:mt-[40vh] lg:mt-[10vh] sm:h-[50vh] lg:h-[60vh] overflow-hidden scroll-smooth transition-all duration-1000 ease-in-out"
+      >
         {/* <div
           className={`absolute z-30 top-0 left-0 right-0 h-[30vh] opacity-70 bg-gradient-to-b ${gradientColor} transition-all duration-1000 ease-in-out`}
         ></div> */}
@@ -79,8 +82,14 @@ const AnimationImages: React.FC = () => {
                   src={Logo}
                   alt=""
                 />
-                <h1 className="Font-Animation font-bold text-[4vw] opacity-100 text-yellow-700">
-                  Memories, Straight to your hearts!
+                <h1 className="Font-Animation font-bold lg:text-[2.8vw] text-[3.6vw] leading-[10px]  sm:text-[2.4vw] justify-between sm:leading-4 lg:leading-[30px] opacity-100 text-yellow-700">
+                  <p className="mr-[17vw] sm:mr-[12vw]">
+                    Photography is a Story...
+                  </p>{" "}
+                  <br />
+                  <p className="ml-[17vw] sm:ml-[12vw]">
+                    We Fail to put in a Words...
+                  </p>
                 </h1>
               </div>
               {/* <div className="scale-[0.7] absolute bottom-0 right-10 rounded">
