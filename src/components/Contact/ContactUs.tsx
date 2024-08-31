@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Frame from "../../assets/People1.jpg";
-import Buttons from "../../assets/Button_Controls.svg";
-import Vector from "../../assets/Vector.svg";
+import Frame from "../../assets/1.webp";
+import Buttons from "../../assets/Icons/Button_Controls.svg";
+import Vector from "../../assets/Icons/Vector.svg";
 import "./Style.css";
 
 const ContactUs = () => {

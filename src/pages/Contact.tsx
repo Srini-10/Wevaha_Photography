@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ContactUs from "../components/Contact/ContactUs.tsx";
 import LocationMap from "../components/Contact/LocationMap.tsx";
 import NavbarFixed from "../NavbarFixed.tsx";
-import ArrowUp from "../assets/Up_Arrow.svg";
+import ArrowUp from "../assets/Icons/Up_Arrow.svg";
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);

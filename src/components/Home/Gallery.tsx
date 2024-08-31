@@ -1,10 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
-import Demo1 from "../../assets/demo1.jpg";
-import Demo2 from "../../assets/demo2.jpg";
-import Demo3 from "../../assets/demo3.jpg";
-import Demo4 from "../../assets/demo4.jpg";
-import Arrow_Left from "../../assets/Arrow_Left.svg";
-import Arrow_Right from "../../assets/Arrow_Right.svg";
+import Demo1 from "../../assets/1.webp";
+import Demo2 from "../../assets/2.webp";
+import Demo3 from "../../assets/3.webp";
+import Demo4 from "../../assets/4.webp";
+import Arrow_Left from "../../assets/Icons/Arrow_Left.svg";
+import Arrow_Right from "../../assets/Icons/Arrow_Right.svg";
 import "./Style.css";
 import { useNavigate } from "react-router-dom";
 
@@ -16,8 +16,8 @@ const Gallery = () => {
   const [showAnimation, setShowAnimation] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [images] = useState([
-    ...Array(1000).fill([Demo1, Demo2, Demo3, Demo4]).flat(),
-  ]); // Repeat images 10 times
+    ...Array(30).fill([Demo1, Demo2, Demo3, Demo4]).flat(),
+  ]);
 
   useEffect(() => {
     const handlePageScroll = () => {
@@ -120,7 +120,7 @@ const Gallery = () => {
   return (
     <>
       <div
-        className="flex justify-between items-center w-full h-[80vh] sm:h-screen mt-[70vh] sm:mt-[6vh] px-[8vw] scroll-smooth transition-all duration-1000 ease-in-out"
+        className="flex justify-between items-center w-full h-[80vh] sm:h-screen mt-[70vh] sm:mt-[6vh] lg:mt-[115vh] px-[8vw] scroll-smooth transition-all duration-1000 ease-in-out"
         ref={galleryRef}
       >
         <div className="w-full h-screen items-center justify-center">
@@ -131,7 +131,7 @@ const Gallery = () => {
             className="w-full h-[60vh] mt-[-30px] sm:mt-[-40px] flex overflow-x-scroll overflow-y-scroll gap-5 transition-all duration-1000 ease-in-out"
             ref={carouselRef}
             style={{
-              scrollSnapType: "x mandatory", // Ensure snapping behavior
+              scrollSnapType: "x mandatory",
             }}
           >
             {images.map((src, index) => (

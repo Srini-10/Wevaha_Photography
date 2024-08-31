@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import BG1 from "../../assets/People1.jpg";
-import BG2 from "../../assets/People2.jpg";
-import BG3 from "../../assets/People3.jpg";
-import Navbar from "../../Navbar.tsx";
+import BG1 from "../../assets/1.webp";
+import BG2 from "../../assets/3.webp";
+import BG3 from "../../assets/2.webp";
+import BG4 from "../../assets/4.webp";
 
 const Header = () => {
   const [gradientBlack, setGradientBlack] = useState(
@@ -61,7 +61,7 @@ const Header = () => {
         >
           Wevaha Photography
         </div>
-        <div id="parallax" className="w-full h-[35vh] sm:h-screen">
+        <div className="w-full h-[35vh] sm:h-screen transition-all duration-1000 ease-in-out">
           <div
             className={`absolute z-10 top-0 left-0 right-0 h-[30vh] opacity-70 bg-gradient-to-b ${gradientBlack} transition-all duration-1000 ease-in-out`}
           ></div>
@@ -90,6 +90,16 @@ const Header = () => {
               <img
                 className="w-full h-[35vh] sm:h-screen object-cover select-none"
                 src={BG3}
+                alt="Background 3"
+              />
+              <div
+                className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] min-h-[10vh] from-black to-transparent opacity-75 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
+              ></div>
+            </div>
+            <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
+              <img
+                className="w-full h-[35vh] sm:h-screen object-cover select-none"
+                src={BG4}
                 alt="Background 3"
               />
               <div

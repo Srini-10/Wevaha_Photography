@@ -3,7 +3,7 @@ import Header from "../components/Home/Header.tsx";
 import About from "../components/Home/About.tsx";
 import AnimationImages from "../components/Home/AnimationImages.tsx";
 import Footer from "../Footer.tsx";
-import ArrowUp from "../assets/Up_Arrow.svg";
+import ArrowUp from "../assets/Icons/Up_Arrow.svg";
 import Navbar from "../Navbar.tsx";
 import Gallery from "../components/Home/Gallery.tsx";
 import Collage from "../components/Home/Collage.tsx";

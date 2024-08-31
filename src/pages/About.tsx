@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import AboutUs from "../components/About/AboutUs.tsx";
 import Collage from "../components/About/Collage.tsx";
 import NavbarWhite from "../NavbarWhite.tsx";
-import ArrowUp from "../assets/Up_Arrow.svg";
+import ArrowUp from "../assets/Icons/Up_Arrow.svg";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);

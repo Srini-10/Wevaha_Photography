@@ -1,9 +1,9 @@
 import React from "react";
 import Logo from "./assets/Wevaha_Logo.png";
-import Facebook from "./assets/Facebook_Icon.svg";
-import Instagram from "./assets/Instagram.svg";
-import Youtube from "./assets/Youtube.svg";
-import Pinterest from "./assets/Pinterest.svg";
+import Facebook from "./assets/Icons/Facebook_Icon.svg";
+import Instagram from "./assets/Icons/Instagram.svg";
+import Youtube from "./assets/Icons/Youtube.svg";
+import Pinterest from "./assets/Icons/Pinterest.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

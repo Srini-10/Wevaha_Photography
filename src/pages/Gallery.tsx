@@ -3,7 +3,7 @@ import ContainerImages from "../components/Gallery/ContainerImages.tsx";
 import OurServices from "../components/Gallery/OurServices.tsx";
 import NavbarDark from "../NavbarDark.tsx";
 import SecondService from "../components/Gallery/SecondService.tsx";
-import ArrowUp from "../assets/Up_Arrow.svg";
+import ArrowUp from "../assets/Icons/Up_Arrow.svg";
 
 const Gallery = () => {
   const [isVisible, setIsVisible] = useState(false);

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Style.css";
-import Image1 from "../../assets/People1.jpg";
-import Down_Arrow from "../../assets/Arrow_More_Icon.svg";
-import BGImage from "../../assets/People1.jpg";
+import AllTypeOfEvents from "../../assets/001-1.webp";
+import Down_Arrow from "../../assets/Icons/Arrow_More_Icon.svg";
+import ModelShoot from "../../assets/008-1.svg";
 import Slider from "react-slick";
-import BG1 from "../../assets/People1.jpg";
-import BG2 from "../../assets/People2.jpg";
-import BG3 from "../../assets/People3.jpg";
+import BG1 from "../../assets/002-3.webp";
+import BG2 from "../../assets/009-2.webp";
+import BG3 from "../../assets/009-1.webp";
 
 const OurServices = () => {
   const scrollToNextComponent = () => {
@@ -128,7 +128,7 @@ const OurServices = () => {
             <div className="overflow-hidden w-full h-auto">
               <div className="h-[22vh] sm:h-[28vh] rounded mb-1 sm:mb-3 overflow-hidden">
                 <img
-                  src={Image1}
+                  src={AllTypeOfEvents}
                   alt=""
                   className="w-full h-full brightness-75 object-cover"
                 />
@@ -159,7 +159,7 @@ const OurServices = () => {
         <div className="w-[70vw] sm:w-[90vw] absolute h-[29vh] flex justify-center mt-[-54vh] sm:mt-[-40vh] items-center ">
           <div className="min-w-[80px] sm:min-w-[100px]"></div>
           <img
-            src={BGImage}
+            src={ModelShoot}
             alt=""
             className="shadow-inner w-[87vw] h-full brightness-50 object-cover rounded-3xl"
             style={{
@@ -171,9 +171,9 @@ const OurServices = () => {
           />
           <h1 className="Font-About absolute flex gap-2 right-[2.3vw] bottom-[-2vh] text-white opacity-85 text-end sm:text-[20px] lg:text-[25px] font-bold">
             <p className="lg:text-[100px] sm:text-[70px] sm:-mr-5 opacity-45">
-              Baby
+              Model
             </p>{" "}
-            Shower
+            Shoot
           </h1>
         </div>
       </div>

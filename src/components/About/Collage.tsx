@@ -1,7 +1,9 @@
 import React from "react";
 import "./Style.css";
-import BGImage from "../../assets/People1.jpg";
-import Arrow_More from "../../assets/Arrow_More_Icon.svg";
+import BGImage1 from "../../assets/011-1.webp";
+import BGImage2 from "../../assets/011-1.svg";
+import BGImage3 from "../../assets/4.webp";
+import Arrow_More from "../../assets/Icons/Arrow_More_Icon.svg";
 import { Link } from "react-router-dom";
 
 const Collage = () => {
@@ -26,15 +28,15 @@ const Collage = () => {
           <div className="w-full h-[17vh] lg:h-[180px] sm:h-[150px] flex gap-3 sm:gap-5">
             <span className="min-w-[40vw] h-[15vh] sm:h-auto sm:min-w-[34.5vw] grow rounded-3xl overflow-hidden">
               <img
-                className="object-cover w-full h-full sm:w-full sm:h-auto"
-                src={BGImage}
+                className="object-cover sm:mt-[-80px] w-full h-full sm:w-full sm:h-auto"
+                src={BGImage1}
                 alt=""
               />
             </span>
             <span className="min-w-[25.2%] lg:block hidden h-[180px] rounded-3xl overflow-hidden"></span>
             <span className="absolute lg:block sm:hidden min-w-[60.63vw] lg:h-[375px] rounded-3xl overflow-hidden">
               <img
-                src={BGImage}
+                src={BGImage2}
                 alt=""
                 className="absolute top-0 left-0 w-[57.6vw] shadow-inner h-full object-cover rounded-3xl"
                 style={{
@@ -45,7 +47,7 @@ const Collage = () => {
                 }}
               />
             </span>
-            <span className="lg:min-w-[30.3vw] sm:min-w-[200px] w-auto sm:mt-[10px] lg:mt-0 h-[12vh] sm:h-[145px] grow pl-3 rounded-2xl">
+            <span className="lg:min-w-[30.3vw] sm:min-w-[200px] w-auto mt-[45px] sm:mt-[10px] lg:mt-0 h-[12vh] sm:h-[145px] grow pl-3 rounded-2xl">
               <Link
                 to={"/gallery"}
                 className="hover:scale-[1.01] transition-all duration-700 ease-in-out lg:text-[40px] sm:text-[25px] text-[10px] flex gap-5 mt-2 font-bold"
@@ -84,14 +86,14 @@ const Collage = () => {
             <span className="min-w-[50.8%] mt-[-17px] sm:mt-0 sm:h-[155px] lg:h-[145px] sm:opacity-100 lg:opacity-0 grow rounded-3xl overflow-hidden">
               <img
                 className="object-cover w-full h-full sm:w-full sm:h-auto"
-                src={BGImage}
+                src={BGImage2}
                 alt=""
               />
             </span>
-            <span className="min-w-[45%] h-[17vh] mt-[-45px] sm:h-[135px] bg-white lg:h-[145px] sm:mt-[0px] lg:mt-[0px] rounded-3xl overflow-hidden">
+            <span className="min-w-[45%] h-[17vh] mt-[0px] sm:h-[135px] bg-white lg:h-[145px] sm:mt-[0px] lg:mt-[0px] rounded-3xl overflow-hidden">
               <img
-                className="object-cover w-auto h-full sm:w-full sm:h-auto"
-                src={BGImage}
+                className="object-cover w-auto sm:mt-[-170px] h-full sm:w-full sm:h-auto"
+                src={BGImage3}
                 alt=""
               />
             </span>

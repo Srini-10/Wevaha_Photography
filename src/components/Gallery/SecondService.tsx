@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import BGImage from "../../assets/People1.jpg";
+import BGImage from "../../assets/3.webp";
+import Maternity from "../../assets/008-21.webp";
 import "./Style.css"; // Import the CSS file
 
 const SecondService = () => {
@@ -60,7 +61,7 @@ const SecondService = () => {
           className={`h-45vh] mb-[-10vh] justify-end text-end flex ${animationClass}`}
         >
           <div className="w-[80vw] sm:w-[40vw] items-end justify-center gap-3 flex flex-col">
-            <div className="w-[70vw] sm:w-[30vw] h-[25vh rounded right-0 shadow-md overflow-hidden">
+            <div className="w-[70vw] sm:w-[30vw] sm:h-[37vh] h-[25vh] rounded right-0 shadow-md overflow-hidden">
               <img
                 className="w-full h-full right-0 object-cover"
                 src={BGImage}
@@ -68,7 +69,7 @@ const SecondService = () => {
               />
             </div>
             <h1 className="Font-About text-gray-400 opacity-75 text-[50px] sm:text-[65px] lg:text-[90px] font-bold mt-[-7.5vh] sm:mt-[-8.5vh] lg:mt-[-11vh]">
-              WEDDING
+              OUT DOOR
             </h1>
             <p className="mt-[-3.5vh] sm:mt-[-5vh] text-[12px] lg:text-[16px] sm:text-[12px] sm:leading-4 lg:leading-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
@@ -83,15 +84,15 @@ const SecondService = () => {
           className={`h-[45vh] mt-[-10vh] justify-start text-start flex  ${animation2Class}`}
         >
           <div className="w-[80vw] sm:w-[40vw] items-start justify-center gap-3 flex flex-col">
-            <div className="w-[70vw] sm:w-[30vw] h-[25vh rounded right-0 shadow-md overflow-hidden">
+            <div className="w-[70vw] sm:w-[30vw] sm:h-[37vh] h-[25vh] rounded right-0 shadow-md overflow-hidden">
               <img
-                className="w-full h-full right-0 object-cover"
-                src={BGImage}
+                className="w-full h-auto mt-[-7vh] right-0 object-cover"
+                src={Maternity}
                 alt=""
               />
             </div>
             <h1 className="Font-About text-gray-400 opacity-75 text-[50px] sm:text-[65px] lg:text-[90px] font-bold mt-[-7.5vh] sm:mt-[-8.5vh] lg:mt-[-11vh]">
-              Baby Shower
+              Maternity
             </h1>
             <p className="mt-[-3.5vh] sm:mt-[-5vh] text-[12px] lg:text-[16px] sm:text-[12px] sm:leading-4 lg:leading-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat

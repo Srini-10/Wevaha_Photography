@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Logo from "./assets/Wevaha_Logo.png";
-import Arrow_Left from "./assets/Left_Arrow_white.svg";
-import Arrow_Right from "./assets/Right_Arrow_white.svg";
+import Arrow_Left from "./assets/Icons/Left_Arrow_white.svg";
+import Arrow_Right from "./assets/Icons/Right_Arrow_white.svg";
 import { Link } from "react-router-dom";
 import "./index.css";
 
