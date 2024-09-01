@@ -5,23 +5,14 @@ import BG1 from "../../assets/1.webp";
 import BG2 from "../../assets/3.webp";
 import BG3 from "../../assets/2.webp";
 import BG4 from "../../assets/4.webp";
-import { Skeleton } from "@mui/material";
 
 const Header = () => {
-  const [imageLoaded, setImageLoaded] = useState({
-    BG1: false,
-    BG2: false,
-    BG3: false,
-    BG4: false,
-  });
-
   const scrollToNextComponent = () => {
     const nextComponent = document.getElementById("nextComponent1");
     if (nextComponent) {
       nextComponent.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   const [gradientBlack, setGradientBlack] = useState(
     "from-black to-transparent"
   );
@@ -67,10 +58,6 @@ const Header = () => {
     };
   }, []);
 
-  const handleImageLoad = (image) => {
-    setImageLoaded((prevState) => ({ ...prevState, [image]: true }));
-  };
-
   return (
     <>
       <div className="w-full h-[35vh] lg:h-screen sm:h-[60vh] overflow-hidden scroll-smooth transition-all duration-1000 ease-in-out">
@@ -86,88 +73,44 @@ const Header = () => {
           ></div>
           <Slider {...settings}>
             <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
-              {!imageLoaded.BG1 && (
-                <Skeleton
-                  variant="rectangular"
-                  width="100%"
-                  height="100%"
-                  animation="wave"
-                />
-              )}
               <img
                 loading="lazy"
-                className={`w-full h-[35vh] saturate-[120%] sm:h-screen object-cover select-none ${
-                  imageLoaded.BG1 ? "block" : "hidden"
-                }`}
+                className="w-full h-[35vh] saturate-[120%] sm:h-screen object-cover select-none"
                 src={BG1}
                 alt="Background 1"
-                onLoad={() => handleImageLoad("BG1")}
               />
               <div
                 className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] min-h-[10vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
               ></div>
             </div>
             <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
-              {!imageLoaded.BG2 && (
-                <Skeleton
-                  variant="rectangular"
-                  width="100%"
-                  height="100%"
-                  animation="wave"
-                />
-              )}
               <img
                 loading="lazy"
-                className={`w-full h-[35vh] saturate-[130%] sm:h-screen object-cover select-none ${
-                  imageLoaded.BG2 ? "block" : "hidden"
-                }`}
+                className="w-full h-[35vh] saturate-[130%] sm:h-screen object-cover select-none"
                 src={BG2}
                 alt="Background 2"
-                onLoad={() => handleImageLoad("BG2")}
               />
               <div
                 className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] min-h-[10vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
               ></div>
             </div>
             <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
-              {!imageLoaded.BG3 && (
-                <Skeleton
-                  variant="rectangular"
-                  width="100%"
-                  height="100%"
-                  animation="wave"
-                />
-              )}
               <img
                 loading="lazy"
-                className={`w-full h-[35vh] saturate-[115%] sm:h-screen object-cover select-none ${
-                  imageLoaded.BG3 ? "block" : "hidden"
-                }`}
+                className="w-full h-[35vh] saturate-[115%] sm:h-screen object-cover select-none"
                 src={BG3}
                 alt="Background 3"
-                onLoad={() => handleImageLoad("BG3")}
               />
               <div
                 className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] min-h-[10vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
               ></div>
             </div>
             <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
-              {!imageLoaded.BG4 && (
-                <Skeleton
-                  variant="rectangular"
-                  width="100%"
-                  height="100%"
-                  animation="wave"
-                />
-              )}
               <img
                 loading="lazy"
-                className={`w-full h-[35vh] saturate-[130%] sm:h-screen object-cover select-none ${
-                  imageLoaded.BG4 ? "block" : "hidden"
-                }`}
+                className="w-full h-[35vh] saturate-[130%] sm:h-screen object-cover select-none"
                 src={BG4}
-                alt="Background 4"
-                onLoad={() => handleImageLoad("BG4")}
+                alt="Background 3"
               />
               <div
                 className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] min-h-[10vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}

@@ -7,7 +7,7 @@ import Image5 from "../../assets/Gallery/005.webp";
 import Image6 from "../../assets/Gallery/006.webp";
 import Image7 from "../../assets/Gallery/007.webp";
 import Image8 from "../../assets/Gallery/008.webp";
-// import Image9 from "../../assets/Gallery/009.webp";
+import Image9 from "../../assets/Gallery/009.webp";
 import Image10 from "../../assets/Gallery/010.webp";
 import Image11 from "../../assets/Gallery/011.webp";
 import Image12 from "../../assets/Gallery/012.webp";
@@ -15,16 +15,11 @@ import Image13 from "../../assets/Gallery/013.webp";
 import Image14 from "../../assets/Gallery/014.webp";
 import Image15 from "../../assets/Gallery/015.webp";
 import Image16 from "../../assets/Gallery/016.webp";
-// import Image17 from "../../assets/Gallery/017.webp";
 import Image18 from "../../assets/Gallery/018.webp";
-// import Image19 from "../../assets/Gallery/019.webp";
 import Image20 from "../../assets/Gallery/020.webp";
-// import Image21 from "../../assets/Gallery/009.webp";
 
 import Arrow_Left from "../../assets/Icons/Arrow_Left.svg";
 import Arrow_Right from "../../assets/Icons/Arrow_Right.svg";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 import "./Style.css";
 import { useNavigate } from "react-router-dom";
 
@@ -46,7 +41,7 @@ const Gallery = () => {
         Image6,
         Image7,
         Image8,
-        // Image9,
+        Image9,
         Image10,
         Image11,
         Image12,
@@ -54,15 +49,11 @@ const Gallery = () => {
         Image14,
         Image15,
         Image16,
-        // Image17,
         Image18,
-        // Image19,
         Image20,
-        // Image21,
       ])
       .flat(),
   ]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const handlePageScroll = () => {
@@ -122,15 +113,6 @@ const Gallery = () => {
     };
   }, [navigate]);
 
-  useEffect(() => {
-    // Simulate image loading with a timeout
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000); // Adjust as needed
-
-    return () => clearTimeout(timer);
-  }, []);
-
   const handleMouseMove = (e) => {
     const container = e.currentTarget;
     const rect = container.getBoundingClientRect();
@@ -188,30 +170,24 @@ const Gallery = () => {
               scrollSnapType: "x mandatory",
             }}
           >
-            {loading ? (
-              <div className="w-full h-full flex items-center justify-center">
-                <Skeleton count={5} height={500} width={300} />
+            {images.map((src, index) => (
+              <div
+                key={index}
+                className="parallax-container min-w-[90vw] sm:w-[20vw] sm:min-w-[300px] h-full bg-gray-200 flex items-center justify-center rounded transition-all duration-1000 ease-in-out"
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+                style={{
+                  scrollSnapAlign: "start", // Align each image at the start
+                }}
+              >
+                <img
+                  loading="lazy"
+                  src={src}
+                  alt={`Placeholder ${index + 1}`}
+                  className="w-full h-full object-cover shadow-md border-[1.5px] border-gray-200 rounded"
+                />
               </div>
-            ) : (
-              images.map((src, index) => (
-                <div
-                  key={index}
-                  className="parallax-container min-w-[90vw] sm:w-[20vw] sm:min-w-[300px] h-full bg-gray-200 flex items-center justify-center rounded transition-all duration-1000 ease-in-out"
-                  onMouseMove={handleMouseMove}
-                  onMouseLeave={handleMouseLeave}
-                  style={{
-                    scrollSnapAlign: "start", // Align each image at the start
-                  }}
-                >
-                  <img
-                    loading="lazy"
-                    src={src}
-                    alt={`Placeholder ${index + 1}`}
-                    className="w-full h-full object-cover shadow-md border-[1.5px] border-gray-200 rounded"
-                  />
-                </div>
-              ))
-            )}
+            ))}
             <div className="Animation-Pop">
               <p
                 onClick={handleIframeClick}
@@ -227,19 +203,34 @@ const Gallery = () => {
             </div>
 
             <p
-              className="Arrow_Left cursor-pointer absolute sm:hidden xl:block right-[13vw] bottom-[11vh] sm:bottom-[20vh] lg:bottom-[25vh] xl:bottom-[24vh] z-[99]"
+              onClick={handleIframeClick}
+              className="cursor-pointer absolute right-[5.2vw] mt-[25.4vh] z-[9999] text-black rounded-full w-20 h-20"
+            ></p>
+            <iframe
+              title="animation"
+              className="absolute scale-[1.7] sm:scale-[1.2] right-[3.5vw] w-[9vw] z-50 mt-[21vh] Animated_Button"
+              src="https://lottie.host/embed/bda50e50-7c17-4a38-941a-1708b955a4df/bPhWC8UGtn.json"
+              onClick={handleIframeClick}
+            ></iframe>
+          </div>
+          <div className="flex justify-center xl:ml-[-79vw] lg:ml-[-78vw] sm:ml-[-75vw] ml-[-67vw] mt-[10px] gap-3 z-[999999999999]">
+            <img
+              loading="lazy"
+              className="w-7 h-7 border-[1px] shadow-xl cursor-pointer rounded-full"
+              src={Arrow_Left}
               onClick={prevImage}
-            >
-              <img src={Arrow_Left} alt="Previous" />
-            </p>
-            <p
-              className="Arrow_Right cursor-pointer absolute sm:hidden xl:block right-[2vw] bottom-[11vh] sm:bottom-[20vh] lg:bottom-[25vh] xl:bottom-[24vh] z-[99]"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              className="w-7 h-7 border-[1px] shadow-xl cursor-pointer rounded-full"
+              src={Arrow_Right}
               onClick={nextImage}
-            >
-              <img src={Arrow_Right} alt="Next" />
-            </p>
+              alt=""
+            />
           </div>
         </div>
+        <div className="min-w-[25vw] sm:min-w-[35vw] absolute right-7 sm:right-14 lg:right-20 sm:mt-40 h-[80vh] sm:min-h-full bg-gradient-to-l from-white to-transparent flex items-center justify-center"></div>
       </div>
     </>
   );
