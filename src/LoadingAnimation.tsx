@@ -3,7 +3,7 @@ import "./index.css";
 
 const LoadingAnimation = () => {
   return (
-    <div className="flex h-screen items-center bg-black backdrop-blur-3xl justify-center">
+    <div className="flex h-screen items-center justify-center bg-black">
       <span className="loader"></span>
     </div>
   );
