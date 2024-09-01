@@ -16,14 +16,14 @@ const Footer = () => {
         alt="Wevaha Logo"
       />
 
-      <p className="lg:w-[40vw] w-[80vw] sm:w-[60vw] sm:mt-[-20px] lg:mt-[-30px] pb-2 sm:pb-2 lg:pb-4 text-center text-yellow-900 text-[10px] sm:text-[10.5px] lg:text-[13px]">
+      <p className="lg:w-[40vw] w-[85vw] sm:w-[60vw] sm:mt-[-20px] mt-[-6px] lg:mt-[-20px] pb-2 sm:pb-2 lg:pb-4 text-center text-yellow-900 text-[8px] sm:text-[10.5px] lg:text-[13px]">
         Welcome we specialize in Capturing your cherished moments for Weddings,
         Receptions, All Kind of Events & Commercial shoots and etc..
       </p>
 
       <div className="w-[20vw] h-[0.5px] rounded-full bg-yellow-700"></div>
 
-      <div className="flex justify-between pb-12 pt-4 items-center sm:w-[20vw] w-[33vw] lg:w-[13vw]">
+      <div className="flex justify-between pb-12 pt-4 items-center sm:w-[20vw] sm:max-w-[150px] w-[40vw] max-w-[150px] lg:w-[13vw] lg:max-w-[180px]">
         <Link to={"/"} className="cursor-pointer">
           <img
             loading="lazy"

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BGImage from "../../assets/3.webp";
-import Maternity from "../../assets/008-21.webp";
+import Maternity from "../../assets/Gallery/1019.webp";
 import "./Style.css";
 
 const SecondService = () => {

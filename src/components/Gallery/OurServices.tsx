@@ -82,7 +82,7 @@ const OurServices = () => {
         <div className="w-[90vw] h-full flex justify-center items-center">
           <div className="w-[80px] sm:w-[100px] h-full flex items-start text-start justify-start">
             <h1 className="Font-About -rotate-90 text-[100px] sm:text-[130px] font-bold ml-[-90px] sm:ml-[-124px] mt-[79px]">
-              WEDDING
+              WEVAHA
             </h1>
           </div>
           <div className="w-[87vw] h-full items-start text-start justify-start">
@@ -167,9 +167,9 @@ const OurServices = () => {
           />
           <h1 className="Font-About absolute flex gap-2 right-[2.3vw] bottom-[-2vh] text-white opacity-85 text-end sm:text-[20px] lg:text-[25px] font-bold">
             <p className="lg:text-[100px] sm:text-[70px] sm:-mr-5 opacity-45">
-              Model
+              Memory
             </p>{" "}
-            Shoot
+            Frames
           </h1>
         </div>
       </div>

@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Down_Arrow from "../../assets/Icons/Arrow_More_Icon.svg";
 import BG1 from "../../assets/1.webp";
-import BG2 from "../../assets/3.webp";
-import BG3 from "../../assets/2.webp";
-import BG4 from "../../assets/4.webp";
+import BG2 from "../../assets/005.webp";
+import BG3 from "../../assets/3.webp";
+import BG4 from "../../assets/2.webp";
+import BG5 from "../../assets/4.webp";
 
 const Header = () => {
   const scrollToNextComponent = () => {
@@ -110,6 +111,17 @@ const Header = () => {
                 loading="lazy"
                 className="w-full h-[35vh] saturate-[130%] sm:h-screen object-cover select-none"
                 src={BG4}
+                alt="Background 3"
+              />
+              <div
+                className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] min-h-[10vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
+              ></div>
+            </div>
+            <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
+              <img
+                loading="lazy"
+                className="w-full h-[35vh] saturate-[130%] sm:h-screen object-cover select-none"
+                src={BG5}
                 alt="Background 3"
               />
               <div

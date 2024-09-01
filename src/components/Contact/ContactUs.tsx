@@ -91,7 +91,7 @@ const ContactUs = () => {
             CONTACT US
           </h1>
           <div className="max-w-[90vw] mx-auto gap-3 sm:mx-0 h-[25vh] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[420px] mt-[-10px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute">
-            <div className="w-full border-2 border-neutral-800 mt-[50px] h-[250px]">
+            <div className="w-full border-2 border-neutral-800 sm:mt-[50px] h-[250px]">
               <img
                 loading="lazy"
                 className="mr-[30px] object-cover h-full w-full"
@@ -99,7 +99,7 @@ const ContactUs = () => {
                 alt=""
               />
             </div>
-            <div className="w-full border-2 border-neutral-800 mt-[90px] h-[250px]">
+            <div className="w-full border-2 border-neutral-800 sm:mt-[90px] h-[250px]">
               <img
                 loading="lazy"
                 className="object-cover h-full w-full"
@@ -107,7 +107,7 @@ const ContactUs = () => {
                 alt=""
               />
             </div>
-            <div className="w-full border-2 border-neutral-800 mt-[170px] h-[250px]">
+            <div className="w-full border-2 border-neutral-800 sm:mt-[170px] h-[250px]">
               <img
                 loading="lazy"
                 className="object-cover h-full w-full"

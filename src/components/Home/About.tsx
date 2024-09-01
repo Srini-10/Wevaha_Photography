@@ -56,7 +56,7 @@ const About = () => {
             id="parallax"
             className="max-w-[90vw] mx-auto gap-3 sm:mx-0 h-[25vh] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[420px] mt-[-10px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute"
           >
-            <div className="w-full mt-[50px] h-[250px]">
+            <div className="w-full sm:mt-[50px] h-[250px]">
               <img
                 loading="lazy"
                 className="mr-[30px] object-cover h-full w-full"
@@ -64,7 +64,7 @@ const About = () => {
                 alt=""
               />
             </div>
-            <div className="w-full mt-[90px] h-[250px]">
+            <div className="w-full sm:mt-[90px] h-[250px]">
               <img
                 loading="lazy"
                 className="object-cover h-full w-full"
@@ -72,7 +72,7 @@ const About = () => {
                 alt=""
               />
             </div>
-            <div className="w-full mt-[170px] h-[250px]">
+            <div className="w-full sm:mt-[170px] h-[250px]">
               <img
                 loading="lazy"
                 className="object-cover h-full w-full"
@@ -82,8 +82,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="xl:w-[40vw] max-w-[100vw] p-4 sm:p-0 h-[48vh] sm:h-[29vh] lg:h-[45vh] lg:w-[38vw] sm:w-[40vw] z-50 mt-[1vh] sm:mt-[8vh] lg:mt-[30vh] justify-between flex flex-col">
-          <p className="lg:text-[14px] text-[12px] text-gray-700 sm:text-black text-justify sm:text-[10px]">
+        <div className="xl:w-[40vw] max-w-[100vw] p-4 sm:p-0 h-[48vh] sm:h-[29vh] lg:h-[45vh] lg:w-[38vw] sm:w-[40vw] z-50 mt-[2vh] sm:mt-[8vh] lg:mt-[30vh] justify-between flex flex-col">
+          <p className="lg:text-[16px] text-[12px] text-gray-700 sm:text-black text-justify sm:text-[12px]">
             We are incredibly blessed to have a team of talented photographers.
             We choose our clients as carefully as they choose us. We approach
             every client with intent to create Fresh, offbeat ideas while
