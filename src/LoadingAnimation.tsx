@@ -16,6 +16,7 @@ const LoadingAnimation = () => {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        filter: "saturate(1.15)",
       }}
     >
       <div
