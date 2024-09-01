@@ -33,16 +33,27 @@ const About = () => {
           <div className="max-w-[90vw] mx-auto sm:mx-0 h-[25vh] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[320px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute bg-gray-200">
             <div className="w-full">
               <img
+                loading="lazy"
                 className="mr-[30px] object-cover h-full w-full"
                 src={Frame1}
                 alt=""
               />
             </div>
             <div className="w-full">
-              <img className="object-cover h-full w-full" src={Frame2} alt="" />
+              <img
+                loading="lazy"
+                className="object-cover h-full w-full"
+                src={Frame2}
+                alt=""
+              />
             </div>
             <div className="w-full">
-              <img className="object-cover h-full w-full" src={Frame3} alt="" />
+              <img
+                loading="lazy"
+                className="object-cover h-full w-full"
+                src={Frame3}
+                alt=""
+              />
             </div>
           </div>
         </div>

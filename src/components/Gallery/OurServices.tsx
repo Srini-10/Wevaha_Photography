@@ -101,6 +101,7 @@ const OurServices = () => {
                       className="w-full h-screen relative overflow-hidden"
                     >
                       <img
+                        loading="lazy"
                         className="object-cover select-none h-[62vh] w-[55vw]"
                         src={slide.image}
                         alt={slide.alt}
@@ -121,6 +122,7 @@ const OurServices = () => {
             <div className="overflow-hidden w-full h-auto">
               <div className="h-[22vh] sm:h-[28vh] rounded mb-1 sm:mb-3 overflow-hidden">
                 <img
+                  loading="lazy"
                   src={AllTypeOfEvents}
                   alt=""
                   className="w-full h-full brightness-75 object-cover"
@@ -138,6 +140,7 @@ const OurServices = () => {
             >
               <div className="arrow wave">
                 <img
+                  loading="lazy"
                   className="w-8 rotate-[135deg] mt-2.5"
                   src={Down_Arrow}
                   alt=""
@@ -151,6 +154,7 @@ const OurServices = () => {
         <div className="w-[70vw] sm:w-[90vw] absolute h-[29vh] flex justify-center mt-[-54vh] sm:mt-[-40vh] items-center ">
           <div className="min-w-[80px] sm:min-w-[100px]"></div>
           <img
+            loading="lazy"
             src={ModelShoot}
             alt=""
             className="shadow-inner w-[87vw] h-full brightness-50 object-cover rounded-3xl"

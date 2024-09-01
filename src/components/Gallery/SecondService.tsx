@@ -64,6 +64,7 @@ const SecondService = () => {
           <div className="w-[80vw] sm:w-[40vw] items-end justify-center gap-3 flex flex-col">
             <div className="w-[70vw] sm:w-[30vw] sm:h-[33vh] h-[25vh] rounded right-0 shadow-md overflow-hidden">
               <img
+                loading="lazy"
                 className="w-full h-full right-0 object-cover"
                 src={BGImage}
                 alt=""
@@ -87,6 +88,7 @@ const SecondService = () => {
           <div className="w-[80vw] sm:w-[40vw] items-start justify-center gap-3 flex flex-col">
             <div className="w-[70vw] sm:w-[30vw] sm:h-[33vh] h-[25vh] rounded right-0 shadow-md overflow-hidden">
               <img
+                loading="lazy"
                 className="w-full h-auto mt-[-7vh] right-0 object-cover"
                 src={Maternity}
                 alt=""

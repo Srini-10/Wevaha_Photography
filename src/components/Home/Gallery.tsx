@@ -187,6 +187,7 @@ const Gallery = () => {
                 }}
               >
                 <img
+                  loading="lazy"
                   src={src}
                   alt={`Placeholder ${index + 1}`}
                   className="w-full h-full object-cover shadow-md border-[1.5px] border-gray-200 rounded"
@@ -220,12 +221,14 @@ const Gallery = () => {
           </div>
           <div className="flex justify-center xl:ml-[-79vw] lg:ml-[-78vw] sm:ml-[-75vw] ml-[-67vw] mt-[10px] gap-3 z-[999999999999]">
             <img
+              loading="lazy"
               className="w-7 h-7 border-[1px] shadow-xl cursor-pointer rounded-full"
               src={Arrow_Left}
               onClick={prevImage}
               alt=""
             />
             <img
+              loading="lazy"
               className="w-7 h-7 border-[1px] shadow-xl cursor-pointer rounded-full"
               src={Arrow_Right}
               onClick={nextImage}

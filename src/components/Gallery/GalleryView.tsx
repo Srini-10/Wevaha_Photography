@@ -16,6 +16,7 @@ const GalleryView = () => {
           ></div>
           <div className="w-full h-[100vh] relative flex justify-center overflow-hidden">
             <img
+              loading="lazy"
               className="w-full h-screen object-cover contrast-[110%] saturate-[130%] select-none"
               src={Background}
               alt="Background"

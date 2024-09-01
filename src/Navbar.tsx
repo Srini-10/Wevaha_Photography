@@ -61,7 +61,12 @@ const Navbar = () => {
           } h-full p-1.5 items-center cursor-pointer bg-white rounded-r-full transition-all duration-1000 ease-in-out`}
           onClick={openModal}
         >
-          <img className="h-full w-full cursor-pointer" src={Logo} alt="Logo" />
+          <img
+            loading="lazy"
+            className="h-full w-full cursor-pointer"
+            src={Logo}
+            alt="Logo"
+          />
         </div>
         <ul
           className={`${
@@ -86,6 +91,7 @@ const Navbar = () => {
             <p className="cursor-pointer flex gap-2 items-center text-black pr-4 py-2 rounded-lg hover:bg-rainbow">
               {!isExpanded && (
                 <img
+                  loading="lazy"
                   className="w-[18px] group-hover:-ml-1.5 group-hover:mr-1.5 group-hover:scale-[1.05] transition-all duration-500 ease-in-out"
                   src={Arrow_Left}
                   alt="Left Arrow"
@@ -95,6 +101,7 @@ const Navbar = () => {
               {isExpanded && (
                 <div className="flex">
                   <img
+                    loading="lazy"
                     className="w-[18px] group-hover:ml-1 group-hover:-mr-1 group-hover:scale-[1.05] transition-all duration-500 ease-in-out"
                     src={Arrow_Right}
                     alt="Right Arrow"
@@ -153,7 +160,12 @@ const Navbar = () => {
           } h-full p-1.5 items-center bg-white cursor-pointer rounded-r-full transition-all duration-1000 ease-in-out`}
           onClick={openModal}
         >
-          <img className="h-full w-full cursor-pointer" src={Logo} alt="Logo" />
+          <img
+            loading="lazy"
+            className="h-full w-full cursor-pointer"
+            src={Logo}
+            alt="Logo"
+          />
         </div>
         <ul
           onClick={toggleNavbarExpansion}
@@ -180,6 +192,7 @@ const Navbar = () => {
             <p className="cursor-pointer flex gap-3 items-center text-black pr-4 py-2 rounded-lg hover:bg-rainbow  transition-all duration-1000 ease-in-out">
               {!isExpanded && (
                 <img
+                  loading="lazy"
                   className="w-[16px] group-hover:-ml-1.5 -rotate-90 group-hover:mr-1.5 group-hover:scale-[1.05] transition-all duration-1000 ease-in-out"
                   src={Arrow_Left}
                   alt="Left Arrow"
@@ -187,6 +200,7 @@ const Navbar = () => {
               )}
               {isExpanded && (
                 <img
+                  loading="lazy"
                   className="w-[16px] group-hover:-ml-1.5 rotate-90 group-hover:mr-1.5 group-hover:scale-[1.05] transition-all duration-1000 ease-in-out"
                   src={Arrow_Left}
                   alt="Left Arrow"
@@ -242,6 +256,7 @@ const Navbar = () => {
           ></div>
           <div className="relative bg-white p-4 rounded-lg shadow-lg">
             <img
+              loading="lazy"
               className="max-w-[75vw] h-auto sm:h-[75vh] sm:w-[75vh]"
               src={Logo}
               alt="Logo"

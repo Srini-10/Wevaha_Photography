@@ -86,6 +86,7 @@ const ContainerImages = () => {
             }`}
           >
             <img
+              loading="lazy"
               className="w-full h-auto object-cover rounded-lg"
               src={image}
               alt={`Gallery Img ${index + 1}`}
@@ -102,6 +103,7 @@ const ContainerImages = () => {
           >
             Show More
             <img
+              loading="lazy"
               className="w-[13px] sm:w-[16px] mt-0.5 rotate-90"
               src={Arrow_Down}
               alt="Show More"
@@ -115,6 +117,7 @@ const ContainerImages = () => {
           >
             Show Less
             <img
+              loading="lazy"
               className="w-[13px] sm:w-[16px] mt-0.5 rotate-90"
               src={Arrow_Up}
               alt="Show Less"

@@ -94,16 +94,27 @@ const ContactUs = () => {
           <div className="max-w-[90vw] h-[25vh] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[320px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute bg-gray-200">
             <div className="w-full">
               <img
+                loading="lazy"
                 className="mr-[30px] object-cover h-full w-full"
                 src={Frame1}
                 alt=""
               />
             </div>
             <div className="w-full">
-              <img className="object-cover h-full w-full" src={Frame2} alt="" />
+              <img
+                loading="lazy"
+                className="object-cover h-full w-full"
+                src={Frame2}
+                alt=""
+              />
             </div>
             <div className="w-full">
-              <img className="object-cover h-full w-full" src={Frame3} alt="" />
+              <img
+                loading="lazy"
+                className="object-cover h-full w-full"
+                src={Frame3}
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -111,6 +122,7 @@ const ContactUs = () => {
           <div className="w-full bg-neutral-900 rounded-2xl sm:h-[470px] lg:h-[650px]">
             <div className="flex items-center justify-between">
               <img
+                loading="lazy"
                 src={Buttons}
                 alt=""
                 className="p-4 scale-[0.8] lg:scale-[1]"
@@ -119,6 +131,7 @@ const ContactUs = () => {
                 New message
               </p>
               <img
+                loading="lazy"
                 src={Buttons}
                 alt=""
                 className="p-4 opacity-0 -z-50 select-none"
@@ -225,6 +238,7 @@ const ContactUs = () => {
                   ) : (
                     <>
                       <img
+                        loading="lazy"
                         src={Vector}
                         alt=""
                         className="w-[16px] lg:w-[18px] xl:w-[20px]"

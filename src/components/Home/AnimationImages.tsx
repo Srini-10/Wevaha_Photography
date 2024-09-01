@@ -56,6 +56,7 @@ const AnimationImages: React.FC = () => {
             <div className="relative w-full h-full border-2 border-transparent">
               <div className="absolute inset-0 flex flex-col items-center justify-center ">
                 <img
+                  loading="lazy"
                   className="w-[40vw] sm:w-[20vw] hover:scale-[1.02] transition-all duration-1000 ease-in-out"
                   src={Logo}
                   alt=""

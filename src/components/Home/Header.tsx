@@ -74,6 +74,7 @@ const Header = () => {
           <Slider {...settings}>
             <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
               <img
+                loading="lazy"
                 className="w-full h-[35vh] saturate-[120%] sm:h-screen object-cover select-none"
                 src={BG1}
                 alt="Background 1"
@@ -84,6 +85,7 @@ const Header = () => {
             </div>
             <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
               <img
+                loading="lazy"
                 className="w-full h-[35vh] saturate-[130%] sm:h-screen object-cover select-none"
                 src={BG2}
                 alt="Background 2"
@@ -94,6 +96,7 @@ const Header = () => {
             </div>
             <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
               <img
+                loading="lazy"
                 className="w-full h-[35vh] saturate-[115%] sm:h-screen object-cover select-none"
                 src={BG3}
                 alt="Background 3"
@@ -104,6 +107,7 @@ const Header = () => {
             </div>
             <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
               <img
+                loading="lazy"
                 className="w-full h-[35vh] saturate-[130%] sm:h-screen object-cover select-none"
                 src={BG4}
                 alt="Background 3"
@@ -119,6 +123,7 @@ const Header = () => {
           >
             <div className="arrow wave">
               <img
+                loading="lazy"
                 className="w-6 ml-0.5 rotate-[135deg] mt-2.5"
                 src={Down_Arrow}
                 alt=""

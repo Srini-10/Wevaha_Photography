@@ -68,7 +68,12 @@ const Gallery = () => {
                 showText ? "w-38 rounded-r mr-[-1px]" : "w-12 rounded-full"
               }`}
             >
-              <img className="w-6 h-6" src={ArrowUp} alt="Scroll to top" />
+              <img
+                loading="lazy"
+                className="w-6 h-6"
+                src={ArrowUp}
+                alt="Scroll to top"
+              />
               {showText && (
                 <span className="ml-3 text-sm text-gray-600 animate-textReveal transition-all duration-1000 transform">
                   Click to go Top!

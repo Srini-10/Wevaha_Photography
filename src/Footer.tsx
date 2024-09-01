@@ -10,6 +10,7 @@ const Footer = () => {
   return (
     <div className="w-full\ sm:h-[60vh] lg:mt-0 mt-[5vh] sm:mt-[5vh] lg:h-[70vh] pb-10 flex flex-col justify-center items-center bg-gradient-to-b from-white to-[#fff7e4] scroll-smooth transition-all duration-1000 ease-in-out">
       <img
+        loading="lazy"
         className="sm:w-[25vw] w-[40vw] lg:w-[15vw] pt-32"
         src={Logo}
         alt="Wevaha Logo"
@@ -25,6 +26,7 @@ const Footer = () => {
       <div className="flex justify-between pb-12 pt-4 items-center sm:w-[20vw] w-[33vw] lg:w-[13vw]">
         <Link to={"/"} className="cursor-pointer">
           <img
+            loading="lazy"
             className="lg:w-7 lg:h-7 sm:w-6 sm:h-6 w-6 h-6 rounded-full hover:scale-[1.05] transition-all duration-300 ease-in-out"
             src={Facebook}
             alt="Facebook"
@@ -32,6 +34,7 @@ const Footer = () => {
         </Link>
         <Link to={"/"} className="cursor-pointer">
           <img
+            loading="lazy"
             className="lg:w-7 lg:h-7 sm:w-6 sm:h-6 w-6 h-6 rounded-full hover:scale-[1.05] transition-all duration-300 ease-in-out"
             src={Instagram}
             alt="Instagram"
@@ -39,6 +42,7 @@ const Footer = () => {
         </Link>
         <Link to={"/"} className="cursor-pointer">
           <img
+            loading="lazy"
             className="lg:w-7 lg:h-7 sm:w-6 sm:h-6 w-6 h-6 rounded-full hover:scale-[1.05] transition-all duration-300 ease-in-out"
             src={Youtube}
             alt="YouTube"
@@ -46,6 +50,7 @@ const Footer = () => {
         </Link>
         <Link to={"/"} className="cursor-pointer">
           <img
+            loading="lazy"
             className="lg:w-7 lg:h-7 sm:w-6 sm:h-6 w-6 h-6 rounded-full hover:scale-[1.05] transition-all duration-300 ease-in-out"
             src={Pinterest}
             alt="Pinterest"
