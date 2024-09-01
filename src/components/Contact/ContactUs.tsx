@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Frame1 from "../../assets/013-2.webp";
+import React, { useEffect, useState } from "react";
+import Frame1 from "../../assets/Gallery/1026.webp";
 import Frame2 from "../../assets/012-9.webp";
 import Frame3 from "../../assets/005-11.webp";
 import Buttons from "../../assets/Icons/Button_Controls.svg";
@@ -87,11 +87,11 @@ const ContactUs = () => {
           <p className="font-semibold absolute left-14 bottom-10 hidden sm:block sm:text-[18px] lg:text-[25px] text-white opacity-30 text-start">
             Wevaha Photography
           </p>
-          <h1 className="Font-About text-white z-50 mt-[-3vh] sm:mt-[10vh] relative text-[12vw] sm:text-[91px] lg:text-[130px] xl:text-[170px] font-bold">
+          <h1 className="Font-About text-white z-50 mt-[-3vh] sm:mt-[6vh] relative text-[12vw] sm:text-[91px] lg:text-[130px] xl:text-[170px] font-bold">
             CONTACT US
           </h1>
-          <div className="max-w-[90vw] h-[25vh] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[320px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute bg-gray-200">
-            <div className="w-full">
+          <div className="max-w-[90vw] mx-auto gap-3 sm:mx-0 h-[25vh] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[420px] mt-[-10px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute">
+            <div className="w-full border-2 border-neutral-800 mt-[50px] h-[250px]">
               <img
                 loading="lazy"
                 className="mr-[30px] object-cover h-full w-full"
@@ -99,7 +99,7 @@ const ContactUs = () => {
                 alt=""
               />
             </div>
-            <div className="w-full">
+            <div className="w-full border-2 border-neutral-800 mt-[90px] h-[250px]">
               <img
                 loading="lazy"
                 className="object-cover h-full w-full"
@@ -107,7 +107,7 @@ const ContactUs = () => {
                 alt=""
               />
             </div>
-            <div className="w-full">
+            <div className="w-full border-2 border-neutral-800 mt-[170px] h-[250px]">
               <img
                 loading="lazy"
                 className="object-cover h-full w-full"

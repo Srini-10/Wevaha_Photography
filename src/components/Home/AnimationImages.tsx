@@ -9,6 +9,25 @@ const AnimationImages: React.FC = () => {
   const [scrollY, setScrollY] = useState<number>(0);
 
   useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.pageYOffset;
+      const parallaxElement = document.getElementById("parallax");
+
+      if (parallaxElement) {
+        parallaxElement.style.transform = `translateY(${
+          scrollPosition * 0.3
+        }px)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
     const handlePageScroll = () => {
       setScrollY(window.scrollY);
     };
@@ -53,7 +72,10 @@ const AnimationImages: React.FC = () => {
         </div>
         <div className="relative w-full mt-[-5vh] sm:mt-0 h-full flex items-center justify-center z-10">
           <div className="w-full h-full sm:p-12">
-            <div className="relative w-full h-full border-2 border-transparent">
+            <div
+              id="parallax"
+              className="relative w-full h-full  border-2 border-transparent"
+            >
               <div className="absolute inset-0 flex flex-col items-center justify-center ">
                 <img
                   loading="lazy"
@@ -61,12 +83,12 @@ const AnimationImages: React.FC = () => {
                   src={Logo}
                   alt=""
                 />
-                <h1 className="Font-Animation font-bold lg:text-[2.8vw] text-[3.6vw] leading-[10px]  sm:text-[2.4vw] justify-between sm:leading-4 lg:leading-[30px] opacity-100 text-yellow-700">
-                  <p className="mr-[17vw] sm:mr-[12vw]">
+                <h1 className="font-sans font-semibold lg:text-[25px] text-[3.6vw] leading-[10px]  sm:text-[2.4vw] justify-between sm:leading-4 lg:leading-[18px] opacity-100 text-yellow-800">
+                  <p className="mr-[17vw] sm:mr-[14vw]">
                     Photography is a Story...
                   </p>{" "}
                   <br />
-                  <p className="ml-[17vw] sm:ml-[12vw]">
+                  <p className="ml-[17vw] sm:ml-[14vw]">
                     We Fail to put in a Words...
                   </p>
                 </h1>

@@ -30,8 +30,11 @@ const About = () => {
           <h1 className="Font-About z-50 mt-[-30px] sm:mt-[-40px] relative text-[15vw] pl-4 pt-5 sm:p-0 sm:text-[80px] lg:text-[150px] xl:text-[200px] font-bold">
             ABOUT US
           </h1>
-          <div className="max-w-[90vw] mx-auto sm:mx-0 h-[25vh] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[320px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute bg-gray-200">
-            <div className="w-full">
+          <div
+            id="parallax"
+            className="max-w-[90vw] mx-auto gap-3 sm:mx-0 h-[25vh] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[420px] mt-[-10px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute"
+          >
+            <div className="w-full mt-[50px] h-[250px]">
               <img
                 loading="lazy"
                 className="mr-[30px] object-cover h-full w-full"
@@ -39,7 +42,7 @@ const About = () => {
                 alt=""
               />
             </div>
-            <div className="w-full">
+            <div className="w-full mt-[90px] h-[250px]">
               <img
                 loading="lazy"
                 className="object-cover h-full w-full"
@@ -47,7 +50,7 @@ const About = () => {
                 alt=""
               />
             </div>
-            <div className="w-full">
+            <div className="w-full mt-[170px] h-[250px]">
               <img
                 loading="lazy"
                 className="object-cover h-full w-full"

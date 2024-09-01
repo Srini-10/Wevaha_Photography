@@ -118,7 +118,7 @@ const Header = () => {
             </div>
           </Slider>
           <div
-            className="scroll-arrow bg-yellow-100 absolute z-[99] rounded-full sm:mt-[-11vh] lg:mt-[-12vh] mt-[0vh] shadow-md sm:ml-[0px] sm:right-[2.1vw] lg:right-[3.5vw] right-[5vw] w-11 h-11 cursor-pointer"
+            className="scroll-arrow bg-yellow-100 absolute z-[99] rounded-full sm:top-[53vh] lg:top-[90vh] mt-[0vh] shadow-md sm:ml-[0px] sm:right-[2.1vw] lg:right-[3.5vw] right-[5vw] w-11 h-11 cursor-pointer"
             onClick={scrollToNextComponent}
           >
             <div className="arrow wave">

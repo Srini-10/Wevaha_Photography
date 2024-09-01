@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import Arrow_Down from "../../assets/Icons/Right_Arrow.svg";
 import Arrow_Up from "../../assets/Icons/Left_Arrow.svg";
-import Image1 from "../../assets/Gallery/001.webp";
+
 import Image2 from "../../assets/Gallery/002.webp";
 import Image3 from "../../assets/Gallery/003.webp";
 import Image4 from "../../assets/Gallery/004.webp";
@@ -21,11 +21,61 @@ import Image17 from "../../assets/Gallery/017.webp";
 import Image18 from "../../assets/Gallery/018.webp";
 import Image19 from "../../assets/Gallery/019.webp";
 import Image20 from "../../assets/Gallery/020.webp";
+import Image21 from "../../assets/Gallery/021.webp";
+
+import Image23 from "../../assets/Gallery/1020.webp";
+import Image24 from "../../assets/Gallery/1026.webp";
+import Image25 from "../../assets/Gallery/1023.webp";
+import Image26 from "../../assets/Gallery/1022.webp";
+import Image27 from "../../assets/Gallery/1007.webp";
+import Image28 from "../../assets/Gallery/1004.webp";
+import Image29 from "../../assets/Gallery/1013.webp";
+import Image30 from "../../assets/Gallery/1008.webp";
+import Image31 from "../../assets/Gallery/1011.webp";
+import Image32 from "../../assets/Gallery/1012.webp";
+import Image33 from "../../assets/Gallery/1014.webp";
+import Image34 from "../../assets/Gallery/1015.webp";
+import Image35 from "../../assets/Gallery/1003.webp";
+import Image43 from "../../assets/Gallery/1016.webp";
+import Image36 from "../../assets/Gallery/1017.webp";
+import Image37 from "../../assets/Gallery/1018.webp";
+import Image38 from "../../assets/Gallery/1019.webp";
+import Image39 from "../../assets/Gallery/1021.webp";
+import Image40 from "../../assets/Gallery/1024.webp";
+import Image41 from "../../assets/Gallery/1025.webp";
+import Image42 from "../../assets/Gallery/1006.webp";
+import Image44 from "../../assets/Gallery/1002.webp";
+import Image45 from "../../assets/Gallery/1001.webp";
+import Image46 from "../../assets/Gallery/1000.webp";
 import "./Style.css";
 
 const ContainerImages = () => {
   const images = [
-    Image1,
+    Image23,
+    Image24,
+    Image25,
+    Image26,
+    Image27,
+    Image28,
+    Image29,
+    Image30,
+    Image31,
+    Image32,
+    Image33,
+    Image34,
+    Image35,
+    Image36,
+    Image37,
+    Image38,
+    Image39,
+    Image40,
+    Image41,
+    Image42,
+    Image43,
+    Image44,
+    Image45,
+    Image46,
+
     Image2,
     Image3,
     Image4,
@@ -45,6 +95,7 @@ const ContainerImages = () => {
     Image18,
     Image19,
     Image20,
+    Image21,
   ];
 
   const [showAllImages, setShowAllImages] = useState(false);

@@ -1,11 +1,30 @@
 import React, { useEffect, useState } from "react";
-import Frame1 from "../../assets/013-2.webp";
+import Frame1 from "../../assets/Gallery/1020.webp";
 import Frame2 from "../../assets/012-9.webp";
 import Frame3 from "../../assets/002-4.webp";
 import "./Style.css";
 
 const About = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.pageYOffset;
+      const parallaxElement = document.getElementById("parallax");
+
+      if (parallaxElement) {
+        parallaxElement.style.transform = `translateY(${
+          scrollPosition * 0.3
+        }px)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -25,16 +44,19 @@ const About = () => {
           boxShadow:
             window.innerWidth <= 767
               ? "0px 0px 3px 3px rgba(0, 0, 0, 0.05)"
-              : "none",
+              : "0px 0px 3px 3px rgba(0, 0, 0, 0.03)",
         }}
-        className="w-full h-[570px] sm:h-[50vh] lg:h-screen sm:mt-[-8vh] z-[99] absolute overflow-hidden mt-[-17vh] lg:min-h-[700px] rounded-t-3xl sm:rounded-none bg-white sm:flex justify-between sm:px-[10vw] lg:px-[7vw] sm:py-[3vh] lg:py-[10vh] scroll-smooth transition-all duration-1000 ease-in-out"
+        className="w-full h-[570px] sm:h-[50vh] lg:h-screen sm:mt-[-8vh] xl:mt-[0vh] z-[99] absolute overflow-hidden mt-[-17vh] lg:min-h-[700px] rounded-t-3xl sm:rounded-none bg-white sm:flex justify-between sm:px-[10vw] lg:px-[7vw] sm:py-[3vh] lg:py-[10vh] scroll-smooth transition-all duration-1000 ease-in-out"
       >
         <div className="flex sm:flex-row flex-col justify-between sm:block">
           <h1 className="Font-About z-50 mt-[-10px] sm:mt-[-40px] relative text-[15vw] pl-4 pt-5 sm:p-0 sm:text-[80px] lg:text-[150px] xl:text-[200px] font-bold">
             ABOUT US
           </h1>
-          <div className="max-w-[90vw] mx-auto sm:mx-0 h-[25vh] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[320px] mt-[-10px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute bg-gray-200">
-            <div className="w-full">
+          <div
+            id="parallax"
+            className="max-w-[90vw] mx-auto gap-3 sm:mx-0 h-[25vh] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[420px] mt-[-10px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute"
+          >
+            <div className="w-full mt-[50px] h-[250px]">
               <img
                 loading="lazy"
                 className="mr-[30px] object-cover h-full w-full"
@@ -42,7 +64,7 @@ const About = () => {
                 alt=""
               />
             </div>
-            <div className="w-full">
+            <div className="w-full mt-[90px] h-[250px]">
               <img
                 loading="lazy"
                 className="object-cover h-full w-full"
@@ -50,7 +72,7 @@ const About = () => {
                 alt=""
               />
             </div>
-            <div className="w-full">
+            <div className="w-full mt-[170px] h-[250px]">
               <img
                 loading="lazy"
                 className="object-cover h-full w-full"
