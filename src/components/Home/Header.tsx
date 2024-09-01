@@ -63,7 +63,7 @@ const Header = () => {
       <div className="w-full h-[35vh] lg:h-screen sm:h-[60vh] overflow-hidden scroll-smooth transition-all duration-1000 ease-in-out">
         <div
           id="parallax"
-          className="h-[30vh] sm:h-[7vh] w-full absolute z-10 text-[8vw] top-[20vh] sm:top-[35vh] lg:top-[70vh] opacity-30 font-semibold sm:text-[40px] lg:text-[63px] lg:ml-[10vw] text-start text-[#cfcfcf]"
+          className="h-[30vh] sm:h-[7vh] absolute z-10 text-[8vw] top-[20vh] sm:top-[35vh] lg:top-[70vh] opacity-30 font-semibold sm:text-[40px] lg:text-[63px] lg:ml-[10vw] text-start text-[#cfcfcf]"
         >
           Wevaha Photography
         </div>
