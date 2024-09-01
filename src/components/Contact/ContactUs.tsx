@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import Frame from "../../assets/1.webp";
+import Frame1 from "../../assets/013-2.webp";
+import Frame2 from "../../assets/012-9.webp";
+import Frame3 from "../../assets/005-1.png";
+import FrameMobile from "../../assets/012-9.svg";
 import Buttons from "../../assets/Icons/Button_Controls.svg";
 import Vector from "../../assets/Icons/Vector.svg";
 import "./Style.css";
@@ -85,14 +88,26 @@ const ContactUs = () => {
           <p className="font-semibold absolute left-14 bottom-10 hidden sm:block sm:text-[18px] lg:text-[25px] text-white opacity-30 text-start">
             Wevaha Photography
           </p>
-          <h1 className="Font-About text-white z-50 sm:mt-[10vh] relative text-[12vw] sm:text-[91px] lg:text-[130px] xl:text-[170px] font-bold">
+          <h1 className="Font-About text-white z-50 mt-[-3vh] sm:mt-[10vh] relative text-[12vw] sm:text-[91px] lg:text-[130px] xl:text-[170px] font-bold">
             CONTACT US
           </h1>
-          <div className="w-[86vw] sm:w-[200px] sm:h-[300px] lg:w-[225px] xl:w-[250px] lg:h-[300px] rounded-xl overflow-hidden sm:rounded-none xl:h-[350px] mt-[-10px] sm:mt-[-55px] lg:mt-[-75px] xl:mt-[-100px] sm:ml-[110px] lg:ml-[200px] xl:ml-[336px] absolute bg-blue-400">
-            <img className="object-cover h-full w-full" src={Frame} alt="" />
+          <div className="max-w-[90vw] h-[25vh] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[320px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute bg-gray-200">
+            <div className="w-full">
+              <img
+                className="mr-[30px] object-cover h-full w-full"
+                src={Frame1}
+                alt=""
+              />
+            </div>
+            <div className="w-full">
+              <img className="object-cover h-full w-full" src={Frame2} alt="" />
+            </div>
+            <div className="w-full">
+              <img className="object-cover h-full w-full" src={Frame3} alt="" />
+            </div>
           </div>
         </div>
-        <div className="lg:w-[400px] xl:w-[500px] sm:w-[40vw] text-white z-50 mt-[220px] sm:mt-[15vh] lg:mt-[50px] justify-between flex flex-col">
+        <div className="lg:w-[400px] xl:w-[500px] sm:w-[40vw] text-white z-50 mt-[30px] sm:mt-[15vh] lg:mt-[50px] justify-between flex flex-col">
           <div className="w-full bg-neutral-900 rounded-2xl sm:h-[470px] lg:h-[650px]">
             <div className="flex items-center justify-between">
               <img

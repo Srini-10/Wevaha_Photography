@@ -46,7 +46,7 @@ const AnimationImages: React.FC = () => {
     <>
       <div
         id="nextComponent1"
-        className="relative w-full h-[43vh] mb-[10vh] mt-[0vh] bg-white sm:mt-[40vh] lg:mt-[10vh] sm:h-[50vh] lg:h-[60vh] overflow-hidden scroll-smooth transition-all duration-1000 ease-in-out"
+        className="relative w-full h-[43vh] mb-[10vh] z-50 mt-[0vh] bg-white sm:mt-[0vh] lg:mt-[0vh] lg:pt-[10vh] sm:h-[50vh] lg:h-[60vh] overflow-hidden scroll-smooth transition-all duration-1000 ease-in-out"
       >
         <div className="absolute sm:top-[-300px] left-0 w-full opacity-0 sm:h-[120vh] top-[-200px] h-[60vh] bg-no-repeat bg-cover bg-center">
           <div className="absolute inset-0 bg-black opacity-40"></div>

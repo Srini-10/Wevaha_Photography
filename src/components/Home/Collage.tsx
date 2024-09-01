@@ -68,13 +68,13 @@ const Collage = () => {
                 </p>
                 <p className="flex gap-3 text-gray-500 items-center">
                   <b className="Number_Font sm:text-[28px] lg:text-[32px] text-[#9a0104]">
-                    150+
+                    60+
                   </b>{" "}
                   Happy Clients
                 </p>
                 <p className="flex gap-3 text-gray-500 items-center">
                   <b className="Number_Font sm:text-[28px] lg:text-[32px] text-[#9a0104]">
-                    5+
+                    6+
                   </b>{" "}
                   Years of Experience
                 </p>
