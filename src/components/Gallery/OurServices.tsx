@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Style.css";
 import AllTypeOfEvents from "../../assets/001-1.webp";
 import Down_Arrow from "../../assets/Icons/Arrow_More_Icon.svg";
-import ModelShoot from "../../assets/008-1.svg";
+import ModelShoot from "../../assets/008-11.webp";
 import Slider from "react-slick";
 import BG1 from "../../assets/002-3.webp";
 import BG2 from "../../assets/007-9.webp";

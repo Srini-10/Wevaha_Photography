@@ -1,7 +1,7 @@
 import React from "react";
 import "./Style.css";
 import BGImage1 from "../../assets/011-1.webp";
-import BGImage2 from "../../assets/011-1.svg";
+import BGImage2 from "../../assets/011-11.webp";
 import BGImage3 from "../../assets/012-8.webp";
 import Arrow_More from "../../assets/Icons/Arrow_More_Icon.svg";
 import { Link } from "react-router-dom";

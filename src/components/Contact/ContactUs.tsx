@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Frame1 from "../../assets/013-2.webp";
 import Frame2 from "../../assets/012-9.webp";
-import Frame3 from "../../assets/005-1.png";
-import FrameMobile from "../../assets/012-9.svg";
+import Frame3 from "../../assets/005-11.webp";
 import Buttons from "../../assets/Icons/Button_Controls.svg";
 import Vector from "../../assets/Icons/Vector.svg";
 import "./Style.css";

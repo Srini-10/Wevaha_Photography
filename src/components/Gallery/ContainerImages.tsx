@@ -9,7 +9,7 @@ import Image5 from "../../assets/Gallery/005.webp";
 import Image6 from "../../assets/Gallery/006.webp";
 import Image7 from "../../assets/Gallery/007.webp";
 import Image8 from "../../assets/Gallery/008.webp";
-// import Image9 from "../../assets/Gallery/009.webp";
+import Image9 from "../../assets/Gallery/009.webp";
 import Image10 from "../../assets/Gallery/010.webp";
 import Image11 from "../../assets/Gallery/011.webp";
 import Image12 from "../../assets/Gallery/012.webp";
@@ -21,7 +21,6 @@ import Image17 from "../../assets/Gallery/017.webp";
 import Image18 from "../../assets/Gallery/018.webp";
 import Image19 from "../../assets/Gallery/019.webp";
 import Image20 from "../../assets/Gallery/020.webp";
-import Image21 from "../../assets/Gallery/009.webp";
 import "./Style.css";
 
 const ContainerImages = () => {
@@ -34,7 +33,7 @@ const ContainerImages = () => {
     Image6,
     Image7,
     Image8,
-    // Image9,
+    Image9,
     Image10,
     Image11,
     Image12,
@@ -46,7 +45,6 @@ const ContainerImages = () => {
     Image18,
     Image19,
     Image20,
-    Image21,
   ];
 
   const [showAllImages, setShowAllImages] = useState(false);

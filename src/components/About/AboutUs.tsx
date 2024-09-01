@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Frame1 from "../../assets/014-2.svg";
+import Frame1 from "../../assets/014-21.webp";
 import Frame2 from "../../assets/003-4.webp";
 import Frame3 from "../../assets/012-01.webp";
 import "./Style.css";
