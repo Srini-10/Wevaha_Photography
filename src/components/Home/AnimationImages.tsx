@@ -83,7 +83,7 @@ const AnimationImages: React.FC = () => {
                   src={Logo}
                   alt=""
                 />
-                <h1 className="font-sans font-semibold lg:text-[25px] text-[3.6vw] leading-[10px]  sm:text-[2.4vw] justify-between sm:leading-4 lg:leading-[18px] opacity-100 text-yellow-800">
+                <h1 className="Font-Animation font-semibold lg:text-[25px] text-[3.6vw] leading-[10px]  sm:text-[2.4vw] justify-between sm:leading-4 lg:leading-[18px] opacity-100 text-yellow-800">
                   <p className="mr-[17vw] sm:mr-[14vw]">
                     Photography is a Story...
                   </p>{" "}
