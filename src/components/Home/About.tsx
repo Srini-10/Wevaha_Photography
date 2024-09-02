@@ -5,66 +5,6 @@ import Frame3 from "../../assets/002-4.webp";
 import "./Style.css";
 
 const About = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.pageYOffset;
-      const parallaxElement = document.getElementById("parallax");
-
-      if (parallaxElement) {
-        parallaxElement.style.transform = `translateY(${
-          scrollPosition * 0.3
-        }px)`;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 767);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const [isParallaxActive, setIsParallaxActive] = useState(false);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsParallaxActive(window.innerWidth >= 768);
-    };
-
-    const handleScroll = () => {
-      const scrollPosition = window.pageYOffset;
-      const parallaxElement = document.getElementById("parallax");
-
-      if (parallaxElement && isParallaxActive) {
-        parallaxElement.style.transform = `translateY(${
-          scrollPosition * 0.3
-        }px)`;
-      }
-    };
-
-    checkScreenSize(); // Initial check
-    window.addEventListener("resize", checkScreenSize);
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("resize", checkScreenSize);
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [isParallaxActive]);
   return (
     <>
       <div
@@ -80,10 +20,7 @@ const About = () => {
           <h1 className="Font-About z-50 mt-[-10px] sm:mt-[-40px] relative text-[15vw] pl-4 pt-5 sm:p-0 sm:text-[80px] lg:text-[150px] xl:text-[200px] font-bold">
             ABOUT US
           </h1>
-          <div
-            id={isParallaxActive ? "parallax" : undefined}
-            className="max-w-[90vw] mx-auto gap-3 sm:mx-0 h-[25vh] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[420px] mt-[-10px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute"
-          >
+          <div className="max-w-[90vw] mx-auto gap-3 sm:mx-0 h-[25vh] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[420px] mt-[-10px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute">
             <div className="w-full sm:mt-[50px] h-[250px]">
               <img
                 loading="lazy"
