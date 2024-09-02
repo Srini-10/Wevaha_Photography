@@ -32,7 +32,7 @@ const Founder = () => {
               </p>
               ,
             </h1>
-            <u className="text-[10px] text-blue-400 sm:text-[10px] lg:text-[13px] xl:text-[16px]">
+            <u className="text-[10px] text-blue-400 sm:text-[10px] text-start lg:text-[13px] xl:text-[16px]">
               B.Sc.Film & Television production, M.A Journalism,
             </u>
             <p className="text-[8px] sm:text-[8.5px] lg:text-[11px] xl:text-[13px] text-neutral-600 text-justify pb-[7px] mt-1.5">
