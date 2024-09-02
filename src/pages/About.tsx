@@ -3,6 +3,7 @@ import AboutUs from "../components/About/AboutUs.tsx";
 import Collage from "../components/About/Collage.tsx";
 import NavbarWhite from "../NavbarWhite.tsx";
 import ArrowUp from "../assets/Icons/Up_Arrow.svg";
+import Founder from "../components/About/Founder.tsx";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -53,7 +54,9 @@ const About = () => {
       <div className="">
         <NavbarWhite />
         <AboutUs />
-        <Collage /> {/* Scroll to Top Button */}
+        <Collage />
+        <Founder />
+        {/* Scroll to Top Button */}
         {isVisible && (
           <div className="fixed bottom-4 right-0 z-[1000] flex items-center">
             <button

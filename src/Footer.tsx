@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./assets/Wevaha_Logo.png";
-import Facebook from "./assets/Icons/Facebook_Icon.svg";
+import Facebook from "./assets/Icons/Facebook.svg";
 import Instagram from "./assets/Icons/Instagram.svg";
 import Youtube from "./assets/Icons/Youtube.svg";
 import Pinterest from "./assets/Icons/Pinterest.svg";

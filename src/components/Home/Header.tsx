@@ -64,13 +64,13 @@ const Header = () => {
       <div className="w-full h-[35vh] lg:h-screen sm:h-[60vh] overflow-hidden scroll-smooth transition-all duration-1000 ease-in-out">
         <div
           id="parallax"
-          className="h-[30vh] sm:h-[7vh] absolute z-10 text-[8vw] top-[20vh] sm:top-[35vh] lg:top-[70vh] opacity-30 font-semibold sm:text-[40px] lg:text-[63px] lg:ml-[10vw] text-start text-[#cfcfcf]"
+          className="h-[30vh] sm:h-[7vh] absolute z-10 text-[8vw] top-[20vh] sm:top-[35vh] lg:top-[70vh] opacity-0 sm:opacity-30 font-semibold sm:text-[40px] lg:text-[63px] lg:ml-[10vw] text-start text-[#cfcfcf]"
         >
           Wevaha Photography
         </div>
         <div className="w-full h-[35vh] sm:h-screen transition-all duration-1000 ease-in-out">
           <div
-            className={`absolute z-10 top-0 left-0 right-0 h-[35vh] opacity-90 bg-gradient-to-b ${gradientBlack} transition-all duration-1000 ease-in-out`}
+            className={`absolute z-10 top-0 left-0 right-0 h-[5vh] sm:h-[35vh] opacity-90 bg-gradient-to-b ${gradientBlack} transition-all duration-1000 ease-in-out`}
           ></div>
           <Slider {...settings}>
             <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
@@ -81,7 +81,7 @@ const Header = () => {
                 alt="Background 1"
               />
               <div
-                className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] min-h-[10vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
+                className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] h-[5vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
               ></div>
             </div>
             <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
@@ -92,7 +92,7 @@ const Header = () => {
                 alt="Background 2"
               />
               <div
-                className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] min-h-[10vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
+                className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] h-[5vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
               ></div>
             </div>
             <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
@@ -103,7 +103,7 @@ const Header = () => {
                 alt="Background 3"
               />
               <div
-                className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] min-h-[10vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
+                className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] h-[5vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
               ></div>
             </div>
             <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
@@ -114,7 +114,7 @@ const Header = () => {
                 alt="Background 3"
               />
               <div
-                className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] min-h-[10vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
+                className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] h-[5vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
               ></div>
             </div>
             <div className="w-full h-[35vh] sm:h-screen relative overflow-hidden">
@@ -125,7 +125,7 @@ const Header = () => {
                 alt="Background 3"
               />
               <div
-                className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] min-h-[10vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
+                className={`absolute bottom-0 left-0 right-0 sm:mb-[-12px] h-[5vh] from-black to-transparent opacity-90 sm:h-[60vh] lg:h-[40vh] sm:opacity-100 lg:opacity-70 bg-gradient-to-t lg:${gradientBlack} sm:${gradientWhite} transition-all duration-1000 ease-in-out`}
               ></div>
             </div>
           </Slider>
