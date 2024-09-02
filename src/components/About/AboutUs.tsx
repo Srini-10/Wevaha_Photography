@@ -42,7 +42,7 @@ const About = () => {
           </h1>
           <div
             id={isParallaxActive ? "parallax" : undefined}
-            className="max-w-[90vw] mx-auto gap-3 sm:mx-0 h-[29vh] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[420px] mt-[-10px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute"
+            className="max-w-[90vw] mx-auto gap-3 sm:mx-0 h-[220px] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[420px] mt-[-10px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute"
           >
             <div className="w-full sm:mt-[50px] h-[250px]">
               <img
