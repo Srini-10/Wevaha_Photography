@@ -46,7 +46,6 @@ import Image41 from "../../assets/Gallery/1025.webp";
 import Image42 from "../../assets/Gallery/1006.webp";
 import Image44 from "../../assets/Gallery/1002.webp";
 import Image45 from "../../assets/Gallery/1001.webp";
-import Image46 from "../../assets/Gallery/1000.webp";
 import "./Style.css";
 
 const ContainerImages = () => {
@@ -74,7 +73,6 @@ const ContainerImages = () => {
     Image43,
     Image44,
     Image45,
-    Image46,
 
     Image2,
     Image3,
