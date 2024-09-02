@@ -26,7 +26,7 @@ import Image21 from "../../assets/Gallery/021.webp";
 import Image23 from "../../assets/Gallery/1020.webp";
 import Image24 from "../../assets/Gallery/1026.webp";
 import Image25 from "../../assets/Gallery/1023.webp";
-import Image26 from "../../assets/Gallery/1022.webp";
+import Image26 from "../../assets/Gallery/1000.webp";
 import Image27 from "../../assets/Gallery/1007.webp";
 import Image28 from "../../assets/Gallery/1004.webp";
 import Image29 from "../../assets/Gallery/1013.webp";
