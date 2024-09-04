@@ -42,6 +42,7 @@ const ContactUs = () => {
       to_name: formData.to_name,
       from_name: formData.name,
       phone: formData.phone,
+      name: formData.name,
       email: formData.email,
       message: formData.message,
       city: formData.city,
