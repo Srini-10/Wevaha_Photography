@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Founder = () => {
   return (
     <>
-      <div className="w-full bg-neutral-50 mt-[-78vh] sm:shadow-inner sm:mt-0 scroll-smooth">
+      <div className="w-full bg-neutral-50 mt-[-780px] sm:shadow-inner sm:mt-0 scroll-smooth">
         <div className="h-[420px] mx-auto w-[90vw] shadow-lg sm:shadow-none sm:w-[85vw] sm:flex gap-[2vw] justify-between items-end mt-[80vh]">
           <div className=" sm:w-[35vw] lg:w-[25vw] bg-blue-100 shadow-md flex flex-col justify-between items-center rounded-t-xl max-h-[370px]">
             <div className="overflow-hidden rounded-t-xl">

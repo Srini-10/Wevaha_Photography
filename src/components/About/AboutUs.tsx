@@ -35,16 +35,16 @@ const About = () => {
 
   return (
     <>
-      <div className="w-full h-[580px] lg:mt-[10vh] sm:h-[40vh] shadow-md lg:h-[90vh] sm:mt-[25vh] z-[99] absolute overflow-hidden mt-[15vh] lg:min-h-[700px] rounded-b-2xl sm:rounded-none bg-white sm:flex justify-between sm:px-[10vw] lg:px-[7vw] sm:py-[3vh] lg:py-[10vh] scroll-smooth transition-all duration-1000 ease-in-out">
+      <div className="w-full h-[580px] lg:mt-[60px] sm:h-[450px] shadow-md lg:h-[550px] sm:mt-[150px] z-[99] absolute overflow-hidden mt-[15vh] lg:min-h-[700px] rounded-b-2xl sm:rounded-none bg-white sm:flex justify-between sm:px-[10vw] lg:px-[7vw] sm:py-[3vh] lg:py-[10vh] scroll-smooth transition-all duration-1000 ease-in-out">
         <div className="flex sm:flex-row flex-col justify-between sm:block">
           <h1 className="Font-About z-50 mt-[-30px] sm:mt-[-40px] relative text-[15vw] pl-4 pt-5 sm:p-0 sm:text-[80px] lg:text-[150px] xl:text-[200px] font-bold">
             ABOUT US
           </h1>
           <div
             id={isParallaxActive ? "parallax" : undefined}
-            className="max-w-[90vw] mx-auto gap-3 sm:mx-0 h-[220px] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[420px] mt-[-10px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute"
+            className="max-w-[90vw] mx-auto gap-3 sm:gap-1.5 lg:gap-2 sm:mx-0 h-[220px] flex sm:w-[180px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[250px] lg:h-[420px] mt-[-10px] sm:mt-[-50px] lg:mt-[-140px] xl:ml-[300px] sm:ml-[80px] lg:ml-[180px] sm:absolute"
           >
-            <div className="w-full sm:mt-[50px] h-[250px]">
+            <div className="w-full sm:mt-[50px] lg:mt-[70px] h-[250px] lg:h-[250px] sm:h-[170px]">
               <img
                 loading="lazy"
                 className="mr-[30px] object-cover h-full w-full"
@@ -52,7 +52,7 @@ const About = () => {
                 alt=""
               />
             </div>
-            <div className="w-full sm:mt-[90px] h-[250px]">
+            <div className="w-full sm:mt-[80px] lg:mt-[105px] h-[250px] lg:h-[250px] sm:h-[170px]">
               <img
                 loading="lazy"
                 className="object-cover h-full w-full"
@@ -60,7 +60,7 @@ const About = () => {
                 alt=""
               />
             </div>
-            <div className="w-full sm:mt-[170px] h-[250px]">
+            <div className="w-full sm:mt-[110px] lg:mt-[140px] h-[250px] lg:h-[250px] sm:h-[170px]">
               <img
                 loading="lazy"
                 className="object-cover h-full w-full"
@@ -71,7 +71,7 @@ const About = () => {
           </div>
         </div>
         <div className="xl:w-[40vw] max-w-[100vw] p-4 sm:p-0 h-[48vh] sm:h-[29vh] lg:h-[45vh] lg:w-[38vw] sm:w-[40vw] z-50 mt-[30px] sm:mt-[8vh] lg:mt-[30vh] justify-between flex flex-col">
-          <p className="lg:text-[16px] text-[12px] text-gray-700 sm:text-black text-justify sm:text-[12px]">
+          <p className="lg:text-[14px] text-[12px] sm:text-[10px] text-gray-700 sm:text-black text-justify">
             We are incredibly blessed to have a team of talented photographers.
             We choose our clients as carefully as they choose us. We approach
             every client with intent to create Fresh, offbeat ideas while

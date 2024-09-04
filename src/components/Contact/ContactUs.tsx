@@ -108,7 +108,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <div className="w-full sm:min-h-[700px] bg-black min-h-[700px] h-[700px] overflow-hidden sm:flex justify-between px-[7%] pt-[15vh] sm:py-[6%] scroll-smooth transition-all duration-1000 ease-in-out">
+      <div className="w-full sm:min-h-screen bg-black min-h-[700px] h-[700px] overflow-hidden sm:flex justify-between px-[7%] pt-[15vh] sm:py-[6%] scroll-smooth transition-all duration-1000 ease-in-out">
         <div className="">
           <p className="font-semibold absolute left-14 bottom-10 hidden sm:block sm:text-[18px] lg:text-[25px] text-white opacity-30 text-start">
             Wevaha Photography
@@ -116,8 +116,8 @@ const ContactUs = () => {
           <h1 className="Font-About text-white z-50 mt-[0vh] sm:mt-[6vh] relative text-[12vw] sm:text-[91px] lg:text-[130px] xl:text-[170px] font-bold">
             CONTACT US
           </h1>
-          <div className="max-w-[90vw] mx-auto gap-3 sm:mx-0 h-[180px] flex sm:w-[130px] shadow-inner sm:shadow-none sm:h-[170px] lg:min-w-[300px] lg:h-[420px] mt-[-10px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[120px] lg:ml-[230px] sm:absolute">
-            <div className="w-full border-2 border-neutral-800 sm:mt-[50px] h-[250px]">
+          <div className="max-w-[90vw] mx-auto gap-3 sm:mx-0 h-[180px] flex sm:w-[230px] shadow-inner sm:shadow-none sm:h-[150px] lg:min-w-[270px] lg:h-[350px] mt-[-10px] sm:mt-[-50px] lg:mt-[-100px] xl:ml-[300px] sm:ml-[80px] lg:ml-[180px] sm:absolute">
+            <div className="w-full border-2 border-neutral-800 sm:mt-[50px] lg:mt-[70px] h-[250px]">
               <img
                 loading="lazy"
                 className="mr-[30px] object-cover h-full w-full"
@@ -125,7 +125,7 @@ const ContactUs = () => {
                 alt=""
               />
             </div>
-            <div className="w-full border-2 border-neutral-800 sm:mt-[90px] h-[250px]">
+            <div className="w-full border-2 border-neutral-800 sm:mt-[80px] lg:mt-[105px] h-[250px]">
               <img
                 loading="lazy"
                 className="object-cover h-full w-full"
@@ -133,7 +133,7 @@ const ContactUs = () => {
                 alt=""
               />
             </div>
-            <div className="w-full border-2 border-neutral-800 sm:mt-[170px] h-[250px]">
+            <div className="w-full border-2 border-neutral-800 sm:mt-[110px] lg:mt-[140px] h-[250px]">
               <img
                 loading="lazy"
                 className="object-cover h-full w-full"
@@ -371,7 +371,7 @@ const ContactUs = () => {
                   <div className="Responsive-GT-Button flex mb-16 gap-4 sm:mt-3 lg:mt-4 xl:mt-5 justify-end mr-5 items-center">
                     {success && (
                       <p
-                        className={`text-green-500 text-[12px] w-[30vw] ${
+                        className={`text-green-500 text-[12px] w-[30vw] sm:w-auto sm:text-[13px] lg:text-[14px] xl:text-[15px] ${
                           fadeOut ? "fade-out" : ""
                         }`}
                       >
@@ -380,7 +380,7 @@ const ContactUs = () => {
                     )}
                     {error && (
                       <p
-                        className={`text-red-500 text-[12px] w-[30vw] ${
+                        className={`text-red-500 text-[12px] w-[30vw] sm:w-auto sm:text-[13px] lg:text-[14px] xl:text-[15px] ${
                           fadeOut ? "fade-out" : ""
                         }`}
                       >
@@ -414,15 +414,15 @@ const ContactUs = () => {
         )}
         <div className="items-end flex text-neutral-500 mt-[80px] lg:w-[400px] xl:w-[500px] sm:w-[40vw]">
           <div className="">
-            <p className="text-justify items-end justify-end">
+            <p className="text-justify items-end justify-end lg:text-[14px] sm:text-[13px] xl:text-[15px]">
               Hello! Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Porro alias totam impedit culpa sapiente laborum provident
               numquam, non illum dolorum quo in eveniet animi quisquam,
               necessitatibus repellendus molestias neque minus.
             </p>
-            <div className="items-end absolute sm:relative w-[86vw] justify-end mt-[20px] sm:mt-[10vh] flex">
+            <div className="items-end absolute sm:relative w-[86vw] sm:w-auto justify-end mt-[20px] sm:mt-[10vh] flex">
               <button
-                className="shadow-inner bg-neutral-900 shadow-neutral-700 py-3 px-8 text-[12px] sm:text-[20px] font-semibold rounded-lg text-white"
+                className="shadow-inner bg-neutral-900 shadow-neutral-700 py-3 px-8 text-[12px] lg:text-[16px] sm:text-[14px] xl:text-[20px] font-semibold rounded-lg text-white"
                 onClick={() => setIsFormOpen(!isFormOpen)}
               >
                 Open Form
