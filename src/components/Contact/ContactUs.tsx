@@ -371,7 +371,7 @@ const ContactUs = () => {
                   <div className="Responsive-GT-Button flex mb-16 gap-4 sm:mt-3 lg:mt-4 xl:mt-5 justify-end mr-5 items-center">
                     {success && (
                       <p
-                        className={`text-green-500 ${
+                        className={`text-green-500 text-[12px] w-[30vw] ${
                           fadeOut ? "fade-out" : ""
                         }`}
                       >
@@ -380,7 +380,9 @@ const ContactUs = () => {
                     )}
                     {error && (
                       <p
-                        className={`text-red-500 ${fadeOut ? "fade-out" : ""}`}
+                        className={`text-red-500 text-[12px] w-[30vw] ${
+                          fadeOut ? "fade-out" : ""
+                        }`}
                       >
                         {error}
                       </p>
