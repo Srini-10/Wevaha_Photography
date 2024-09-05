@@ -50,14 +50,7 @@ const ContactUs = () => {
               numquam, non illum dolorum quo in eveniet animi quisquam,
               necessitatibus repellendus molestias neque minus.
             </p>
-            <div className="items-end absolute sm:relative w-[86vw] sm:w-auto justify-end mt-[20px] sm:mt-[10vh] flex">
-              <button
-                className="shadow-inner bg-neutral-900 shadow-neutral-700 py-3 px-8 text-[12px] lg:text-[16px] sm:text-[14px] xl:text-[20px] font-semibold rounded-lg text-white"
-                onClick={() => setIsFormOpen(!isFormOpen)}
-              >
-                Open Form
-              </button>
-            </div>
+            <div className="items-end absolute sm:relative w-[86vw] sm:w-auto justify-end mt-[20px] sm:mt-[10vh] flex"></div>
           </div>
         </div>
       </div>
