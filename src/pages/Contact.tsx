@@ -3,6 +3,7 @@ import ContactUs from "../components/Contact/ContactUs.tsx";
 import LocationMap from "../components/Contact/LocationMap.tsx";
 import NavbarFixed from "../NavbarFixed.tsx";
 import ArrowUp from "../assets/Icons/Up_Arrow.svg";
+import Form from "../components/Contact/Form.tsx";
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -53,6 +54,7 @@ const Contact = () => {
       <div className="">
         <NavbarFixed />
         <ContactUs />
+        <Form />
         <LocationMap />
         {/* Scroll to Top Button */}
         {isVisible && (
