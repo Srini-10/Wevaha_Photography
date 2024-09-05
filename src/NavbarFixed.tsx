@@ -48,12 +48,12 @@ const NavbarFixed = () => {
     <>
       <div className="Responsive-Navbar navbar-container navbar-large-screen h-[7vh] w-full absolute z-50 mt-7 flex items-center justify-between text-black scroll-smooth transition-all duration-1000 ease-in-out">
         <div
-          className="hover:pl-8 max-h-[55px] min-h-[55px] max-w-[90px] cursor-pointer p-1.5 items-center bg-white px-6 rounded-r-full transition-all duration-1000 ease-in-out"
+          className="hover:pl-8 hover:w-[100px] max-h-[55px] min-h-[55px] w-[90px] cursor-pointer p-1.5 items-center bg-white px-6 rounded-r-full transition-all duration-1000 ease-in-out"
           onClick={openModal}
         >
           <img
             loading="lazy"
-            className="h-full w-full cursor-pointer"
+            className="h-[45px] w-[45px] cursor-pointer"
             src={Logo}
             alt="Logo"
           />

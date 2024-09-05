@@ -100,9 +100,12 @@ const Form = () => {
   };
   return (
     <>
-      <div className="w-full h-[1050px] bg-black flex items-center justify-center">
-        <div className="Form w-[86vw] h-[900px]">
-          <div className="w-full h-full bg-neutral-900 overflow-hidden rounded-2xl">
+      <div className="w-full h-[1000px] sm:h-[1200px] bg-black flex items-center justify-center">
+        <div className="Form w-[86vw] mt-[-250px] h-[900px]">
+          <h1 className="Font-About left-0 text-white z-50 relative text-[90px] sm:text-[91px] lg:text-[130px] xl:text-[170px] font-bold">
+            Book Now
+          </h1>
+          <div className="w-full h-full mt-[-10px] sm:mt-[-20px] lg:mt-[-40px] bg-neutral-900 overflow-hidden rounded-2xl">
             <div className="flex items-center justify-between">
               <img
                 onClick={() => setIsFormOpen(!isFormOpen)}
@@ -112,7 +115,7 @@ const Form = () => {
                 className="p-4 scale-[0.8] cursor-pointer lg:scale-[1]"
               />
               <p className="text-white font-medium text-[11px] lg:text-[13px]">
-                Book Now
+                Connect with Us
               </p>
               <img
                 loading="lazy"
