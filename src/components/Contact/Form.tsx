@@ -112,7 +112,7 @@ const Form = () => {
                 className="p-4 scale-[0.8] cursor-pointer lg:scale-[1]"
               />
               <p className="text-white font-medium text-[11px] lg:text-[13px]">
-                New message
+                Book Now
               </p>
               <img
                 loading="lazy"
