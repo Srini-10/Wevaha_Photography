@@ -35,7 +35,7 @@ const About = () => {
 
   return (
     <>
-      <div className="w-full h-[580px] lg:mt-[60px] sm:h-[450px] shadow-md lg:h-[550px] sm:mt-[150px] z-[99] absolute overflow-hidden mt-[15vh] lg:min-h-[700px] rounded-b-2xl sm:rounded-none bg-white sm:flex justify-between sm:px-[10vw] lg:px-[7vw] sm:py-[3vh] lg:py-[10vh] scroll-smooth transition-all duration-1000 ease-in-out">
+      <div className="w-full h-[580px] lg:mt-[20px] sm:h-[450px] shadow-md lg:h-[550px] sm:mt-[100px] z-[99] sm:absolute overflow-hidden mt-[15vh] lg:min-h-[700px] rounded-b-2xl sm:rounded-none bg-white sm:flex justify-between sm:px-[10vw] lg:px-[7vw] sm:py-[3vh] lg:py-[10vh] scroll-smooth transition-all duration-1000 ease-in-out">
         <div className="flex sm:flex-row flex-col justify-between sm:block">
           <h1 className="Font-About z-50 mt-[-30px] sm:mt-[-40px] relative text-[15vw] pl-4 pt-5 sm:p-0 sm:text-[80px] lg:text-[150px] xl:text-[200px] font-bold">
             ABOUT US

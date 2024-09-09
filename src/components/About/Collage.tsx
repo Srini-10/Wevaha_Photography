@@ -10,7 +10,7 @@ const Collage = () => {
   return (
     <>
       <div
-        className="pt-[750px] pb-[100px] sm:pb-0 sm:pt-[630px] sm:h-[630px] lg:pt-[850px] lg:h-[900px] scroll-smooth transition-all bg-white duration-1000 ease-in-out"
+        className="mt-[80px] pb-[0px] sm:pb-0 sm:pt-[630px] sm:h-[630px] lg:pt-[850px] lg:h-[900px] scroll-smooth transition-all bg-white duration-1000 ease-in-out"
         style={{ boxShadow: "0px 0px 100px 150px rgba(255, 255, 255, 10)" }}
       >
         <div className="sm:w-[65vw] lg:w-[65vw] w-[85vw] mx-auto text-center">
