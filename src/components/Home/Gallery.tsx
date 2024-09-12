@@ -39,7 +39,6 @@ import Image33 from "../../assets/Gallery/1014.webp";
 import Image34 from "../../assets/Gallery/1015.webp";
 import Image35 from "../../assets/Gallery/1003.webp";
 import Image43 from "../../assets/Gallery/1016.webp";
-import Image36 from "../../assets/Gallery/1017.webp";
 import Image37 from "../../assets/Gallery/1018.webp";
 import Image38 from "../../assets/Gallery/1019.webp";
 import Image39 from "../../assets/Gallery/1021.webp";
@@ -73,7 +72,6 @@ const Gallery = () => {
         Image33,
         Image34,
         Image35,
-        Image36,
         Image37,
         Image38,
         Image39,

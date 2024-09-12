@@ -25,7 +25,7 @@ const Founder = () => {
             </h1>
             <hr />
             <br />
-            <h1 className="flex items-end lg:mb-[-3px] sm:mb-[-6px] mb-[-5px] mt-[-24px] font-normal sm:text-[12px] lg:text-[14px] xl:text-[16px] text-neutral-400">
+            <h1 className="flex items-end lg:mb-[-3px] sm:mb-[-6px] mb-[-5px] mt-[-24px] font-normal text-start sm:text-[12px] lg:text-[14px] xl:text-[16px] text-neutral-400">
               This is{" "}
               <p className="text-[25px] mb-[-3.5px] sm:text-[30px] lg:text-[35px] xl:text-[40px] font-medium ml-1 sm:-mb-[8.5px] text-black">
                 Harish
