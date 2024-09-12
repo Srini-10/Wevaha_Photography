@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Background from "../../assets/1.webp";
+import "./Style.css";
 
 const GalleryView = () => {
   const [gradientColor, setGradientColor] = useState(

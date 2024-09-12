@@ -50,7 +50,7 @@ function App() {
 
   return (
     <>
-      <div className="unresponsive-view hidden w-full h-screen py-[20%] justify-center items-center bg-black">
+      <div className="unresponsive-view hidden select-none w-full h-screen py-[20%] justify-center items-center bg-black">
         <div className="text-center min-h-[20%] max-h-[20%]">
           <h1 className="text-[150px] font-bold text-white">Oops!</h1>
           <p className="text-[25px] text-neutral-600">

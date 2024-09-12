@@ -7,3 +7,7 @@
 .Font-About {
   font-family: "Bebas Neue", sans-serif;
 }
+
+img {
+  pointer-events: none;
+}

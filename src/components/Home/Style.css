@@ -55,3 +55,7 @@
     transform: translateY(-10px);
   }
 }
+
+img {
+  pointer-events: none;
+}

@@ -6,6 +6,7 @@ import BG2 from "../../assets/005.webp";
 import BG3 from "../../assets/3.webp";
 import BG4 from "../../assets/2.webp";
 import BG5 from "../../assets/4.webp";
+import "./Style.css";
 
 const Header = () => {
   const scrollToNextComponent = () => {

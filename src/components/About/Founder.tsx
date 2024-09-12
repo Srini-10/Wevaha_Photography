@@ -6,6 +6,7 @@ import Youtube from "../../assets/Icons/YoutubeDark.svg";
 import Pinterest from "../../assets/Icons/PinterestDark.svg";
 import Threads from "../../assets/Icons/Threads-White.svg";
 import { Link } from "react-router-dom";
+import "./Style.css";
 
 const Founder = () => {
   return (

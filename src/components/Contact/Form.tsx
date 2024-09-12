@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Buttons from "../../assets/Icons/Button_Controls.svg";
 import Vector from "../../assets/Icons/Vector.svg";
+import "./Style.css";
 
 const Form = () => {
   const [formData, setFormData] = useState({
