@@ -4,6 +4,7 @@ import Facebook from "../../assets/Icons/FacebookDark.svg";
 import Instagram from "../../assets/Icons/InstagramDark.svg";
 import Youtube from "../../assets/Icons/YoutubeDark.svg";
 import Pinterest from "../../assets/Icons/PinterestDark.svg";
+import Threads from "../../assets/Icons/Threads-White.svg";
 import { Link } from "react-router-dom";
 
 const Founder = () => {
@@ -66,32 +67,55 @@ const Founder = () => {
                 </p>
               </div>
               <div className="flex mt-2 sm:mt-0 sm:justify-end gap-1 sm:gap-1 lg:gap-1.5 xl:gap-2">
-                <Link to={""}>
+                <Link
+                  to={
+                    "https://www.facebook.com/share/6sHCKECLXjQSZFCV/?mibextid=qi2Omg"
+                  }
+                >
                   <img
                     src={Facebook}
                     alt=""
                     className="w-[20px] h-[20px] sm:w-[15px] sm:h-[15px] lg:w-[20px] lg:h-[20px] xl:w-[25px] xl:h-[25px] hover:scale-[1.1] transition-all duration-500 cursor-pointer ease-in-out"
                   />
                 </Link>
-                <Link to={""}>
+                <Link
+                  to={
+                    "https://www.instagram.com/wevahaphotography?igsh=MTdzZDFuaWNzZXh4Mg=="
+                  }
+                >
                   <img
                     src={Instagram}
                     alt=""
                     className="w-[20px] h-[20px] sm:w-[15px] sm:h-[15px] lg:w-[20px] lg:h-[20px] xl:w-[25px] xl:h-[25px] hover:scale-[1.1] transition-all duration-500 cursor-pointer ease-in-out"
                   />
                 </Link>
-                <Link to={""}>
+                <Link
+                  to={
+                    "https://youtube.com/@wevahaphotography?si=mYl3u-3hy2io3_CC"
+                  }
+                >
                   <img
                     src={Youtube}
                     alt=""
                     className="w-[20px] h-[20px] sm:w-[15px] sm:h-[15px] lg:w-[20px] lg:h-[20px] xl:w-[25px] xl:h-[25px] hover:scale-[1.1] transition-all duration-500 cursor-pointer ease-in-out"
                   />
                 </Link>
-                <Link to={""}>
+                <Link to={"https://pin.it/3PPV3nOlS"}>
                   <img
                     src={Pinterest}
                     alt=""
                     className="w-[20px] h-[20px] sm:w-[15px] sm:h-[15px] lg:w-[20px] lg:h-[20px] xl:w-[25px] xl:h-[25px] hover:scale-[1.1] transition-all duration-500 cursor-pointer ease-in-out"
+                  />
+                </Link>
+                <Link
+                  to={
+                    "https://www.threads.net/@wevahaphotography?xmt=AQGzJq6tWvLB6Cnk7ZLBctQOYBFBv4fP_BdfeK_7iKQwLmg"
+                  }
+                >
+                  <img
+                    src={Threads}
+                    alt=""
+                    className="w-[20px] h-[20px] bg-black rounded-full p-1 sm:w-[15px] sm:h-[15px] lg:w-[20px] lg:h-[20px] xl:w-[25px] xl:h-[25px] hover:scale-[1.1] transition-all duration-500 cursor-pointer ease-in-out"
                   />
                 </Link>
               </div>

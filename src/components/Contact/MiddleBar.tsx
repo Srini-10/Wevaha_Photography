@@ -7,7 +7,7 @@ const MiddleBar = () => {
         <p>Available on</p>
         <p className="text-[13px] sm:text-[18px] flex gap-2 font-medium">
           <p className="text-[#9c9c9c]">Monday - Sunday</p>
-          <p>:</p> <p>6 AM to 10PM</p>
+          <p>:</p> <p>9 AM to 7PM</p>
         </p>
       </div>
     </>

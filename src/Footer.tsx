@@ -4,6 +4,7 @@ import Facebook from "./assets/Icons/Facebook.svg";
 import Instagram from "./assets/Icons/Instagram.svg";
 import Youtube from "./assets/Icons/Youtube.svg";
 import Pinterest from "./assets/Icons/Pinterest.svg";
+import Threads from "./assets/Icons/Threads-White.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -24,7 +25,12 @@ const Footer = () => {
       <div className="w-[20vw] h-[0.5px] rounded-full bg-yellow-700"></div>
 
       <div className="flex justify-between pb-12 pt-4 items-center sm:w-[20vw] sm:max-w-[150px] w-[40vw] max-w-[150px] lg:w-[13vw] lg:max-w-[180px]">
-        <Link to={"/"} className="cursor-pointer">
+        <Link
+          to={
+            "https://www.facebook.com/share/6sHCKECLXjQSZFCV/?mibextid=qi2Omg"
+          }
+          className="cursor-pointer"
+        >
           <img
             loading="lazy"
             className="lg:w-7 lg:h-7 sm:w-6 sm:h-6 w-6 h-6 rounded-full hover:scale-[1.05] transition-all duration-300 ease-in-out"
@@ -32,7 +38,12 @@ const Footer = () => {
             alt="Facebook"
           />
         </Link>
-        <Link to={"/"} className="cursor-pointer">
+        <Link
+          to={
+            "https://www.instagram.com/wevahaphotography?igsh=MTdzZDFuaWNzZXh4Mg=="
+          }
+          className="cursor-pointer"
+        >
           <img
             loading="lazy"
             className="lg:w-7 lg:h-7 sm:w-6 sm:h-6 w-6 h-6 rounded-full hover:scale-[1.05] transition-all duration-300 ease-in-out"
@@ -40,7 +51,10 @@ const Footer = () => {
             alt="Instagram"
           />
         </Link>
-        <Link to={"/"} className="cursor-pointer">
+        <Link
+          to={"https://youtube.com/@wevahaphotography?si=mYl3u-3hy2io3_CC"}
+          className="cursor-pointer"
+        >
           <img
             loading="lazy"
             className="lg:w-7 lg:h-7 sm:w-6 sm:h-6 w-6 h-6 rounded-full hover:scale-[1.05] transition-all duration-300 ease-in-out"
@@ -48,11 +62,24 @@ const Footer = () => {
             alt="YouTube"
           />
         </Link>
-        <Link to={"/"} className="cursor-pointer">
+        <Link to={"https://pin.it/3PPV3nOlS"} className="cursor-pointer">
           <img
             loading="lazy"
             className="lg:w-7 lg:h-7 sm:w-6 sm:h-6 w-6 h-6 rounded-full hover:scale-[1.05] transition-all duration-300 ease-in-out"
             src={Pinterest}
+            alt="Pinterest"
+          />
+        </Link>
+        <Link
+          to={
+            "https://www.threads.net/@wevahaphotography?xmt=AQGzJq6tWvLB6Cnk7ZLBctQOYBFBv4fP_BdfeK_7iKQwLmg"
+          }
+          className="cursor-pointer"
+        >
+          <img
+            loading="lazy"
+            className="lg:w-7 lg:h-7 sm:w-6 sm:h-6 w-6 h-6 p-1 rounded-full bg-yellow-800 hover:scale-[1.05] transition-all duration-300 ease-in-out"
+            src={Threads}
             alt="Pinterest"
           />
         </Link>

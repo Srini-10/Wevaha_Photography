@@ -2,9 +2,16 @@ import React from "react";
 import Frame1 from "../../assets/Gallery/1026.webp";
 import Frame2 from "../../assets/012-9.webp";
 import Frame3 from "../../assets/005-11.webp";
+import Down_Arrow from "../../assets/Icons/Arrow_More_Icon.svg";
 import "./Style.css";
 
 const ContactUs = () => {
+  const scrollToNextComponent = () => {
+    const nextComponent = document.getElementById("nextComponent2");
+    if (nextComponent) {
+      nextComponent.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <div className="w-full sm:min-h-screen bg-black min-h-[700px] h-[700px] overflow-hidden sm:flex justify-between px-[7%] pt-[15vh] sm:py-[6%] scroll-smooth transition-all duration-1000 ease-in-out">
@@ -45,13 +52,28 @@ const ContactUs = () => {
         <div className="items-end flex text-neutral-500 mt-[80px] lg:w-[400px] xl:w-[500px] sm:w-[40vw]">
           <div className="">
             <p className="text-justify items-end justify-end lg:text-[14px] sm:text-[13px] xl:text-[15px]">
-              Hello! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Porro alias totam impedit culpa sapiente laborum provident
-              numquam, non illum dolorum quo in eveniet animi quisquam,
-              necessitatibus repellendus molestias neque minus.
+              We’d love to capture your special moments and turn them into
+              timeless memories. Whether it’s a wedding, a family portrait, or a
+              personal photoshoot, we’re here to make your vision come to life.
+              Reach out to us with your ideas, questions, or to book a session.
+              Your story deserves to be told through our lens, and we can’t wait
+              to be a part of it. Let’s create something beautiful together!
             </p>
             <div className="items-end absolute sm:relative w-[86vw] sm:w-auto justify-end mt-[20px] sm:mt-[10vh] flex"></div>
           </div>
+        </div>
+      </div>
+      <div
+        className="scroll-arrow bg-yellow-100 absolute z-[99] rounded-full sm:top-[53vh] lg:top-[90vh] mt-[0vh] shadow-md sm:ml-[0px] sm:right-[2.1vw] lg:right-[3.5vw] right-[5vw] w-11 h-11 cursor-pointer"
+        onClick={scrollToNextComponent}
+      >
+        <div className="arrow wave">
+          <img
+            loading="lazy"
+            className="w-6 ml-2.5 rotate-[135deg] mt-2.5"
+            src={Down_Arrow}
+            alt=""
+          />
         </div>
       </div>
     </>

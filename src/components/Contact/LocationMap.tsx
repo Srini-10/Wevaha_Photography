@@ -40,7 +40,7 @@ const LocationMap = () => {
         <div className="w-[90vw] sm:w-[80vw] h-[36vh] sm:h-[43vh] mt-[-8vh] sm:mt-[-15vh] rounded-t-2xl sm:rounded-t-xl rounded-b-sm saturate-0 overflow-hidden absolute">
           <iframe
             title="wevaha map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125042.27043261344!2d78.05589537109506!3d11.653891509092347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1ccf52cba0b%3A0xee9989007068ca47!2sSalem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1724872855770!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d528.1832870649705!2d78.14439868129696!3d11.6782001049507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1726163344244!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
