@@ -14,7 +14,7 @@ const ContactUs = () => {
   };
   return (
     <>
-      <div className="w-full sm:min-h-screen bg-black min-h-[700px] h-[700px] overflow-hidden sm:flex justify-between px-[7%] pt-[15vh] sm:py-[6%] scroll-smooth transition-all duration-1000 ease-in-out">
+      <div className="w-full sm:min-h-screen bg-black min-h-[800px] h-[800px] overflow-hidden sm:flex justify-between px-[7%] pt-[15vh] sm:py-[6%] scroll-smooth transition-all duration-1000 ease-in-out">
         <div className="">
           <p className="font-semibold absolute left-14 bottom-10 hidden sm:block sm:text-[18px] lg:text-[25px] text-white opacity-30 text-start">
             Wevaha Photography
@@ -64,7 +64,7 @@ const ContactUs = () => {
         </div>
       </div>
       <div
-        className="scroll-arrow bg-yellow-100 absolute z-[99] rounded-full sm:top-[53vh] lg:top-[90vh] mt-[0vh] shadow-md sm:ml-[0px] sm:right-[2.1vw] lg:right-[3.5vw] right-[5vw] w-11 h-11 cursor-pointer"
+        className="scroll-arrow bg-yellow-100 absolute z-[99] hidden sm:block rounded-full sm:top-[53vh] lg:top-[90vh] mt-[0vh] shadow-md sm:ml-[0px] sm:right-[2.1vw] lg:right-[3.5vw] right-[5vw] w-11 h-11 cursor-pointer"
         onClick={scrollToNextComponent}
       >
         <div className="arrow wave">

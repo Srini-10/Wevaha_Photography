@@ -105,7 +105,7 @@ const Form = () => {
         className="w-full h-[1000px] sm:h-[1200px] bg-black flex items-center justify-center"
       >
         <div className="Form w-[86vw] mt-[-250px] h-[900px]">
-          <h1 className="Font-About left-0 text-white z-50 relative text-[90px] sm:text-[91px] lg:text-[130px] xl:text-[170px] font-bold">
+          <h1 className="Font-About left-0 text-white z-50 relative text-[85px] sm:text-[91px] lg:text-[130px] xl:text-[170px] font-bold">
             Book Now
           </h1>
           <div className="w-full h-full mt-[-10px] sm:mt-[-20px] lg:mt-[-40px] bg-neutral-900 overflow-hidden rounded-2xl">
