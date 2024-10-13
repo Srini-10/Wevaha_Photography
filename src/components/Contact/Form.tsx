@@ -53,7 +53,7 @@ const Form = () => {
     emailjs
       .send(
         "service_etkdndb",
-        "template_2v3ykau",
+        "template_2oibkvp",
         templateParams,
         "TvGK3F0-DTgbMCHz5"
       )
