@@ -10,7 +10,7 @@ const Form = () => {
     name: "",
     phone: "",
     message: "",
-    to_name: "Wevaha",
+    to_name: "",
     from_name: "",
     city: "",
     eventType: "",
@@ -52,7 +52,7 @@ const Form = () => {
 
     emailjs
       .send(
-        "service_l8hwoab",
+        "service_etkdndb",
         "template_2v3ykau",
         templateParams,
         "TvGK3F0-DTgbMCHz5"
