@@ -73,7 +73,7 @@ const Form = () => {
             location: "",
             venue: "",
             crowd: "",
-            to_name: "Wevaha",
+            to_name: "",
             from_name: "",
           });
           console.log("Success:", response);
