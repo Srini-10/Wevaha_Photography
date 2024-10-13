@@ -55,7 +55,7 @@ const Form = () => {
         "service_etkdndb",
         "template_2oibkvp",
         templateParams,
-        "TvGK3F0-DTgbMCHz5"
+        "1orcNLyU45mQIeRXw"
       )
       .then(
         (response) => {
